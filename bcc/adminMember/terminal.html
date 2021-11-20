@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xml:lang="ko" lang="ko">
+<head>
+<title>부천시 지능형 역학 시스템</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<script src="/js/jquery-3.6.0.js"></script>
+<script defer src="/js/common.js"></script>
+<script>
+	$(function(){//퍼블 LNB 확인용
+		$('.inc__area').load("/bcc/inc/inc_nav.html",function(){depth(2,3);});
+	});
+</script>
+</head>
+<body>
+<div class="wrapper">
+
+	<header class="header">
+		<!-- "/bcc/inc/inc_header.html" -->
+	</header>
+	<!-- //Header -->
+
+	<div class="container">
+		<div class="contents">
+
+			<div class="inc__area">
+				<!-- "/bcc/inc/inc_nav.html" -->
+			</div>
+
+			<div class="area__contents">
+				<h3 class="hide-">사용자관리</h3>
+				<h4 class="hide-">터미널관리</h4>
+
+				<div class="board-wrap">
+
+					<div class="board__title">
+						<strong>사용자 관리</strong>
+					</div>
+					<!-- //board__title -->
+
+					<div class="board__btn type-02">
+						<div class="board__btn__right">
+							<button class="btn__small btn--normal" onclick="modalPopup('/bcc/popup/pop_terminal.html')">등록</button>
+							<button class="btn__small btn--normal">수정</button>
+							<button class="btn__small btn--normal">삭제</button>
+						</div>
+						<!-- //board__btn__right -->
+					</div>
+					<!-- //board__btn -->
+
+					<div class="board__list">
+						<table>
+							<caption>목록</caption>
+							<colgroup>
+								<col style="width:50px;">
+								<col style="width:320px;">
+								<col style="width:320px;">
+								<col style="width:400px;">
+								<col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col"><input type="checkbox"></th>
+									<th scope="col">시작 IP</th>
+									<th scope="col">종료 IP</th>
+									<th scope="col">메모</th>
+									<th scope="col">비고</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="align__center"><input type="checkbox"></td>
+									<td class="align__center">192.16.2.3</td>
+									<td class="align__center">192.16.2.120</td>
+									<td>관제센터 상황실 A</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="align__center"><input type="checkbox"></td>
+									<td class="align__center">192.16.2.210</td>
+									<td class="align__center">192.16.2.240</td>
+									<td>관제센터 상황실 B</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- //board__list -->
+				</div>
+				<!-- //board-wrap -->
+
+			</div>
+			<!-- //contents -->
+
+		</div>
+		<!-- //area__contents -->
+
+	</div>
+	<!-- //container -->
+
+	<footer class="footer">
+		<!-- "/bcc/inc/inc_footer.html" -->
+	</footer>
+	<!-- //Footer -->
+
+</div>
+<!-- //wrapper -->
+</body>
+</html>

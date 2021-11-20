@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html xml:lang="ko" lang="ko">
+<head>
+<title>부천시 지능형 역학 시스템</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/css/region.css" />
+<script src="/js/jquery-3.6.0.js"></script>
+<script defer src="/js/common.js"></script>
+</head>
+<body>
+<div class="wrapper">
+
+	<header class="header__region">
+		<div class="header__inner">
+			<h1 class="header--logo"><span>부천시 - 판타지아 부천</span></h1>
+			<h2 class="header__title">감염위험지역</h2>
+		</div>
+		<div class="header__util">
+			<p class="login-info">
+				<strong>부천시 역학조사관</strong> | <span>홍길동 (7722012)</span>
+			</p>
+			<a href="#" role="button" class="btn__logout">Logout</a>
+		</div>
+		<!-- //Header__inner -->
+		</header>
+	<!-- //Header -->
+
+	<div class="container__region">
+		<!-- <div class="contents"> -->
+			<div class="area__left">
+				<div class="title__left">
+					<h2>코로나 바이러스 감염증 – 19 (COVID-19)</h2>
+					<p>부천시 재난안전대책 본부에서 알려드립니다.</p>
+				</div>
+				<!-- //title__left -->
+
+				<div class="situation">
+						<dl class="situation__left">
+							<dt>확진환자</dt>
+							<dd>
+								<ul class="situation__list">
+									<li class="situation__item">
+										<p class="situation__number"><strong>4,630</strong>명</p>
+										<span class="situation__state">계</span>
+									</li>
+									<li class="situation__item situation--active">
+										<p class="situation__number"><strong>474</strong>명</p>
+										<span class="situation__state">치료중</span>
+									</li>
+									<li class="situation__item">
+										<p class="situation__number"><strong>4,011</strong>명</p>
+										<span class="situation__state">완치,퇴원</span>
+									</li>
+									<li class="situation__item">
+										<p class="situation__number"><strong>112</strong>명</p>
+										<span class="situation__state">사망</span>
+									</li>
+								</ul>
+							</dd>
+						</dl>
+					<!-- //situation__left -->
+
+						<dl class="situation__right">
+							<dt>접촉자 관리</dt>
+							<dd>
+								<ul class="situation__list">
+									<li class="situation__item">
+										<p class="situation__number"><strong>1,378</strong>명</p>
+										<span class="situation__state">자가격리</span>
+									</li>
+									<li class="situation__item">
+										<p class="situation__number"><strong>663,615</strong>명</p>
+										<span class="situation__state">감시해제</span>
+									</li>
+								</ul>
+
+							</dd>
+						</dl>
+					<!-- //situation__right -->
+				</div>
+				<!-- //situation -->
+
+				<div class="tabs">
+					<div class="tabs__btns">
+						<button class="tabs--active">감염위험지역</button>
+						<button>확진자 동선</button>
+					</div>
+					<!-- //tabs__btns -->
+
+					<div class="tabs__contents tabs--active">
+						<div class="board__list">
+							<table>
+								<caption>목록</caption>
+								<colgroup>
+									<col style="width:100px;">
+									<col style="width:100px;">
+									<col>
+									<col style="width:66px;">
+									<col style="width:112px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">위험시작일</th>
+										<th scope="col">위험종료일</th>
+										<th scope="col">명칭</th>
+										<th scope="col">위험등급</th>
+										<th scope="col">위험원인</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2021-07-23</td>
+										<td>2021-07-23</td>
+										<td>한솔프라자 2층<br>(경기 부천시 송내대로265번길 59)</td>
+										<td>1</td>
+										<td>확진자 노출</td>
+									</tr>
+									<tr>
+										<td>2021-07-23</td>
+										<td>2021-07-23</td>
+										<td>한솔프라자 2층<br>(경기 부천시 송내대로265번길 59)</td>
+										<td>2</td>
+										<td>방지 가이드 위반</td>
+									</tr>
+									<tr>
+										<td>2021-07-23</td>
+										<td>2021-07-23</td>
+										<td>한솔프라자 2층<br>(경기 부천시 송내대로265번길 59)</td>
+										<td>2</td>
+										<td>확진자 노출, 밀집</td>
+									</tr>
+									<tr>
+										<td>2021-07-23</td>
+										<td>2021-07-23</td>
+										<td>한솔프라자 2층<br>(경기 부천시 송내대로265번길 59)</td>
+										<td>1</td>
+										<td>확진자 노출</td>
+									</tr>
+									<tr>
+										<td>2021-07-23</td>
+										<td>2021-07-23</td>
+										<td>한솔프라자 2층<br>(경기 부천시 송내대로265번길 59)</td>
+										<td>1</td>
+										<td>확진자 노출</td>
+									</tr>
+									<tr>
+										<td>2021-07-23</td>
+										<td>2021-07-23</td>
+										<td>한솔프라자 2층<br>(경기 부천시 송내대로265번길 59)</td>
+										<td>1</td>
+										<td>확진자 노출</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- //board__list -->
+					</div>
+					<!-- //tabs_contents -->
+
+					<div class="tabs__contents">
+						<ul class="toggle__list">
+							<li class="toggle__item">
+								<button class="toggle__btn">확진자 46번</button>
+								<div class="board__list">
+									<table>
+										<caption>확진자 46번 동선 목록</caption>
+										<colgroup>
+											<col style="width:100px;">
+											<col style="width:100px;">
+											<col style="width:100px;">
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">순번</th>
+												<th scope="col">위험종료일</th>
+												<th scope="col">시각</th>
+												<th scope="col">장소</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>2021-07-23</td>
+												<td>15:30</td>
+												<td>한솔프라자 2층<br>(경기 부천시 송내대로265번길 59)</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td>2021-07-23</td>
+												<td>15:30</td>
+												<td>한솔프라자 2층<br>(경기 부천시 송내대로265번길 59)</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>2021-07-23</td>
+												<td>15:30</td>
+												<td>한솔프라자 2층<br>(경기 부천시 송내대로265번길 59)</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>2021-07-23</td>
+												<td>15:30</td>
+												<td>한솔프라자 2층<br>(경기 부천시 송내대로265번길 59)</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- //board__list -->
+							</li>
+							<li class="toggle__item">
+								<button class="toggle__btn">확진자 46번</button>
+								<div class="board__list">
+									<table>
+										<caption>확진자 46번 동선 목록</caption>
+										<colgroup>
+											<col style="width:100px;">
+											<col style="width:100px;">
+											<col style="width:100px;">
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">순번</th>
+												<th scope="col">위험종료일</th>
+												<th scope="col">시각</th>
+												<th scope="col">장소</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>2021-07-23</td>
+												<td>15:30</td>
+												<td>한솔프라자 2층<br>(경기 부천시 송내대로265번길 59)</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- //board__list -->
+							</li>
+							<li class="toggle__item">
+								<button class="toggle__btn">확진자 46번</button>
+								<div class="board__list">
+									<table>
+										<caption>확진자 46번 동선 목록</caption>
+										<colgroup>
+											<col style="width:100px;">
+											<col style="width:100px;">
+											<col style="width:100px;">
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">순번</th>
+												<th scope="col">위험종료일</th>
+												<th scope="col">시각</th>
+												<th scope="col">장소</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>2021-07-23</td>
+												<td>15:30</td>
+												<td>한솔프라자 2층<br>(경기 부천시 송내대로265번길 59)</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- //board__list -->
+							</li>
+							<li class="toggle__item">
+								<button class="toggle__btn">확진자 46번</button>
+								<div class="board__list">
+									<table>
+										<caption>확진자 46번 동선 목록</caption>
+										<colgroup>
+											<col style="width:100px;">
+											<col style="width:100px;">
+											<col style="width:100px;">
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">순번</th>
+												<th scope="col">위험종료일</th>
+												<th scope="col">시각</th>
+												<th scope="col">장소</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>2021-07-23</td>
+												<td>15:30</td>
+												<td>한솔프라자 2층<br>(경기 부천시 송내대로265번길 59)</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- //board__list -->
+							</li>
+							<li class="toggle__item">
+								<button class="toggle__btn">확진자 46번</button>
+								<div class="board__list">
+									<table>
+										<caption>확진자 46번 동선 목록</caption>
+										<colgroup>
+											<col style="width:100px;">
+											<col style="width:100px;">
+											<col style="width:100px;">
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">순번</th>
+												<th scope="col">위험종료일</th>
+												<th scope="col">시각</th>
+												<th scope="col">장소</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>2021-07-23</td>
+												<td>15:30</td>
+												<td>한솔프라자 2층<br>(경기 부천시 송내대로265번길 59)</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- //board__list -->
+							</li>
+							<li class="toggle__item">
+								<button class="toggle__btn">확진자 46번</button>
+								<div class="board__list">
+									<table>
+										<caption>확진자 46번 동선 목록</caption>
+										<colgroup>
+											<col style="width:100px;">
+											<col style="width:100px;">
+											<col style="width:100px;">
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">순번</th>
+												<th scope="col">위험종료일</th>
+												<th scope="col">시각</th>
+												<th scope="col">장소</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>2021-07-23</td>
+												<td>15:30</td>
+												<td>한솔프라자 2층<br>(경기 부천시 송내대로265번길 59)</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- //board__list -->
+							</li>
+							<li class="toggle__item">
+								<button class="toggle__btn">확진자 46번</button>
+								<div class="board__list">
+									<table>
+										<caption>확진자 46번 동선 목록</caption>
+										<colgroup>
+											<col style="width:100px;">
+											<col style="width:100px;">
+											<col style="width:100px;">
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">순번</th>
+												<th scope="col">위험종료일</th>
+												<th scope="col">시각</th>
+												<th scope="col">장소</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>2021-07-23</td>
+												<td>15:30</td>
+												<td>한솔프라자 2층<br>(경기 부천시 송내대로265번길 59)</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- //board__list -->
+							</li>
+							<li class="toggle__item">
+								<button class="toggle__btn">확진자 46번</button>
+								<div class="board__list">
+									<table>
+										<caption>확진자 46번 동선 목록</caption>
+										<colgroup>
+											<col style="width:100px;">
+											<col style="width:100px;">
+											<col style="width:100px;">
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">순번</th>
+												<th scope="col">위험종료일</th>
+												<th scope="col">시각</th>
+												<th scope="col">장소</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>2021-07-23</td>
+												<td>15:30</td>
+												<td>한솔프라자 2층<br>(경기 부천시 송내대로265번길 59)</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- //board__list -->
+							</li>
+						</ul>
+
+
+
+
+					</div>
+					<!-- //tabs_contents -->
+
+				</div>
+				<!-- //tabs -->
+
+			</div>
+			<!-- //area__left -->
+
+			<div class="area__maps">
+				<div class="maps">
+					<!-- 삭제 -->
+					<p class="description">지도영역</p>
+					<!-- //삭제 -->
+
+					<div class="tip__balloon type-01" style="top:50px; left:50px;">
+						<div class="tip__header">
+							<strong>삼성전자 서비스센터 서비스센터</strong>
+							<span class="grade">위험도 4</span>
+						</div>
+						<!-- //tip__header -->
+						<div class="tip__contents">
+							<div class="board__view__mini">
+								<table>
+									<caption>상세</caption>
+									<colgroup>
+										<col style="width:63px;">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">구분</th>
+											<td>감염위험</td>
+										</tr>
+										<tr>
+											<th scope="row">위험도</th>
+											<td>1</td>
+										</tr>
+										<tr>
+											<th scope="row">기간</th>
+											<td>7/15 ~ 7/29</td>
+										</tr>
+										<tr>
+											<th scope="row">위험원인</th>
+											<td><span class="tag__danger tag--red">확진자 노출</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<p class="tip__address">경기 부천시 부흥로 193</p>
+						</div>
+						<!-- //tip__contents -->
+					</div>
+					<!-- //tip__balloon -->
+
+					<div class="tip__balloon type-02" style="top:250px; left:50px;">
+						<div class="tip__contents">
+							<ul class="movement__list">
+								<li class="movement__item">
+									<p class="date">2021-07-17 15:30</p>
+									<p class="place">한솔프라자 2층</p>
+								</li>
+								<li class="movement__item">
+									<p class="date">2021-07-17 15:30</p>
+									<p class="place">서울어린이병원앞</p>
+								</li>
+								<li class="movement__item">
+									<p class="date">2021-07-17 15:30</p>
+									<p class="place">노영범한의원 앞</p>
+								</li>
+								<li class="movement__item">
+									<p class="date">2021-07-17 15:30</p>
+									<p class="place">상1주민센터 앞</p>
+								</li>
+							</ul>
+							<!-- //movement__list -->
+						</div>
+						<!-- //tip__contents -->
+					</div>
+					<!-- //tip__balloon -->
+
+				</div>
+				<!-- //maps -->
+			</div>
+			<!-- //area__maps -->
+		<!-- </div> -->
+		<!-- //contents -->
+	</div>
+	<!-- //container -->
+</div>
+<!-- //wrapper -->
+</body>
+</html>

@@ -1,0 +1,188 @@
+<div class="pop__wrap">
+
+	<div class="pop__header">
+		<h4>지능형 역학시스템</h4>
+	</div>
+	<!-- //pop__header -->
+
+	<div class="pop__container">
+		<div class="pop__title">
+			<h3>위험 지역 등록</h3>
+		</div>
+		<!-- //pop__title -->
+
+		<div class="pop__board__reg">
+			<table>
+				<colgroup>
+					<col style="width:153px;">
+					<col>
+					<col>
+					<col>
+				</colgroup>
+				<caption>위험 지역 등록</caption>
+				<tbody>
+					<tr>
+						<th><label for="typeA-001">구분</label></th>
+						<td>
+							<div class="input__chk">
+								<label><input name="typeA" id="typeA-001" type="checkbox" checked="checked"><i></i><span>감염위험</span></label>
+							</div>
+							<!-- //input__chk -->
+						</td>
+						<td>
+							<div class="input__chk">
+								<label><input name="typeA" id="typeA-002" type="checkbox"><i></i><span>우선방역대상</span></label>
+							</div>
+							<!-- //input__chk -->
+						</td>
+						<td>
+							<div class="input__chk">
+								<label><input name="typeA" id="typeA-003" type="checkbox"><i></i><span>접촉자 우선검색</span></label>
+							</div>
+							<!-- //input__chk -->
+						</td>
+					</tr>
+					<tr>
+						<th><label for="typeB-001">외부공개</label></th>
+						<td>
+							<div  class="input__radio">
+								<label><input name="typeB" id="typeB-001" type="radio" checked="checked"><i></i><span>공개</span></label>
+							</div>
+							<!-- //input__radio -->
+						</td>
+						<td>
+							<div  class="input__radio">
+								<label><input name="typeB" id="typeB-002" type="radio"><i></i><span>비공개</span></label>
+							</div>
+							<!-- //input__radio -->
+						</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th><label for="typeC">장소명</label></th>
+						<td colspan="3"><input type="text" id="typeC" value=""></td>
+					</tr>
+					<tr>
+						<th><label for="typeD">주소</label></th>
+						<td colspan="3"><input type="text" id="typeD" value=""></td>
+					</tr>
+					<tr>
+						<th><label for="typeE">위험 시작일</label></th>
+						<td colspan="3">
+							<div class="input__set__date-time">
+								<div class="input__set__date type-icon">
+									<input type="text" id="typeE" value="2021-07-20"><button class="btn__cal">달력</button>
+								</div>
+								<!-- //input__set__date -->
+							</div>
+							<!-- //input__set__date-time -->
+						</td>
+					</tr>
+					<tr>
+						<th><label for="typeF">위험 종료일</label></th>
+						<td colspan="3">
+							<div class="input__set__date-time">
+								<div class="input__set__date type-icon">
+									<input type="text" id="typeF" value="2021-07-20"><button class="btn__cal">달력</button>
+								</div>
+								<!-- //input__set__date -->
+							</div>
+							<!-- //input__set__date-time -->
+						</td>
+					</tr>
+					<tr>
+						<th><label for="typeG">위험 등급</label></th>
+						<td colspan="3">
+							<select name="typeG" id="typeG" class="type-03 w-240">
+								<option value="">선택</option>
+								<option value="">1</option>
+								<option value="">2</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th><label for="typeH">위험 원인</label></th>
+						<td colspan="3"><input type="text" id="typeH" value=""></td>
+					</tr>
+					<tr>
+						<th><label for="typeI">최종 방역일시</label></th>
+						<td colspan="3">
+							<div class="input__set__date-time">
+								<div class="input__set__date">
+									<input type="text" id="typeI" value="2021-07-20"><button class="btn__cal">달력</button>
+								</div>
+								<!-- //input__set__date -->
+								<div class="input__set__time">
+									<div class="input__set__time">
+										<select name="" id="" class="type-03">
+											<option value="">00</option>
+											<option value="">01</option>
+											<option value="">02</option>
+										</select>
+										<span>시</span>
+										<select name="" id="" class="type-03">
+											<option value="">00</option>
+											<option value="">10</option>
+											<option value="">20</option>
+										</select>
+										<span>분</span>
+									</div>
+									<!-- //input__set__time -->
+								</div>
+								<!-- //input__set__time -->
+							</div>
+							<!-- //input__set__date-time -->
+						</td>
+					</tr>
+					<tr>
+						<th><label for="typeJ">접촉자 조사일시</label></th>
+						<td colspan="3">
+							<div class="input__set__date-time">
+								<div class="input__set__date">
+									<input type="text" id="typeJ" value="2021-07-20"><button class="btn__cal">달력</button>
+								</div>
+								<!-- //input__set__date -->
+								<div class="input__set__time">
+									<select name="" id="" class="type-03">
+										<option value="">00</option>
+										<option value="">01</option>
+										<option value="">02</option>
+									</select>
+									<span>시</span>
+									<select name="" id="" class="type-03">
+										<option value="">00</option>
+										<option value="">10</option>
+										<option value="">20</option>
+									</select>
+									<span>분</span>
+								</div>
+								<!-- //input__set__time -->
+							</div>
+							<!-- //input__set__date-time -->
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- //board__reg -->
+
+		<div class="board__pop__btn">
+			<div class="board__btn__right">
+				<button class="btn__small-02 btn--gray">비디오 추가</button>
+				<button class="btn__small-02 btn--gray">취소</button>
+			</div>
+			<!-- //btn__board__right -->
+		</div>
+		<!-- //board__btn -->
+
+	</div>
+	<!-- //pop__container -->
+
+	<button class="btn__close__popup" onclick="modalHide()">닫기</button>
+
+</div>
+<!-- //popup__wrap -->
+
+<script>
+	addFile();
+</script>

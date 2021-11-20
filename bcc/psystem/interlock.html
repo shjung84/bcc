@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xml:lang="ko" lang="ko">
+<head>
+<title>부천시 지능형 역학 시스템</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<script src="/js/jquery-3.6.0.js"></script>
+<script defer src="/js/common.js"></script>
+<script>
+	$(function(){//퍼블 LNB 확인용
+		$('.inc__area').load("/bcc/inc/inc_nav.html",function(){depth(1,2);});
+	});
+</script>
+</head>
+<body>
+<div class="wrapper">
+
+	<header class="header">
+		<!-- "/bcc/inc/inc_header.html" -->
+	</header>
+	<!-- //Header -->
+
+	<div class="container">
+		<div class="contents">
+
+			<div class="inc__area">
+				<!-- "/bcc/inc/inc_nav.html" -->
+			</div>
+
+			<div class="area__contents">
+				<h3 class="hide-">확진자관리</h3>
+				<h4 class="hide-">h4</h4>
+
+				<div class="board-wrap">
+
+					<div class="sub__menu">
+						<ul>
+							<li class="current"><a href="#">AI 영상분석엔진</a></li>
+							<li><a href="#">시각화 엔진</a></li>
+							<li><a href="#">역학데이터분석 엔진</a></li>
+							<li><a href="#">내부연동 IWF</a></li>
+							<li><a href="#">VMS</a></li>
+							<li><a href="#">블록체인</a></li>
+						</ul>
+					</div>
+					<!-- //sub__menu -->
+
+					<div class="board__title">
+						<strong>네트워크 정보</strong>
+					</div>
+					<!-- //board__title -->
+
+					<div class="board__reg type-02">
+						<table>
+							<caption>등록</caption>
+							<colgroup>
+								<col style="width:410px;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row"><label for="typeA-001">IP Address</label></th>
+									<td><input type="text" id="typeA-001" value="10.1.1.3"></td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="typeA-002">Port</label></th>
+									<td><input type="text" id="typeA-002" value="657"></td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="typeA-003">사용자 ID</label></th>
+									<td><input type="text" id="typeA-003" value="boocheon"></td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="typeA-004">사용자 패스워드</label></th>
+									<td><input type="text" id="typeA-004" value="12345"></td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+					<!-- //board__reg -->
+
+
+
+					<div class="board__title">
+						<strong>서비스 정보</strong>
+					</div>
+					<!-- //board__title -->
+
+					<div class="board__reg type-02">
+						<table>
+							<caption>등록</caption>
+							<colgroup>
+								<col style="width:410px;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row"><label for="typeB-001">확진자 일치율 (%)</label></th>
+									<td><input type="text" id="typeB-001" value="CCTV19"></td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="typeB-002">밀접접촉자 감염확률 (%)</label></th>
+									<td><input type="text" id="typeB-002" value="CT19"></td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="typeB-003">밀접접촉자 일치율 (%)</label></th>
+									<td><input type="text" id="typeB-003" value="boocheon"></td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+					<!-- //board__reg -->
+
+					<div class="board__btn">
+						<div class="board__btn__right">
+							<button class="btn__small btn--normal">저장</button>
+						</div>
+						<!-- //board__btn__right -->
+					</div>
+					<!-- //board__btn -->
+
+				</div>
+				<!-- //board-wrap -->
+
+			</div>
+			<!-- //contents -->
+
+		</div>
+		<!-- //area__contents -->
+
+	</div>
+	<!-- //container -->
+
+	<footer class="footer">
+		<!-- "/bcc/inc/inc_footer.html" -->
+	</footer>
+	<!-- //Footer -->
+
+</div>
+<!-- //wrapper -->
+</body>
+</html>

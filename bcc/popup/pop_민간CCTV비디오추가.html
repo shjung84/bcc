@@ -1,0 +1,89 @@
+<div class="pop__wrap">
+
+	<div class="pop__header">
+		<h4>지능형 역학시스템</h4>
+	</div>
+	<!-- //pop__header -->
+
+	<div class="pop__container">
+		<div class="pop__title">
+			<h3>민간 CCTV 비디오 추가</h3>
+		</div>
+		<!-- //pop__title -->
+
+		<div class="pop__board__reg">
+			<table>
+				<colgroup>
+					<col style="width:120px;">
+					<col>
+				</colgroup>
+				<caption>민간 CCTV 비디오 추가</caption>
+				<tbody>
+					<tr>
+						<th><label for="typeA">일시</label></th>
+						<td>
+							<div class="input__set__date-time">
+								<div class="input__set__date type-icon">
+									<input type="text" id="typeA" value="2021-07-20"><button class="btn__cal">달력</button>
+								</div>
+								<!-- //input__set__date -->
+								<div class="input__set__time">
+									<input type="text" value="13"><span>시</span>
+									<input type="text" value="30"><span>분</span>
+								</div>
+								<!-- //input__set__time -->
+							</div>
+							<!-- //input__set__date-time -->
+						</td>
+					</tr>
+					<tr>
+						<th><label for="typeB">장소명</label></th>
+						<td>
+							<input type="text" id="typeB" value="김밥천국">
+						</td>
+					</tr>
+					<tr>
+						<th><label for="typeC">주소</label></th>
+						<td>
+							<input type="text" id="typeC" value="경기 부천시 호현로 495">
+						</td>
+					</tr>
+					<tr>
+						<th><label for="typeD">비디오 파일</label></th>
+						<td>
+							<div class="input__set__file__wrap">
+								<div class="input__set__file active">
+									<label for="typeD" class="input__btn-file">파일첨부</label>
+									<p class="input__file "><span class="input__file-name">CCTV_REC_20210720.mp4</span><button class="input__btn-del">삭제</button></p>
+									<input type="file" id="typeD" class="input__file-hidden">
+								</div>
+								<!-- //input__set__file -->
+							</div>
+							<!-- //input__set__file__wrap -->
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- //board__reg -->
+
+		<div class="board__pop__btn">
+			<div class="board__btn__right">
+				<button class="btn__small-02 btn--gray">비디오 추가</button>
+				<button class="btn__small-02 btn--gray">취소</button>
+			</div>
+			<!-- //btn__board__right -->
+		</div>
+		<!-- //board__btn -->
+
+	</div>
+	<!-- //pop__container -->
+
+	<button class="btn__close__popup" onclick="modalHide()">닫기</button>
+
+</div>
+<!-- //popup__wrap -->
+
+<script>
+	addFile();
+</script>

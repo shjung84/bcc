@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xml:lang="ko" lang="ko">
+<head>
+<title>부천시 지능형 역학 시스템</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<script src="/js/jquery-3.6.0.js"></script>
+<script defer src="/js/common.js"></script>
+<script>
+	$(function(){//퍼블 LNB 확인용
+		$('.inc__area').load("/bcc/inc/inc_nav.html",function(){depth(1,1);});
+	});
+</script>
+</head>
+<body>
+<div class="wrapper">
+
+	<header class="header">
+		<!-- "/bcc/inc/inc_header.html" -->
+	</header>
+	<!-- //Header -->
+
+	<div class="container">
+		<div class="contents">
+
+			<div class="inc__area">
+				<!-- "/bcc/inc/inc_nav.html" -->
+			</div>
+
+			<div class="area__contents">
+				<h3 class="hide-">사용자관리</h3>
+				<h4 class="hide-">h4</h4>
+
+				<div class="board-wrap">
+
+					<div class="board__title">
+						<strong>CCTV 등록</strong>
+					</div>
+					<!-- //board__title -->
+
+					<div class="board__reg">
+						<table>
+							<caption>등록</caption>
+							<colgroup>
+								<!-- <col style="width:410px;"> -->
+								<col style="width:143px;">
+								<col style="width:267px;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row" colspan="2"><label for="typeA-001">관제 CCTV ID</label></th>
+									<td><input type="text" id="typeA-001" value="CCTV19"></td>
+								</tr>
+								<tr>
+									<th scope="row" colspan="2"><label for="typeA-002">시스템 ID</label></th>
+									<td><input type="text" id="typeA-002" value="CT19"></td>
+								</tr>
+								<tr>
+									<th scope="row" rowspan="2" class="border__right"><label for="typeA-003">좌표</label></th>
+									<th scope="row"><label for="typeA-003">경도</label></th>
+									<td><input type="text" id="typeA-003" value="37.366063"></td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="typeA-003-02">위도</label></th>
+									<td><input type="text" id="typeA-003-02" value="127.106565"></td>
+								</tr>
+								<tr>
+									<th scope="row" colspan="2" class="align__top"><label for="typeA-004">주소</label></th>
+									<td>
+										<div class="input__addr">
+											<div class="input__addr__zip">
+												<input type="text" id="typeA-004" class="input__addr__zipcode" value="18530">
+												<button class="btn__zipcode">우편번호</button>
+											</div>
+											<div class="input__addr__text">
+												<input type="text" id="typeA-004-02" value="부천시 원미구 길주로 210">
+												<input type="text" id="typeA-004-03" value="AA아파트 101동 1107호">
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" colspan="2"><label for="typeA-005">설명</label></th>
+									<td><input type="text" id="typeA-005" value="고주몽 화로구이 앞"></td>
+								</tr>
+								<tr>
+									<th scope="row" colspan="2"><label for="typeA-006">모델</label></th>
+									<td><input type="text" id="typeA-006" value="DS-2CD2355FWD-1"></td>
+								</tr>
+								<tr>
+									<th scope="row" colspan="2"><label for="typeA-007">해상도</label></th>
+									<td><input type="text" id="typeA-007" value="2560 x 1920"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- //board__reg -->
+
+					<div class="board__btn">
+						<div class="board__btn__right">
+							<button class="btn__small btn--normal">취소</button>
+							<button class="btn__small btn--normal">저장</button>
+						</div>
+						<!-- //board__btn__right -->
+					</div>
+					<!-- //board__btn -->
+
+				</div>
+				<!-- //board-wrap -->
+
+			</div>
+			<!-- //contents -->
+
+		</div>
+		<!-- //area__contents -->
+
+	</div>
+	<!-- //container -->
+
+	<footer class="footer">
+		<!-- "/bcc/inc/inc_footer.html" -->
+	</footer>
+	<!-- //Footer -->
+
+</div>
+<!-- //wrapper -->
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html xml:lang="ko" lang="ko">
+<head>
+<title>부천시 지능형 역학 시스템</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<script src="/js/jquery-3.6.0.js"></script>
+<script defer src="/js/common.js"></script>
+<script>
+	$(function(){//퍼블 LNB 확인용
+		$('.inc__area').load("/bcc/inc/inc_nav.html",function(){depth(1,1);});
+	});
+</script>
+</head>
+<body>
+<div class="wrapper">
+
+	<header class="header">
+		<!-- "/bcc/inc/inc_header.html" -->
+	</header>
+	<!-- //Header -->
+
+	<div class="container">
+		<div class="contents">
+
+			<div class="inc__area">
+				<!-- "/bcc/inc/inc_nav.html" -->
+			</div>
+
+			<div class="area__contents">
+				<h3 class="hide-">확진자관리</h3>
+				<h4 class="hide-">h4</h4>
+
+				<div class="form__search">
+					<form>
+						<input type="hidden">
+						<fieldset>
+							<legend>검색</legend>
+							<div class="form__search_inner">
+								<div class="form__input__set">
+									<label for="typeA">관제 CCTV ID</label>
+									<input type="text" id="typeA" placeholder="입력해주세요">
+								</div>
+								<!-- //form__input__set -->
+								<div class="form__input__set">
+									<label for="typeB">시스템 ID</label>
+									<input type="text" id="typeB" placeholder="입력해주세요">
+								</div>
+								<!-- //form__input__set -->
+								<div class="form__input__set">
+									<label for="typeC">주소 ID</label>
+									<input type="text" id="typeC" placeholder="입력해주세요">
+								</div>
+								<!-- //form__input__set -->
+								<div class="form__input__set">
+									<label for="typeD">모델</label>
+									<input type="text" id="typeD" placeholder="입력해주세요">
+								</div>
+								<!-- //form__input__set -->
+							</div>
+							<!-- //inner -->
+							<button class="form__btn__search btn--normal">조회</button>
+						</fieldset>
+					</form>
+				</div>
+				<!-- //board-search -->
+
+				<div class="board-wrap">
+
+					<div class="board__util">
+						<div class="board__util__total"><strong>총</strong><em>80건</em></div>
+						<!-- <div class="board__util__sort">
+							<select name="" id="">
+								<option value="">15개씩 보기</option>
+								<option value="">30개씩 보기</option>
+							</select>
+						</div> -->
+					</div>
+					<!-- //board__util -->
+
+					<div class="board__btn">
+						<div class="board__btn__left">
+							<button class="btn__small btn--excel-down">엑셀양식 다운로드</button>
+							<button class="btn__small btn--excel-up" onclick="modalPopup('/bcc/popup/pop_엑셀업로드.html')">엑셀 업로드</button>
+						</div>
+						<!-- //board__btn__left -->
+						<div class="board__btn__right">
+							<button class="btn__small btn--normal">삭제</button>
+							<button class="btn__small btn--normal">등록</button>
+						</div>
+						<!-- //board__btn__right -->
+					</div>
+					<!-- //board__btn -->
+
+					<div class="board__list">
+						<table>
+							<caption>목록</caption>
+							<colgroup>
+								<col style="width:50px;">
+								<col style="width:150px;">
+								<col style="width:120px;">
+								<col style="width:150px;">
+								<col style="width:150px;">
+								<col style="width:300px;">
+								<col style="width:180px;">
+								<col style="width:150px;">
+								<col style="width:120px;">
+								<col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" rowspan="2"><input type="checkbox"></th>
+									<th scope="col" rowspan="2">관제 CCTV ID</th>
+									<th scope="col" rowspan="2">시스템 ID</th>
+									<th scope="col" colspan="2" class="type__location-01">좌표</th>
+									<th scope="col" rowspan="2">주소</th>
+									<th scope="col" rowspan="2">설명</th>
+									<th scope="col" rowspan="2">모델</th>
+									<th scope="col" rowspan="2">해상도</th>
+									<th scope="col" rowspan="2">비고</th>
+								</tr>
+								<tr>
+									<th scope="col" class="type__location-02">경도</th>
+									<th scope="col" class="type__location-02">위도</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="align__center"><input type="checkbox"></td>
+									<td class="align__center">CCTV01</td>
+									<td class="align__center">CT01</td>
+									<td class="align__center">37.366063</td>
+									<td class="align__center">127.106565</td>
+									<td>경기도 부천시 소향로 223</td>
+									<td>고주몽 화로구이 앞</td>
+									<td>DS-2CD2355FWD-1</td>
+									<td class="align__center">2560 x 1920</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="align__center"><input type="checkbox"></td>
+									<td class="align__center">CCTV01</td>
+									<td class="align__center">CT01</td>
+									<td class="align__center">37.366630</td>
+									<td class="align__center">127.106565</td>
+									<td>경기도 부천시 소향로 223</td>
+									<td>고주몽 화로구이 앞</td>
+									<td>DS-2CD2355FWD-1</td>
+									<td class="align__center">2560 x 1920</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="align__center"><input type="checkbox"></td>
+									<td class="align__center">CCTV01</td>
+									<td class="align__center">CT01</td>
+									<td class="align__center">37.366063</td>
+									<td class="align__center">127.106565</td>
+									<td>경기도 부천시 소향로 223</td>
+									<td>고주몽 화로구이 앞</td>
+									<td>DS-2CD2355FWD-1</td>
+									<td class="align__center">2560 x 1920</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="align__center"><input type="checkbox"></td>
+									<td class="align__center">CCTV01</td>
+									<td class="align__center">CT01</td>
+									<td class="align__center">37.366063</td>
+									<td class="align__center">127.106565</td>
+									<td>경기도 부천시 소향로 223</td>
+									<td>고주몽 화로구이 앞</td>
+									<td>DS-2CD2355FWD-1</td>
+									<td class="align__center">2560 x 1920</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="align__center"><input type="checkbox"></td>
+									<td class="align__center">CCTV01</td>
+									<td class="align__center">CT01</td>
+									<td class="align__center">37.366063</td>
+									<td class="align__center">127.106565</td>
+									<td>경기도 부천시 소향로 223</td>
+									<td>고주몽 화로구이 앞</td>
+									<td>DS-2CD2355FWD-1</td>
+									<td class="align__center">2560 x 1920</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="align__center"><input type="checkbox"></td>
+									<td class="align__center">CCTV01</td>
+									<td class="align__center">CT01</td>
+									<td class="align__center">37.366063</td>
+									<td class="align__center">127.106565</td>
+									<td>경기도 부천시 소향로 223</td>
+									<td>고주몽 화로구이 앞</td>
+									<td>DS-2CD2355FWD-1</td>
+									<td class="align__center">2560 x 1920</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- //board__list -->
+
+					<div class="paging">
+						<button class="paging__btn btn--prev" disabled="disabled">prev</button>
+						<p class="paging__item">
+							<a href="#" role="button" class="paging__link paging__link--current">1</a>
+							<a href="#" role="button" class="paging__link">2</a>
+							<a href="#" role="button" class="paging__link">3</a>
+							<a href="#" role="button" class="paging__link">4</a>
+							<a href="#" role="button" class="paging__link">5</a>
+							<span class="paging__ellipsis">...</span>
+							<a href="#" role="button" class="paging__link">10</a>
+						</p>
+						<button class="paging__btn btn--next">next</button>
+					</div>
+					<!-- //paging -->
+
+				</div>
+				<!-- //board-wrap -->
+
+			</div>
+			<!-- //contents -->
+
+		</div>
+		<!-- //area__contents -->
+
+	</div>
+	<!-- //container -->
+
+	<footer class="footer">
+		<!-- "/bcc/inc/inc_footer.html" -->
+	</footer>
+	<!-- //Footer -->
+
+</div>
+<!-- //wrapper -->
+</body>
+</html>

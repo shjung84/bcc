@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xml:lang="ko" lang="ko">
+<head>
+<title>부천시 지능형 역학 시스템</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<script src="/js/jquery-3.6.0.js"></script>
+<script defer src="/js/common.js"></script>
+<script>
+	$(function(){//퍼블 LNB 확인용
+		$('.inc__area').load("/bcc/inc/inc_nav.html",function(){depth(2,1);});
+	});
+</script>
+</head>
+<body>
+<div class="wrapper">
+
+	<header class="header">
+		<!-- "/bcc/inc/inc_header.html" -->
+	</header>
+	<!-- //Header -->
+
+	<div class="container">
+		<div class="contents">
+
+			<div class="inc__area">
+				<!-- "/bcc/inc/inc_nav.html" -->
+			</div>
+
+			<div class="area__contents">
+				<h3 class="hide-">사용자관리</h3>
+				<h4 class="hide-">h4</h4>
+
+				<div class="board-wrap">
+
+					<div class="board__title">
+						<strong>사용자 관리</strong>
+					</div>
+					<!-- //board__title -->
+
+					<div class="board__reg-02">
+						<table>
+							<caption>등록</caption>
+							<colgroup>
+								<col style="width:410px;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row"><label for="typeA">ID <i class="bul__imp">*</i></label></th>
+									<td>
+										<div class="input__set__id">
+											<input type="text" id="typeA" Placeholder="ID 입력" value="">
+											<button class="btn__small-02 btn--normal">중복확인</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="typeB">Password <i class="bul__imp">*</i></label></th>
+									<td>
+										<select required name="typeB" id="typeB" class="type-02 w-220">
+											<option value="" selected>선택하세요</option>
+											<option value="">일반관리자</option>
+											<option value="">옵션2</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="typeC">이름 <i class="bul__imp">*</i></label></th>
+									<td><input type="text" id="typeC" Placeholder="이름 입력" value=""></td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="typeD">소속 <i class="bul__imp">*</i></label></th>
+									<td><input type="text" id="typeD" Placeholder="소속 입력" value=""></td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="typeE">직책 <i class="bul__imp">*</i></label></th>
+									<td><input type="text" id="typeE" Placeholder="직책 입력" value=""></td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="typeF">연락처 <i class="bul__imp">*</i></label></th>
+									<td><input type="text" id="typeF" Placeholder="연락처 입력" value=""></td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="typeG">이메일 <i class="bul__imp">*</i></label></th>
+									<td><input type="text" id="typeG" Placeholder="이메일 입력" value=""></td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="typeH">비고</label></th>
+									<td><input type="text" id="typeH" Placeholder="비고입력" value=""></td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+					<!-- //board__reg -->
+
+					<div class="board__btn">
+						<div class="board__btn__right">
+							<button class="btn__small btn--normal">취소</button>
+							<button class="btn__small btn--normal">저장</button>
+						</div>
+						<!-- //board__btn__right -->
+					</div>
+					<!-- //board__btn -->
+
+				</div>
+				<!-- //board-wrap -->
+
+			</div>
+			<!-- //contents -->
+
+		</div>
+		<!-- //area__contents -->
+
+	</div>
+	<!-- //container -->
+
+	<footer class="footer">
+		<!-- "/bcc/inc/inc_footer.html" -->
+	</footer>
+	<!-- //Footer -->
+
+</div>
+<!-- //wrapper -->
+</body>
+</html>

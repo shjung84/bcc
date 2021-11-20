@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html xml:lang="ko" lang="ko">
+<head>
+<title>부천시 지능형 역학 시스템</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<script src="/js/jquery-3.6.0.js"></script>
+<script defer src="/js/common.js"></script>
+<script>
+	$(function(){//퍼블 LNB 확인용
+		$('.inc__area').load("/bcc/inc/inc_nav.html",function(){depth(2,1);});
+	});
+</script>
+</head>
+<body>
+<div class="wrapper">
+
+	<header class="header">
+		<!-- "/bcc/inc/inc_header.html" -->
+	</header>
+	<!-- //Header -->
+
+	<div class="container">
+		<div class="contents">
+
+			<div class="inc__area">
+				<!-- "/bcc/inc/inc_nav.html" -->
+			</div>
+
+			<div class="area__contents">
+				<h3 class="hide-">사용자관리</h3>
+				<h4 class="hide-">h4</h4>
+
+				<div class="form__search">
+					<form>
+						<input type="hidden">
+						<fieldset>
+							<legend>검색</legend>
+							<div class="form__search_inner">
+								<div class="form__input__set">
+									<label for="typeA-001">등록일</label>
+									<div class="form__input__date">
+										<p><input type="text" id="typeA-001" value="2/18/1993"><button class="btn__cal">달력</button></p>
+										<p><input type="text" id="typeA-002" value="2/18/1993"><button class="btn__cal">달력</button></p>
+									</div>
+								</div>
+								<!-- //form__input__set -->
+								<div class="form__input__set">
+									<label for="typeB">계정권한</label>
+									<select required name="typeB" id="typeB" class="type-02">
+										<option value="" selected>선택</option>
+										<option value="">옵션1</option>
+										<option value="">옵션2</option>
+									</select>
+								</div>
+								<!-- //form__input__set -->
+								<div class="form__input__set">
+									<label for="typeC">이름</label>
+									<input type="text" id="typeC" placeholder="입력해주세요">
+								</div>
+								<!-- //form__input__set -->
+								<div class="form__input__set">
+									<label for="typeD">모델</label>
+									<input type="text" id="typeD" placeholder="입력해주세요">
+								</div>
+								<!-- //form__input__set -->
+							</div>
+							<!-- //inner -->
+							<button class="form__btn__search btn--normal">조회</button>
+						</fieldset>
+					</form>
+				</div>
+				<!-- //board-search -->
+
+				<div class="board-wrap">
+
+					<div class="board__util">
+						<div class="board__util__total"><strong>총</strong><em>80건</em></div>
+						<!-- <div class="board__util__sort">
+							<select name="" id="">
+								<option value="">15개씩 보기</option>
+								<option value="">30개씩 보기</option>
+							</select>
+						</div> -->
+					</div>
+					<!-- //board__util -->
+
+					<div class="board__btn type-02">
+						<div class="board__btn__right">
+							<button class="btn__small btn--normal">등록</button>
+						</div>
+						<!-- //board__btn__right -->
+					</div>
+					<!-- //board__btn -->
+
+					<div class="board__list">
+						<table>
+							<caption>목록</caption>
+							<colgroup>
+								<col style="width:50px;">
+								<col style="width:120px;">
+								<col style="width:120px;">
+								<col style="width:150px;">
+								<col style="width:200px;">
+								<col style="width:150px;">
+								<col style="width:200px;">
+								<col style="width:250px;">
+								<col style="width:120px;">
+								<col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col"><input type="checkbox"></th>
+									<th scope="col">ID</th>
+									<th scope="col">이름</th>
+									<th scope="col">계정 권한</th>
+									<th scope="col">소속</th>
+									<th scope="col">직책</th>
+									<th scope="col">연락처</th>
+									<th scope="col">이메일</th>
+									<th scope="col">등록일</th>
+									<th scope="col">비고</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="align__center"><input type="checkbox"></td>
+									<td class="align__center">hong</td>
+									<td class="align__center">홍길동</td>
+									<td>운영자</td>
+									<td>감염병 관리과</td>
+									<td>주무관</td>
+									<td class="align__center">010-1234-1234</td>
+									<td>hong@korea.kr</td>
+									<td class="align__center">2021-08-11</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="align__center"><input type="checkbox"></td>
+									<td class="align__center">hong</td>
+									<td class="align__center">홍길동</td>
+									<td>시스템 관리자</td>
+									<td>감염병 관리과</td>
+									<td>주무관</td>
+									<td class="align__center">010-1234-1234</td>
+									<td>hong@korea.kr</td>
+									<td class="align__center">2021-08-11</td>
+									<td></td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+					<!-- //board__list -->
+
+					<div class="paging">
+						<button class="paging__btn btn--prev" disabled="disabled">prev</button>
+						<p class="paging__item">
+							<a href="#" role="button" class="paging__link paging__link--current">1</a>
+							<a href="#" role="button" class="paging__link">2</a>
+							<a href="#" role="button" class="paging__link">3</a>
+							<a href="#" role="button" class="paging__link">4</a>
+							<a href="#" role="button" class="paging__link">5</a>
+							<span class="paging__ellipsis">...</span>
+							<a href="#" role="button" class="paging__link">10</a>
+						</p>
+						<button class="paging__btn btn--next">next</button>
+					</div>
+					<!-- //paging -->
+
+				</div>
+				<!-- //board-wrap -->
+
+			</div>
+			<!-- //contents -->
+
+		</div>
+		<!-- //area__contents -->
+
+	</div>
+	<!-- //container -->
+
+	<footer class="footer">
+		<!-- "/bcc/inc/inc_footer.html" -->
+	</footer>
+	<!-- //Footer -->
+
+</div>
+<!-- //wrapper -->
+</body>
+</html>
