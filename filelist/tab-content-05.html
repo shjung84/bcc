@@ -1,0 +1,216 @@
+<div id="guide">
+	<section>
+		<div class="title__guide">
+			<strong>[ FONT ]</strong>
+			<span class="title__description">폰트 굵기</span>
+		</div>
+
+		<div class="box">
+			<p style="font-weight:400;">기본 normal : font-weight:400;</p>
+			<p style="font-weight:700;">볼드 bold : font-weight:700;</p>
+			<p style="font-weight:800;">엑스트라 Extra : font-weight:800;</span>
+		</div>
+	</section>
+
+	<section>
+		<div class="title__guide">
+			<strong>[ BUTTON ]</strong>
+		</div>
+		<!-- //title__guide -->
+
+		<p class="title__description">Height:40px</p>
+		<div class="box">
+			<button class="btn__default btn--normal">기본</button>
+			<button class="btn__default btn--normal" disabled="disabled">기본</button>
+		</div>
+		<!-- //box -->
+
+		<p class="title__description">Height:30px</p>
+		<div class="box">
+			<button class="btn__small btn--normal">등록</button>
+			<button class="btn__small btn--normal">삭제</button>
+			<button class="btn__small btn--normal">수정</button>
+			<button class="btn__small btn--normal">해지</button>
+			<button class="btn__small btn--normal">저장</button>
+			<button class="btn__small btn--normal">다운로드</button>
+			<button class="btn__small btn--normal">출력항목</button>
+
+			<button class="btn__small btn--excel-down">엑셀양식 다운로드</button>
+			<button class="btn__small btn--excel-up">엑셀 업로드</button>
+			<!-- <button class="form__btn__search btn--normal">조회</button> -->
+		</div>
+		<!-- //box -->
+
+		<p class="title__description">Height:28px</p>
+		<div class="box">
+			<button class="btn__small-02 btn--normal">중복확인</button>
+			<button class="btn__small-03 btn--normal">비밀번호 초기화</button>
+		</div>
+		<!-- //box -->
+
+		<p class="title__description">기타</p>
+		<div class="box"><s></s>
+			<button class="btn__zipcode">우편번호</button>
+			<button class="btn__cal">달력</button>
+
+		</div>
+		<!-- //box -->
+
+		<p class="title__description">▶ 게시판 버튼 좌우 정렬</p>
+		<div class="box">
+			<div class="board__btn">
+				<div class="board__btn__left">
+					<button class="btn__small btn--normal">등록</button>
+					<button class="btn__small btn--normal">등록</button>
+				</div>
+				<!-- //board__btn__left -->
+				<div class="board__btn__right">
+					<button class="btn__small btn--normal">등록</button>
+					<button class="btn__small btn--normal">등록</button>
+				</div>
+				<!-- //board__btn__right -->
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="title__guide">
+			<strong>[ INPUT ]</strong>
+			<span class="title__description">▶ 텍스트박스</span>
+		</div>
+		<!-- //title__guide -->
+		<div class="box">
+			<dl>
+				<dt>기본 - 데이터없음</dt>
+				<dd><input type="text" placeholder="텍스트를 입력하세요." value=""></dd>
+			</dl>
+			<dl>
+				<dt>기본 - 데이터있음</dt>
+				<dd><input type="text" placeholder="텍스트를 입력하세요." value="2021-07-01"></dd>
+			</dl>
+			<dl>
+				<dt>비활성화</dt>
+				<dd><input type="text" placeholder="텍스트를 입력하세요." value="" disabled="disabled"></dd>
+			</dl>
+		</div>
+	</section>
+
+	<section>
+		<div class="title__guide">
+			<strong>[ SELECT ]</strong>
+			<span class="title__description">▶ 셀렉트박스</span>
+		</div>
+		<!-- //title__guide -->
+		<div class="box">
+			<select required name="" id="" class="w-240">
+				<option value="" selected>선택</option>
+				<option value="">1</option>
+				<option value="">2</option>
+			</select>
+		</div>
+		<!-- //box -->
+		<div class="box">
+			<select required name="" id="" class="type-02 w-200">
+				<option value="" selected>선택하세요</option>
+				<option value="">일반관리자</option>
+				<option value="">옵션2</option>
+			</select>
+			<select required name="" id="" class="type-02 w-127">
+				<option value="" selected>선택하세요</option>
+				<option value="">일반관리자</option>
+				<option value="">옵션2</option>
+			</select>
+		</div>
+		<!-- //box -->
+		<div class="box">
+			<select required name="" id="" class="type-03 w-240">
+				<option value="" selected>선택하세요</option>
+				<option value="">일반관리자</option>
+				<option value="">옵션2</option>
+			</select>
+		</div>
+		<!-- //box -->
+		<div class="box">
+			<select required name="" id="" class="type-04 w-200">
+				<option value="" selected>선택하세요</option>
+				<option value="">일반관리자</option>
+				<option value="">옵션2</option>
+			</select>
+		</div>
+		<!-- //box -->
+	</section>
+
+	<section>
+		<div class="title__guide">
+			<strong>[ PAGING ]</strong>
+			<span class="title__description">▶ 페이징</span>
+		</div>
+		<!-- //title__guide -->
+		<div class="box">
+			<div class="paging">
+				<a href="#" role="button" class="paging__btn btn--prev" disabled="">prev</a>
+				<p class="paging__item">
+					<a href="#" role="button" class="paging__link paging__link--current">1</a>
+					<a href="#" role="button" class="paging__link">2</a>
+					<a href="#" role="button" class="paging__link">3</a>
+					<a href="#" role="button" class="paging__link">4</a>
+					<a href="#" role="button" class="paging__link">5</a>
+					<span class="paging__ellipsis">...</span>
+					<a href="#" role="button" class="paging__link">10</a>
+				</p>
+				<a href="#" role="button" class="paging__btn btn--next">next</a>
+			</div>
+		</div>
+		<!-- //box -->
+	</section>
+
+	<section>
+		<div class="title__guide">
+			<strong>[ FORM SEARCH ]</strong>
+			<span class="title__description">게시판 상단 검색</span>
+		</div>
+		<div class="box">
+			<div class="form__search">
+				<form>
+					<input type="hidden">
+					<fieldset>
+						<legend>검색</legend>
+						<div class="form__search_inner">
+							<div class="form__input__set">
+								<label for="typeA-001">작업일</label>
+								<div class="form__input__date">
+									<p><input type="text" id="typeA-001" value="2/18/1993"><button class="btn__cal">달력</button></p>
+									<p><input type="text" id="typeA-001-02" value="2/18/1993"><button class="btn__cal">달력</button></p>
+								</div>
+							</div>
+							<!-- //form__input__set -->
+
+							<div class="form__input__set">
+								<label for="typeB">작업구분</label>
+								<select required required name="typeB" id="typeB" class="type-02">
+									<option value="" selected>선택</option>
+									<option value="">옵션1</option>
+									<option value="">옵션2</option>
+								</select>
+							</div>
+							<!-- //form__input__set -->
+
+							<div class="form__input__set">
+								<label for="typeC">사용자 ID</label>
+								<input type="text" id="typeC" placeholder="입력해주세요">
+							</div>
+							<!-- //form__input__set -->
+
+						</div>
+						<!-- //inner -->
+						<button class="form__btn__search btn--normal">조회</button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<!-- //box -->
+	</section>
+
+	</div>
+	<!-- //guide -->
+	<script defer src="/js/common.js"></script>
