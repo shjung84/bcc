@@ -86,8 +86,8 @@
 .paging__link--current {background:#f3802d; color:#fff;}
 .paging__btn {background-color:transparent; background-repeat:no-repeat; background-position:0 0; text-indent:-99999px;}
 .paging__btn[disabled] {opacity:0.7; cursor:default; pointer-events:none;}
-.paging__btn.btn--prev {background-image:url(../../images/btn/btn_page_prev.png);}
-.paging__btn.btn--next {background-image:url(../../images/btn/btn_page_next.png);}
+.paging__btn.btn--prev {background-image:url(../images/btn/btn_page_prev.png);}
+.paging__btn.btn--next {background-image:url(../images/btn/btn_page_next.png);}
 .paging__ellipsis {font-size:14px;}
 .type-02 .paging__link {font-weight:700;}
 

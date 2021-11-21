@@ -8,7 +8,7 @@ body {min-width:320px; width:100%;}
 	.header__inner {height:50px;}
 	.header__title {display:block; position:relative; top:12px; text-align:center; font-weight:800; font-size:15px;}
 	.header__util {display:none;}
-	.header--logo {top:calc(50% - 14px); right:10px; left:auto; width:49px; height:28px; background-image:url(../../images/common/logo_01@2x.png); background-size:49px auto;}
+	.header--logo {top:calc(50% - 14px); right:10px; left:auto; width:49px; height:28px; background-image:url(../images/common/logo_01@2x.png); background-size:49px auto;}
 }
 
 /* container*/
