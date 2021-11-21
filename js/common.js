@@ -230,8 +230,8 @@ function depth(depth1,depth2,depth3){
 				depth_2_text = "연동시스템";
 			}
 			depth_2_sub = [
-				["CCTV 관리","/bcc/cctv/list.html"],
-				["연동시스템","/bcc/psystem/interlock.html"]
+				["CCTV 관리","../bcc/cctv/list.html"],
+				["연동시스템","../bcc/psystem/interlock.html"]
 			]
 		}else if(depth1 === 2){
 			depth_1_text = "사용자 관리";
@@ -247,11 +247,11 @@ function depth(depth1,depth2,depth3){
 				depth_2_text = "삭제기간설정";
 			}
 			depth_2_sub = [
-				["계정 관리","/bcc/adminMember/list.html"],
-				["사용자 작업이력","/bcc/adminMember/userhistory.html"],
-				["터미널관리","/bcc/adminMember/terminal.html"],
-				["CCTV범위설정","/bcc/adminMember/cctvbounds.html"],
-				["삭제기간설정","/bcc/adminMember/deleteperiod.html"]
+				["계정 관리","../bcc/adminMember/list.html"],
+				["사용자 작업이력","../bcc/adminMember/userhistory.html"],
+				["터미널관리","../bcc/adminMember/terminal.html"],
+				["CCTV범위설정","../bcc/adminMember/cctvbounds.html"],
+				["삭제기간설정","../bcc/adminMember/deleteperiod.html"]
 			]
 		}else if(depth1 === 3){
 			depth_1_text = "통계 관리";
@@ -261,8 +261,8 @@ function depth(depth1,depth2,depth3){
 				depth_2_text = "AI분석영상";
 			}
 			depth_2_sub = [
-				["감염등록","/bcc/statistics/register.html"],
-				["AI분석영상","/bcc/statistics/analysis.html"]
+				["감염등록","../bcc/statistics/register.html"],
+				["AI분석영상","../bcc/statistics/analysis.html"]
 			]
 		}
 	}else if(menuType == 2){//운영자
@@ -276,9 +276,9 @@ function depth(depth1,depth2,depth3){
 				depth_2_text = "자가격리 종료대상";
 			}
 			depth_2_sub = [
-				["확진자 조회","/bcc/confirmed/list.html"],
-				["확진자 등록","/bcc/confirmed/reg.html"],
-				["자가격리 종료대상","/bcc/confirmed/end.html"]
+				["확진자 조회","../bcc/confirmed/list.html"],
+				["확진자 등록","../bcc/confirmed/reg.html"],
+				["자가격리 종료대상","../bcc/confirmed/end.html"]
 			]
 		}else if(depth1 === 2){
 			depth_1_text = "접촉자 정보";
@@ -286,7 +286,7 @@ function depth(depth1,depth2,depth3){
 				depth_2_text = "접촉자 정보";
 			}
 			depth_2_sub = [
-				["접촉자 정보","/bcc/confirmed/view.html"]
+				["접촉자 정보","../bcc/confirmed/view.html"]
 			]
 		}else if(depth1 === 3){
 			depth_1_text = "감염위험";
@@ -298,9 +298,9 @@ function depth(depth1,depth2,depth3){
 				depth_2_text = "감염지역 확산정보";
 			}
 			depth_2_sub = [
-				["감염위험지역 정보","/bcc/infection/list.html"],
-				["신규 감염자 예측","/bcc/infection/list.html"],
-				["감염지역 확산정보","/bcc/infection/list.html"]
+				["감염위험지역 정보","../bcc/infection/list.html"],
+				["신규 감염자 예측","../bcc/infection/list.html"],
+				["감염지역 확산정보","../bcc/infection/list.html"]
 			]
 		}else if(depth1 === 4){
 			depth_1_text = "운영관리";
@@ -314,10 +314,10 @@ function depth(depth1,depth2,depth3){
 				depth_2_text = "사용자 작업이력";
 			}
 			depth_2_sub = [
-				["감염 등록 통계","/bcc/management/list.html"],
-				["CCTV 범위 설정","/bcc/management/list.html"],
-				["삭제 기간 설정","/bcc/management/list.html"],
-				["사용자 작업이력","/bcc/management/list.html"]
+				["감염 등록 통계","../bcc/management/list.html"],
+				["CCTV 범위 설정","../bcc/management/list.html"],
+				["삭제 기간 설정","../bcc/management/list.html"],
+				["사용자 작업이력","../bcc/management/list.html"]
 			]
 		}
 	}
