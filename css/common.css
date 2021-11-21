@@ -86,6 +86,7 @@ select::-ms-expand {display:none;}
 /* Size */
 .w-100 {width:100px !important;}
 .w-127 {width:127px !important;}
+.w-150 {width:150px !important;}
 .w-200 {width:200px !important;}
 .w-220 {width:220px !important;}
 .w-240 {width:240px !important;}
@@ -101,7 +102,7 @@ h2, h3, h4, h5, strong, b {font-family:'NanumGothic'; font-weight:700;}
 
 /* Hide Set */
 .hide {overflow:hidden; position:absolute; left:-1000% !important; top:0; width:1px; height:1px; font-size:0.1%; line-height:0.1%;}
-.hide- {overflow:hidden; position:absolute; left:-1000% !important; top:0; width:1px; height:1px; font-size:0.1%; line-height:0.1%;}
+/* .hide- {overflow:hidden; position:absolute; left:-1000% !important; top:0; width:1px; height:1px; font-size:0.1%; line-height:0.1%;} */
 
 /* LAYOUT */
 .wrapper {overflow-x:auto; /*width:1920px;*/ height:100%; margin:0 auto; background:#fff; }

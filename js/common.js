@@ -7,6 +7,8 @@ $(function(){
 	navAction();	// Nav
 	pathAction();	// Path
 	tabs();			// Tab
+	addFile();
+	addFileImg();
 
 	$(window).resize(function(){
 
@@ -80,7 +82,7 @@ function pathAction(){
 /* TAB */
 function tabs(){
 	var tabs = $(".tabs");
-	var btn = $(".tabs__btns button",tabs);
+	var btn = $(".tabs__btn",tabs);
 	var box = $(".tabs__contents",tabs);
 	var act = "tabs--active";
 
@@ -158,20 +160,16 @@ function modalHide() {
 }
 
 function addFile(){
-	var file = $(".input__set__file");
-	var btn = $(".input__btn-del",file);
-	var text = $(".input__file-name",file);
+	var file = $("[class^=input__set__file]");
+	var btn = $("[class^=input__btn-del]",file);
+	var text = $("[class^=input__file-name]",file);
 	var target = $(".input__file-hidden",file);
 	var active = "active";
 
 	target.on("change",function(){
 		var _file = $(this).closest(file);
 		var _text = _file.find(text);
-		if(window.FileReader){
-			var fileName = $(this)[0].files[0].name;
-		}else{
-			var fileName = $(this).val().split('/').pop().split('\\').pop();
-		}
+		if(window.FileReader){var fileName = $(this)[0].files[0].name;}
 		_file.addClass(active);
 		_text.text(fileName);
 	});
@@ -184,14 +182,30 @@ function addFile(){
 	});
 }
 
+function addFileImg(){
+	var imgTarget = $('.input__set__photo .input__file-hidden');
+	var box = $("[aria-photobox]");
+	imgTarget.on('change', function(){
+		box.children('img').remove();
+		if(window.FileReader){
+			var reader = new FileReader();
+			reader.onload = function(e){
+				var src = e.target.result;
+				box.prepend('<img src="'+src+'">');
+			}
+			reader.readAsDataURL($(this)[0].files[0]);
+		}
+	});
+}
 
 // S : 임시 : 퍼블 LNB 확인용
-function depth(depth1,depth2){
+function depth(depth1,depth2,depth3){
 
 	//Nav
 	var nav = $(".nav");
 	var _depth1 = $("[aria-depth="+depth1+"]",nav);
 	var _depth2 = depth2 - 1;
+
 	_depth1.addClass("active");
 	_depth1.find(".nav__sub li").eq(_depth2).addClass("current");
 
@@ -204,6 +218,8 @@ function depth(depth1,depth2){
 	var depth_2_text ;
 	var depth_2_list = $("[aria-depth-02] .path__option ul",path);
 	var depth_2_sub ;
+	var depth_3_box = $("[aria-depth-03] .path__selected span",path);
+	var depth_3_text ;
 
 	if(menuType == 1){//관리자
 		if(depth1 === 1){
@@ -256,7 +272,7 @@ function depth(depth1,depth2){
 				depth_2_text = "확진자 조회";
 			}else if(depth2 === 2){
 				depth_2_text = "확진자 등록";
-			}else if(depth2 === 2){
+			}else if(depth2 === 3){
 				depth_2_text = "자가격리 종료대상";
 			}
 			depth_2_sub = [
@@ -278,7 +294,7 @@ function depth(depth1,depth2){
 				depth_2_text = "감염위험지역 정보";
 			}else if(depth2 === 2){
 				depth_2_text = "신규 감염자 예측";
-			}else if(depth2 === 2){
+			}else if(depth2 === 3){
 				depth_2_text = "감염지역 확산정보";
 			}
 			depth_2_sub = [
@@ -306,8 +322,18 @@ function depth(depth1,depth2){
 		}
 	}
 
+	if(depth3){
+		$("[aria-depth-03").removeAttr("aria-hidden");
+		if(depth3 === 1){
+			depth_3_text = "목록";
+		}else if(depth3 === 2){
+			depth_3_text = "상세조회";
+		}
+	}
+
 	depth_1_box.html(depth_1_text);
 	depth_2_box.html(depth_2_text);
+	depth_3_box.html(depth_3_text);
 
 	for (var i=0;i<depth_2_sub.length;i++){
 		depth_2_list.append($("<li><a></a></li>"));

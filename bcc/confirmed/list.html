@@ -5,10 +5,10 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<link rel="stylesheet" type="text/css" href="/css/common.css" />
-<link rel="stylesheet" type="text/css" href="/css/style.css" />
-<script src="/js/jquery-3.6.0.js"></script>
-<script defer src="/js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css" />
+<script src="../../js/jquery-3.6.0.js"></script>
+<script defer src="../../js/common.js"></script>
 <script>
 	$(function(){//퍼블 LNB 확인용
 		$('.inc__area').load("/bcc/inc/inc_nav_02.html",function(){depth(1,1);});
@@ -31,10 +31,10 @@
 			</div>
 
 			<div class="area__contents">
-				<h3 class="hide-">확진자관리</h3>
-				<h4 class="hide-">h4</h4>
+				<h3 class="hide">확진자관리</h3>
+				<h4 class="hide">확진자 조회</h4>
 
-				<div class="form__search type-02">
+				<div class="form__search">
 					<form>
 						<input type="hidden">
 						<fieldset>
@@ -93,7 +93,7 @@
 					<div class="board__btn type-02">
 						<div class="board__btn__right">
 							<button class="btn__small btn--normal">확진자 등록</button>
-							<button class="btn__small btn--normal">분석요청</button>
+							<button class="btn__small btn--normal" onclick="modalPopup('/bcc/popup/pop_분석요청_02.html')">분석요청</button>
 							<button class="btn__small-w btn--white">삭제</button>
 						</div>
 						<!-- //board__btn__right -->
@@ -130,7 +130,7 @@
 								<tr>
 									<td><input type="checkbox"></td>
 									<td>20210801-13</td>
-									<td>김확진</td>
+									<td><a href="view.html">김확진</a></td>
 									<td>2021-08-15</td>
 									<td>2021-10-15</td>
 									<td>-</td>
@@ -141,7 +141,7 @@
 								<tr>
 									<td><input type="checkbox"></td>
 									<td>20210801-13</td>
-									<td>김확진</td>
+									<td><a href="view.html">김확진</a></td>
 									<td>2021-08-15</td>
 									<td>2021-10-15</td>
 									<td>-</td>
@@ -152,7 +152,7 @@
 								<tr>
 									<td><input type="checkbox"></td>
 									<td>20210801-13</td>
-									<td>김확진</td>
+									<td><a href="view.html">김확진</a></td>
 									<td>2021-08-15</td>
 									<td>2021-10-15</td>
 									<td>-</td>
@@ -163,7 +163,7 @@
 								<tr>
 									<td><input type="checkbox"></td>
 									<td>20210801-13</td>
-									<td>김확진</td>
+									<td><a href="view.html">김확진</a></td>
 									<td>2021-08-15</td>
 									<td>2021-10-15</td>
 									<td>2021-10-15</td>
@@ -174,7 +174,7 @@
 								<tr>
 									<td><input type="checkbox"></td>
 									<td>20210801-13</td>
-									<td>김확진</td>
+									<td><a href="view.html">김확진</a></td>
 									<td>2021-08-15</td>
 									<td>2021-10-15</td>
 									<td>2021-10-15</td>
@@ -185,7 +185,7 @@
 								<tr>
 									<td><input type="checkbox"></td>
 									<td>20210801-13</td>
-									<td>김확진</td>
+									<td><a href="view.html">김확진</a></td>
 									<td>2021-08-15</td>
 									<td>2021-10-15</td>
 									<td>2021-10-15</td>

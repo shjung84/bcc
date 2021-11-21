@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html xml:lang="ko" lang="ko">
+<head>
+<title>부천시 지능형 역학 시스템</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css" />
+<script src="../../js/jquery-3.6.0.js"></script>
+<script defer src="../../js/common.js"></script>
+<script>
+	$(function(){//퍼블 LNB 확인용
+		$('.inc__area').load("/bcc/inc/inc_nav_02.html",function(){depth(1,3);});
+	});
+</script>
+</head>
+<body>
+<div class="wrapper">
+
+	<header class="header">
+		<!-- "/bcc/inc/inc_header.html" -->
+	</header>
+	<!-- //Header -->
+
+	<div class="container">
+		<div class="contents">
+
+			<div class="inc__area">
+				<!-- "/bcc/inc/inc_nav.html" -->
+			</div>
+
+			<div class="area__contents">
+				<h3 class="hide">확진자관리</h3>
+				<h4 class="hide">자가격리 종료대상</h4>
+
+				<div class="form__search">
+					<form>
+						<input type="hidden">
+						<fieldset>
+							<legend>검색</legend>
+							<div class="form__search_inner">
+								<div class="form__input__set" style="width:40%"><!-- 디자인마다 간격이 상이 IE9 크로스브라우징위해 CSS3 사용불가로 인라인타입으로 반영 -->
+									<label for="typeA-001">자가격리 기간</label>
+									<div class="form__input__date type-02">
+										<p><input type="text" id="typeA-001" value="2020/18/1993"><button class="btn__cal">달력</button></p>
+										<p><input type="text" id="typeA-002" value="2/18/1993"><button class="btn__cal">달력</button></p>
+									</div>
+								</div>
+								<!-- //form__input__set -->
+								<div class="form__input__set" style="width:40%"><!-- 디자인마다 간격이 상이 IE9 크로스브라우징위해 CSS3 사용불가로 인라인타입으로 반영 -->
+									<label for="typeB-001">분석기간</label>
+									<div class="form__input__date type-02">
+										<p><input type="text" id="typeB-001" value="2020/18/1993"><button class="btn__cal">달력</button></p>
+										<p><input type="text" id="typeB-002" value="2/18/1993"><button class="btn__cal">달력</button></p>
+									</div>
+								</div>
+								<!-- //form__input__set -->
+
+								<!-- //form__input__set -->
+								<div class="form__input__set"><!-- 디자인마다 간격이 상이 IE9 크로스브라우징위해 CSS3 사용불가로 인라인타입으로 반영 -->
+									<label for="typeC">확진번호</label>
+									<input type="text" id="typeC" class="w-150" placeholder="입력해주세요">
+								</div>
+								<!-- //form__input__set -->
+								<div class="form__input__set"><!-- 디자인마다 간격이 상이 IE9 크로스브라우징위해 CSS3 사용불가로 인라인타입으로 반영 -->
+									<label for="typeD">확진자명</label>
+									<input type="text" id="typeD" class="w-150" placeholder="입력해주세요">
+								</div>
+								<!-- //form__input__set -->
+							</div>
+							<!-- //inner -->
+							<button class="form__btn__search btn--normal">조회</button>
+						</fieldset>
+					</form>
+				</div>
+				<!-- //board-search -->
+
+				<div class="board-wrap">
+
+					<div class="board__util">
+						<div class="board__util__total type-02"><strong>총</strong><em>80건</em></div>
+					</div>
+					<!-- //board__util -->
+
+					<div class="board__btn type-02">
+						<div class="board__btn__right">
+							<button class="btn__small-w btn--white">삭제</button>
+						</div>
+						<!-- //board__btn__right -->
+					</div>
+					<!-- //board__btn -->
+
+					<div class="board__list-02">
+						<table>
+							<caption>목록</caption>
+							<colgroup>
+								<col style="width:42px;">
+								<col style="width:195px;">
+								<col style="width:195px;">
+								<col style="width:195px;">
+								<col style="width:195px;">
+								<col style="width:195px;">
+								<col style="width:195px;">
+								<col style="width:195px;">
+								<col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col"><input type="checkbox"></th>
+									<th scope="col">확진번호</th>
+									<th scope="col">확진자 명</th>
+									<th scope="col">자가격리 시작일</th>
+									<th scope="col">분석 시작일</th>
+									<th scope="col">분석 종료일</th>
+									<th scope="col">분석현황</th>
+									<th scope="col">등록일</th>
+									<th scope="col">작성자</th>
+								</tr>
+							<tbody>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>20210801-13</td>
+									<td><a href="view.html">김확진</a></td>
+									<td>2021-08-15</td>
+									<td>2021-10-15</td>
+									<td>-</td>
+									<td>분석 대기</td>
+									<td>2021-08-15</td>
+									<td>남현우</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>20210801-13</td>
+									<td><a href="view.html">김확진</a></td>
+									<td>2021-08-15</td>
+									<td>2021-10-15</td>
+									<td>-</td>
+									<td>동선분석중</td>
+									<td>2021-08-15</td>
+									<td>남현우</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>20210801-13</td>
+									<td><a href="view.html">김확진</a></td>
+									<td>2021-08-15</td>
+									<td>2021-10-15</td>
+									<td>-</td>
+									<td>완료</td>
+									<td>2021-08-15</td>
+									<td>남현우</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>20210801-13</td>
+									<td><a href="view.html">김확진</a></td>
+									<td>2021-08-15</td>
+									<td>2021-10-15</td>
+									<td>2021-10-15</td>
+									<td>-</td>
+									<td>2021-08-15</td>
+									<td>남현우</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>20210801-13</td>
+									<td><a href="view.html">김확진</a></td>
+									<td>2021-08-15</td>
+									<td>2021-10-15</td>
+									<td>2021-10-15</td>
+									<td>-</td>
+									<td>2021-08-15</td>
+									<td>남현우</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>20210801-13</td>
+									<td><a href="view.html">김확진</a></td>
+									<td>2021-08-15</td>
+									<td>2021-10-15</td>
+									<td>2021-10-15</td>
+									<td>-</td>
+									<td>2021-08-15</td>
+									<td>남현우</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- //board__list -->
+
+					<div class="board__bot">
+
+						<div class="board__btn__left">
+							<button class="btn__excel btn--excel-down">엑셀양식 다운로드</button>
+						</div>
+						<!-- //board__btn__left -->
+
+						<div class="paging type-02">
+							<button class="paging__btn btn--prev" disabled="disabled">prev</button>
+							<p class="paging__item">
+								<a href="#" role="button" class="paging__link paging__link--current">1</a>
+								<a href="#" role="button" class="paging__link">2</a>
+								<a href="#" role="button" class="paging__link">3</a>
+								<a href="#" role="button" class="paging__link">4</a>
+								<a href="#" role="button" class="paging__link">5</a>
+								<span class="paging__ellipsis">...</span>
+								<a href="#" role="button" class="paging__link">10</a>
+							</p>
+							<button class="paging__btn btn--next">next</button>
+						</div>
+						<!-- //paging -->
+
+					</div>
+					<!-- //board__bot -->
+
+				</div>
+				<!-- //board-wrap -->
+
+			</div>
+			<!-- //contents -->
+
+		</div>
+		<!-- //area__contents -->
+
+	</div>
+	<!-- //container -->
+
+	<footer class="footer">
+		<!-- "/bcc/inc/inc_footer.html" -->
+	</footer>
+	<!-- //Footer -->
+
+</div>
+<!-- //wrapper -->
+</body>
+</html>
