@@ -71,7 +71,7 @@ input[type=text]:disabled:-moz-placeholder {color:#cecece !important;}
 input[type=text]:disabled::-moz-placeholder {color:#cecece !important;}
 input[type=text]:disabled:-ms-input-placeholder {color:#cecece !important;}
 
-select {width:100%; height:34px; padding:0 30px 0 12px; border:1px solid #c4c4c4; background:#fff url(../../images/common/bg_selectbox.png) no-repeat 100% 50%; color:#3a3838; vertical-align:middle; font-weight:300; font-size:12px; font-family:'NanumGothic'; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; -webkit-appearance:none; -moz-appearance:none; appearance:none;}
+select {width:100%; height:34px; padding:0 30px 0 12px; border:1px solid #c4c4c4; background:#fff url(../images/common/bg_selectbox.png) no-repeat 100% 50%; color:#3a3838; vertical-align:middle; font-weight:300; font-size:12px; font-family:'NanumGothic'; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; -webkit-appearance:none; -moz-appearance:none; appearance:none;}
 
 select:required:invalid {color:#7b7b7b;}
 /* option[value=""][disabled] {display:none;} */
