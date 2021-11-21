@@ -8,7 +8,7 @@ body {min-width:320px; width:100%;}
 	.header__inner {height:50px;}
 	.header__title {display:block; position:relative; top:12px; text-align:center; font-weight:800; font-size:15px;}
 	.header__util {display:none;}
-	.header--logo {top:calc(50% - 14px); right:10px; left:auto; width:49px; height:28px; background-image:url(/images/common/logo_01@2x.png); background-size:49px auto;}
+	.header--logo {top:calc(50% - 14px); right:10px; left:auto; width:49px; height:28px; background-image:url(../../images/common/logo_01@2x.png); background-size:49px auto;}
 }
 
 /* container*/
@@ -131,7 +131,7 @@ body {min-width:320px; width:100%;}
 .board__view__mini table td {height:25px; border-left:1px solid #c4c4c4;}
 
 .movement__list {position:relative; margin-top:4px; padding-left:30px; border:1px solid #c4c4c4; color:#000; font-size:12px;}
-.movement__list:before {content:''; position:absolute; top:0; bottom:0; left:0; width:30px; border-right:1px solid #c4c4c4; background:#f3802d url(/images/common/bg_movement.png) no-repeat 0 50%;}
+.movement__list:before {content:''; position:absolute; top:0; bottom:0; left:0; width:30px; border-right:1px solid #c4c4c4; background:#f3802d url(../../images/common/bg_movement.png) no-repeat 0 50%;}
 .movement__item {display:table; table-layout:fixed; width:100%; border-top:1px solid #c4c4c4;}
 .movement__item:first-child {border-top:0;}
 .movement__item .date {display:table-cell;  width:120px; padding:0 8px; font-weight:700;}
