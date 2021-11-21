@@ -101,6 +101,10 @@
 
 				<div class="board-wrap board__sec">
 
+					<div class="btns pos__top">
+						<button class="btn__small-w80 btn--navy">동선 분석요청</button>
+					</div>
+
 					<div class="tabs">
 						<div class="tabs__btns">
 							<a href="#" class="tabs__btn">이동 동선</a>
@@ -108,6 +112,7 @@
 							<a href="#" class="tabs__btn">접촉자</a>
 						</div>
 						<!-- //tabs__btn -->
+
 						<div class="tabs__contents">1
 
 
@@ -125,11 +130,11 @@
 									<p aria-photobox><img src="../../images/@temp/@picture.png" alt="예시"></p>
 									<div class="btns">
 										<div class="input__set__photo">
-											<label for="typePhoto" class="btn__small-w80 btn--blue-02">사진 업로드</label>
+											<label for="typePhoto" class="btn__small-w80 btn--blue">사진 업로드</label>
 											<input type="file" id="typePhoto" class="input__file-hidden">
 										</div>
 										<!-- //input__set__photo -->
-										<button class="btn__small-w80 btn--blue-02">CCTV 이미지 선택</button>
+										<button class="btn__small-w80 btn--blue">CCTV 이미지 선택</button>
 									</div>
 									<!-- //btns -->
 								</div>
@@ -150,13 +155,13 @@
 											<td>
 												<div class="input__set__id">
 													<input type="text" id="typeA" Placeholder="" value="#1111">
-													<button class="btn__small-w80 btn--blue-02">중복확인</button>
+													<button class="btn__small-w80 btn--blue">중복확인</button>
 												</div>
 											</td>
 											<th><label for="typeB">기초역학조사서</label></th>
 											<td>
 												<div class="input__set__file-02 active">
-													<label for="typeB" class="btn__small-w80 btn--blue-02">파일첨부</label>
+													<label for="typeB" class="btn__small-w80 btn--blue">파일첨부</label>
 													<p class="input__file-02"><span class="input__file-name-02">기초역학조사서_#1111_김확진.hwp</span></p>
 													<input type="file" id="typeB" class="input__file-hidden">
 												</div>
@@ -210,7 +215,7 @@
 												<div class="input__addr">
 													<div class="input__addr__zip-02">
 														<input type="text" id="typeI" class="input__addr__zipcode" value="18530">
-														<button class="btn__small btn--bk">우편번호</button>
+														<button class="btn__zipcode-02">우편번호 검색</button>
 													</div>
 													<div class="input__addr__text-02">
 														<input type="text" id="typeI-002" value="부천시 원미구 길주로 210">
@@ -239,6 +244,223 @@
 								</table>
 							</div>
 							<!-- //board__reg-info -->
+
+							<div class="board__btn type-03">
+								<div class="board__btn__right">
+									<button class="btn__small-w80 btn--navy">저장</button>
+								</div>
+								<!-- //board__btn__right -->
+							</div>
+							<!-- //board__btn -->
+
+							<div class="board-wrap">
+
+								<div class="board__title">
+									<strong>동선 정보</strong>
+								</div>
+								<!-- //board__title -->
+
+								<div class="board__btn type-02">
+									<div class="board__btn__right">
+										<button class="btn__small-w btn--white">삭제</button>
+										<button class="btn__small-w btn--normal-02">추가</button>
+									</div>
+									<!-- //board__btn__right -->
+								</div>
+								<!-- //board__btn -->
+
+								<div class="board__list-02">
+									<table>
+										<caption>목록</caption>
+										<colgroup>
+											<col style="width:40px;">
+											<col style="width:310px;">
+											<col style="width:310px;">
+											<col style="width:310px;">
+											<col style="width:310px;">
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col"><input type="checkbox"></th>
+												<th scope="col">일자</th>
+												<th scope="col">시간</th>
+												<th scope="col">장소명</th>
+												<th scope="col">주소</th>
+												<th scope="col">비고</th>
+											</tr>
+										<tbody>
+											<tr>
+												<td><input type="checkbox"></td>
+												<td>20210801-13</td>
+												<td>17:10</td>
+												<td>김밥천국</td>
+												<td>부천시  부천로 137번길</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td><input type="checkbox"></td>
+												<td>20210801-13</td>
+												<td>17:10</td>
+												<td><span class="txt__delete">김밥천국</span></td>
+												<td><span class="txt__delete">부천시  부천로 137번길</span></td>
+												<td>진술 변경으로 삭제</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- //board__list -->
+
+							</div>
+							<!-- //board-wrap -->
+
+							<div class="board-wrap board__sec">
+
+								<div class="board__title">
+									<strong>민간CCTV 비디오 정보</strong>
+								</div>
+								<!-- //board__title -->
+
+								<div class="board__btn type-02">
+									<div class="board__btn__right">
+										<button class="btn__small-w btn--white">삭제</button>
+										<button class="btn__small-w btn--normal-02">추가</button>
+									</div>
+									<!-- //board__btn__right -->
+								</div>
+								<!-- //board__btn -->
+
+								<div class="board__list-02">
+									<table>
+										<caption>목록</caption>
+										<colgroup>
+											<col style="width:40px;">
+											<col style="width:310px;">
+											<col style="width:310px;">
+											<col style="width:310px;">
+											<col style="width:310px;">
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col"><input type="checkbox"></th>
+												<th scope="col">일자</th>
+												<th scope="col">시간</th>
+												<th scope="col">장소명</th>
+												<th scope="col">주소</th>
+												<th scope="col">비고</th>
+											</tr>
+										<tbody>
+											<tr>
+												<td><input type="checkbox"></td>
+												<td>20210801-13</td>
+												<td>17:10</td>
+												<td>김밥천국</td>
+												<td>부천시  부천로 137번길</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td><input type="checkbox"></td>
+												<td>20210801-13</td>
+												<td>17:10</td>
+												<td><span class="txt__delete">김밥천국</span></td>
+												<td><span class="txt__delete">부천시  부천로 137번길</span></td>
+												<td>진술 변경으로 삭제</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- //board__list -->
+
+							</div>
+							<!-- //board-wrap -->
+
+
+							<div class="board-wrap board__sec">
+
+								<div class="board__title">
+									<strong>민간CCTV 비디오 정보</strong>
+								</div>
+								<!-- //board__title -->
+
+								<div class="board__btn type-02">
+									<div class="board__btn__right">
+										<button class="btn__small-w btn--white">삭제</button>
+										<button class="btn__small-w btn--normal-02">추가</button>
+									</div>
+									<!-- //board__btn__right -->
+								</div>
+								<!-- //board__btn -->
+
+								<div class="board__list-02">
+									<table>
+										<caption>목록</caption>
+										<colgroup>
+											<col style="width:40px;">
+											<col style="width:150px;">
+											<col style="width:150px;">
+											<col style="width:200px;">
+											<col style="width:200px;">
+											<col style="width:200px;">
+											<col style="width:200px;">
+											<col style="width:200px;">
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col"><input type="checkbox"></th>
+												<th scope="col">접촉일자</th>
+												<th scope="col">시간</th>
+												<th scope="col">장소명</th>
+												<th scope="col">주소</th>
+												<th scope="col">접촉자명</th>
+												<th scope="col">접촉자 연락처</th>
+												<th scope="col">마스크 착용</th>
+												<th scope="col">비고</th>
+											</tr>
+										<tbody>
+											<tr>
+												<td><input type="checkbox"></td>
+												<td>20210801-13</td>
+												<td>17:10</td>
+												<td>김밥천국</td>
+												<td>부천시 부천로 137번길</td>
+												<td>김부천</td>
+												<td>010-1234-1234</td>
+												<td>양방착용</td>
+												<td>형제</td>
+											</tr>
+											<tr>
+												<td><input type="checkbox"></td>
+												<td>20210801-13</td>
+												<td>17:10</td>
+												<td>김밥천국</td>
+												<td>-</td>
+												<td>김부천</td>
+												<td>-</td>
+												<td>미착용</td>
+												<td>형제</td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+								<!-- //board__list -->
+
+							</div>
+							<!-- //board-wrap -->
+
+							<div class="board__btn type-03">
+								<div class="board__btn__right">
+									<button class="btn__small-w80 btn--navy">저장</button>
+									<button class="btn__small-w80 btn--white-gray">취소</button>
+								</div>
+								<!-- //board__btn__right -->
+							</div>
+							<!-- //board__btn -->
+
+
+
 
 
 						</div>
