@@ -17,8 +17,8 @@ $(function(){
 
 /* File Include */
 function fileInclude(){
-	$(".header").load("/bcc/inc/inc_header.html");
-	$(".footer").load("/bcc/inc/inc_footer.html");
+	$(".header").load("../../bcc/inc/inc_header.html");
+	$(".footer").load("../../bcc/inc/inc_footer.html");
 }
 
 /* NAV */
