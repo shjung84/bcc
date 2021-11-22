@@ -57,7 +57,7 @@ label {cursor:pointer;}
 .file-list tbody tr.blank td {padding:1px 0 0 0; border-left:0; font-size:0; line-height:0;}
 .file-list td.depth-02 {background:#fff; text-align:center;}
 .file-list td.date,
-.file-list td.state {text-align:center; font-size:11px;}
+.file-list td.state {text-align:center; font-size:11px; letter-spacing:-1px;}
 
 /* state */
 table tr.step-02 {background:#fff8e1;}
@@ -67,11 +67,11 @@ table tr.modify:hover {background:#fddbdb;}
 table tr.new {background:#dffcf1;}
 table tr.new:hover {background:#cdfbea;}
 
-table td.step-01:before {content:'진행중';}
-table td.step-02:before {content:'검수요청';}
-table td.complete:before {content:'완료';}
+table td.step-01:before {content:'퍼블 진행중';}
+table td.step-02:before {content:'디자인 검수요청';}
+table td.complete:before {content:'퍼블 완료';}
 table td.modify:before {content:'수정중';}
-table td.new:before {content:'업뎃'; font-weight:800;}
+table td.new:before {content:'업데이트'; font-weight:800;}
 
 /* history */
 .history {position:relative;}
