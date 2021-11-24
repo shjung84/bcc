@@ -118,7 +118,7 @@ function toggleList(){
 }
 
 /* POPUP */
-function modalPopup(fileurl) {
+function modalPopup(fileurl){
 	$("body").addClass("modal");
 	$("body").append($("<div class='trplayer'></div>"));
 	$("body").append($("<div class='trplayerw'></div>"));
@@ -152,7 +152,7 @@ function modalPopup(fileurl) {
 		});
 	});
 }
-function modalHide() {
+function modalHide(){
 	$("body").removeClass("modal");
 	$(".trplayer").remove();
 	$(".trplayerw").remove();
@@ -238,18 +238,21 @@ function depth(depth1,depth2,depth3){
 			if(depth2 === 1){
 				depth_2_text = "계정 관리";
 			}else if(depth2 === 2){
-				depth_2_text = "사용자 작업이력";
+				depth_2_text = "메뉴 권한 설정";
 			}else if(depth2 === 3){
-				depth_2_text = "터미널관리";
+				depth_2_text = "사용자 작업이력";
 			}else if(depth2 === 4){
-				depth_2_text = "CCTV범위설정";
+				depth_2_text = "IP접근제어";
 			}else if(depth2 === 5){
+				depth_2_text = "CCTV범위설정";
+			}else if(depth2 === 6){
 				depth_2_text = "삭제기간설정";
 			}
 			depth_2_sub = [
 				["계정 관리","../../bcc/adminMember/list.html"],
+				["메뉴 권한 설정","../../bcc/adminMember/#.html"], //추가 : 211124
 				["사용자 작업이력","../../bcc/adminMember/userhistory.html"],
-				["터미널관리","../../bcc/adminMember/terminal.html"],
+				["IP접근제어","../../bcc/adminMember/terminal.html"], //수정 : 211124
 				["CCTV범위설정","../../bcc/adminMember/cctvbounds.html"],
 				["삭제기간설정","../../bcc/adminMember/deleteperiod.html"]
 			]
