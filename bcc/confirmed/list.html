@@ -6,7 +6,7 @@
 <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <link rel="stylesheet" type="text/css" href="../../css/common.css" />
-<link rel="stylesheet" type="text/css" href="../../css/style.css" />
+<link rel="stylesheet" type="text/css" href="../../css/style_operator.css" />
 <script src="../../js/jquery-3.6.0.js"></script>
 <script defer src="../../js/common.js"></script>
 <script>
@@ -58,10 +58,12 @@
 								<!-- //form__input__set -->
 								<div class="form__input__set" style="width:250px"><!-- 디자인마다 간격이 상이 IE9 크로스브라우징위해 CSS3 사용불가로 인라인타입으로 반영 -->
 									<label for="typeC">분석현황</label>
-									<select name="" id="typeC" class="type-04">
+									<select name="" id="typeC">
 										<option value="">전체</option>
-										<option value="">옵션1</option>
-										<option value="">옵션2</option>
+										<option value="">분석 대기</option>
+										<option value="">동선 분석중</option>
+										<option value="">완료</option>
+										<option value="">오류</option>
 									</select>
 								</div>
 								<!-- //form__input__set -->
@@ -92,15 +94,15 @@
 
 					<div class="board__btn type-02">
 						<div class="board__btn__right">
-							<button class="btn__small btn--normal">확진자 등록</button>
-							<button class="btn__small btn--normal" onclick="modalPopup('/bcc/popup/pop_분석요청_02.html')">분석요청</button>
-							<button class="btn__small-w btn--white">삭제</button>
+							<button class="btn__default btn--normal">확진자 등록</button>
+							<button class="btn__default btn--normal" onclick="modalPopup('/bcc/popup/pop_분석요청_02.html')">분석요청</button>
+							<button class="btn__default w-50 btn--white">삭제</button>
 						</div>
 						<!-- //board__btn__right -->
 					</div>
 					<!-- //board__btn -->
 
-					<div class="board__list-02">
+					<div class="board__list">
 						<table>
 							<caption>목록</caption>
 							<colgroup>

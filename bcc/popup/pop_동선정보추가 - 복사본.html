@@ -1,0 +1,104 @@
+<div class="pop__wrap w-696 type-02">
+
+	<div class="pop__header">
+		<h4>지능형 역학시스템</h4>
+	</div>
+	<!-- //pop__header -->
+
+	<div class="pop__container">
+		<div class="pop__title">
+			<h3>동선 정보 수정</h3>
+		</div>
+		<!-- //pop__title -->
+
+		<div class="pop__section">
+			<div class="area__cctv-info">
+
+				<div class="pop__board__reg type-02">
+					<table>
+						<colgroup>
+							<col style="width:60px;">
+							<col>
+						</colgroup>
+						<caption>동선 정보 수정</caption>
+						<tbody>
+							<tr>
+								<th class="align__center"><label for="typeA-pop">일자</label></th>
+								<td>
+									<div class="input__set__date-time type-02">
+										<div class="input__set__date">
+											<input type="text" id="typeA-pop" value="2021-07-20" class="w-120"><button class="btn__cal">달력</button>
+										</div>
+										<!-- //input__set__date -->
+										<div class="input__set__time type-02">
+											<select name="" id="typeB-pop">
+												<option value="">00</option>
+											</select>
+											<label for="typeB-pop">시</label>
+											<select name="" id="typeC-pop">
+												<option value="">00</option>
+											</select>
+											<label for="typeC-pop">분</label>
+										</div>
+										<!-- //input__set__time -->
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th class="align__center"><label for="typeD-pop">장소명</label></th>
+								<td>
+									<input type="text" id="typeD-pop" placeholder="장소를 입력하세요." value="김밥천국">
+								</td>
+							</tr>
+							<tr>
+								<th class="align__center"><label for="typeE-pop">주소</label></th>
+								<td>
+									<div class="input__addr">
+										<div class="input__addr__zip">
+											<input type="text" id="typeE-pop" class="input__addr__zipcode w-260" Placeholder="우편번호" value="18530">
+											<button class="btn__zipcode">우편번호 검색</button>
+										</div>
+										<!-- //input__addr__zip-02 -->
+										<div class="input__addr__text">
+											<input type="text" id="typeF-001-pop" Placeholder="도로명 주소" value="부천시 원미구 길주로 210
+											" class="w-260">
+											<input type="text" id="typeF-002-pop" Placeholder="상세주소" value="AA아파트 101동 1107호">
+										</div>
+										<!-- //input__addr__text -->
+									</div>
+									<!-- //input__addr -->
+								</td>
+							</tr>
+							<tr>
+								<th class="align__center"><label for="typeF-pop">메모</label></th>
+								<td>
+									<textarea name="" id="typeF-pop" cols="30" rows="3"></textarea>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- //board__reg -->
+
+			</div>
+			<!-- //area__left -->
+
+		</div>
+		<!-- //pop__section -->
+
+		<div class="board__pop__btn type-03">
+			<div class="board__btn__right">
+				<button class="btn__default btn--navy">저장</button>
+				<button class="btn__default btn--navy">취소</button>
+			</div>
+			<!-- //btn__board__right -->
+		</div>
+		<!-- //board__btn -->
+
+	</div>
+	<!-- //pop__container -->
+
+	<button class="btn__close__popup" onclick="modalHide()">닫기</button>
+
+</div>
+<!-- //popup__wrap -->

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xml:lang="ko" lang="ko">
+<head>
+<title>부천시 지능형 역학 시스템</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css" />
+<script src="../../js/jquery-3.6.0.js"></script>
+<script defer src="../../js/common.js"></script>
+<script>
+	$(function(){//퍼블 LNB 확인용
+		$('.inc__area').load("../../bcc/inc/inc_nav.html",function(){depth(1,1);});
+	});
+</script>
+</head>
+<body>
+<div class="wrapper">
+
+	<header class="header">
+		<!-- "/bcc/inc/inc_header.html" -->
+	</header>
+	<!-- //Header -->
+
+	<div class="container">
+		<div class="contents">
+
+			<div class="inc__area">
+				<!-- "/bcc/inc/inc_nav.html" -->
+			</div>
+
+			<div class="area__contents">
+				<h3 class="hide">확진자관리</h3>
+				<h4 class="hide">CCTV관리</h4>
+
+				<div class="board-wrap">
+
+					<div class="board__view">
+						<table>
+							<caption>팝업모음</caption>
+							<colgroup>
+								<col style="width:100px;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">팝업모음</th>
+									<td>
+										<button class="btn__small btn--normal" onclick="modalPopup('/bcc/popup/pop_엑셀업로드.html')">엑셀 업로드</button>
+										<button class="btn__small btn--normal" onclick="modalPopup('/bcc/popup/pop_확진자사진업로드.html')">확진자 사진 업로드</button>
+										<button class="btn__small btn--normal" onclick="modalPopup('/bcc/popup/pop_민간CCTV비디오추가.html')">민간 CCTV 비디오 추가</button>
+										<button class="btn__small btn--normal" onclick="modalPopup('/bcc/popup/pop_위험지역상세정보.html')">위험지역 상세정보</button>
+										<button class="btn__small btn--normal" onclick="modalPopup('/bcc/popup/pop_위험지역등록.html')">위험 지역 등록</button>
+										<button class="btn__small btn--normal" onclick="modalPopup('/bcc/popup/pop_분석요청.html')">분석요청</button>
+										<button class="btn__small btn--normal" onclick="modalPopup('/bcc/popup/pop_감염확산정보.html')">감염확산정보</button>
+										<button class="btn__small btn--normal" onclick="modalPopup('/bcc/popup/pop_terminal.html')">접속 허용 터미널 IP 대역 등록</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- //board__view -->
+
+				</div>
+				<!-- //board-wrap -->
+
+			</div>
+			<!-- //contents -->
+
+		</div>
+		<!-- //area__contents -->
+
+	</div>
+	<!-- //container -->
+
+	<footer class="footer">
+		<!-- "/bcc/inc/inc_footer.html" -->
+	</footer>
+	<!-- //Footer -->
+
+</div>
+<!-- //wrapper -->
+</body>
+</html>

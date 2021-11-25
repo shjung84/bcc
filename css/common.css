@@ -41,7 +41,7 @@ table td {font-size:13px;}
 em,span { font-family:inherit; color:inherit; font-size:inherit; line-height:inherit;}
 
 /* From Style */
-textarea {padding:7px 10px; border:1px solid #c4c4c4; background-color:#fff; vertical-align:middle; font-size:13px; font-family:'NanumGothic'; line-height:1.7; resize:none; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;}
+textarea {width:100%; padding:7px 10px; border:1px solid #c4c4c4; background-color:#fff; vertical-align:middle; font-size:13px; font-family:'NanumGothic'; line-height:1.7; resize:none; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;}
 input {vertical-align:middle;}
 input[type=text],
 input[type=password] {width:100%; padding:0 12px; border:1px solid #c4c4c4; vertical-align:middle; font-weight:300; font-size:13px; font-family:'NanumGothic';}
@@ -313,6 +313,7 @@ h2, h3, h4, h5, strong, b {font-family:'NanumGothic'; font-weight:700;}
 /* ETC */
 /* Point-Color :#f3802d */
 .txt__delete {color:#d1d1d1; text-decoration:line-through;}
+.txt__delete a {color:#d1d1d1;}
 .align__center {text-align:center !important;}
 
 /* bullet */

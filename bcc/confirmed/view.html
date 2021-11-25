@@ -6,7 +6,7 @@
 <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <link rel="stylesheet" type="text/css" href="../../css/common.css" />
-<link rel="stylesheet" type="text/css" href="../../css/style.css" />
+<link rel="stylesheet" type="text/css" href="../../css/style_operator.css" />
 <script src="../../js/jquery-3.6.0.js"></script>
 <script defer src="../../js/common.js"></script>
 <script>
@@ -46,9 +46,8 @@
 						</div>
 						<!-- //photo -->
 						<table>
-							<caption>상세보기</caption>
+							<caption>확진자 정보 상세보기</caption>
 							<colgroup>
-								<!-- <col style="width:197px;"> -->
 								<col style="width:99px;">
 								<col style="width:98px;">
 								<col style="width:560px;">
@@ -102,23 +101,156 @@
 				<div class="board-wrap board__sec">
 
 					<div class="btns pos__top">
-						<button class="btn__small-w80 btn--navy">동선 분석요청</button>
+						<button class="btn__default btn--navy">동선 분석요청</button>
 					</div>
 
 					<div class="tabs">
 						<div class="tabs__btns">
-							<a href="#" class="tabs__btn">이동 동선</a>
-							<a href="#" class="tabs__btn tabs--active">등록정보</a>
+							<a href="#" class="tabs__btn tabs--active">이동 동선</a>
+							<a href="#" class="tabs__btn">등록정보</a>
 							<a href="#" class="tabs__btn">접촉자</a>
 						</div>
 						<!-- //tabs__btn -->
 
-						<div class="tabs__contents">1
+						<!-- 이동 동선 -->
+						<div class="tabs__contents tabs--active">
 
+							<div class="movement-path">
+								<div class="board__util">
+									<div class="input__set__select">
+										<label for="">분석일자</label>
+										<select name="" id="" class="w-150">
+											<option value="">2021-07-20</option>
+										</select>
+									</div>
+								</div>
+								<!-- //board__util -->
 
+								<div class="movement__wrap">
+
+									<ul class="movement__list analysis--after"><!-- 분석후 : analysis--after -->
+										<!-- 공공CCTV : state__cctv-normal, 민간CCTV : state__cctv-private -->
+										<li class="movement__item" title="CCTV없음">
+											<input type="checkbox" id="TypeA-001" class="btn__switch">
+											<label for="TypeA-001"><i></i><span>선택 시 동선에서 제외</span></label>
+											<dl>
+												<dt><span>부천역 자전거보관소</span></dt>
+												<dd>
+													<p class="date">7월 20일 10:58</p>
+													<div class="bot">
+														<button class="btn--cctv" onclick="modalPopup('/bcc/popup/pop_CCTV선택.html')">CCTV 선택</button>
+													</div>
+												</dd>
+											</dl>
+										</li>
+										<li class="movement__item state__cctv-normal movement--active" title="공공CCTV">
+											<input type="checkbox" checked="checked" id="TypeA-002" class="btn__switch">
+											<label for="TypeA-002"><i></i><span>선택 시 동선에서 제외</span></label>
+											<dl>
+												<dt><span>부천역 앞<br>청라큐브시니처 오피스텔 홍보관 2층</span></dt>
+												<dd>
+													<p class="date">7월 20일 10:58</p>
+													<div class="bot">
+														<button class="btn--snap" onclick="modalPopup('/bcc/popup/pop_스냅샷플레이.html')">스냅샷 플레이</button>
+													</div>
+												</dd>
+											</dl>
+										</li>
+										<li class="movement__item state__cctv-normal" title="공공CCTV">
+											<input type="checkbox" checked="checked" id="TypeA-003" class="btn__switch">
+											<label for="TypeA-003"><i></i><span>선택 시 동선에서 제외</span></label>
+											<dl>
+												<dt><span>부천역 앞<br>청라큐브시니처 오피스텔 홍보관</span></dt>
+												<dd>
+													<p class="date">7월 20일 10:58</p>
+													<div class="bot">
+														<button class="btn--snap" onclick="modalPopup('/bcc/popup/pop_스냅샷플레이.html')">스냅샷 플레이</button>
+													</div>
+												</dd>
+											</dl>
+										</li>
+										<li class="movement__item state__cctv-normal" title="공공CCTV">
+											<input type="checkbox" id="TypeA-004" class="btn__switch">
+											<label for="TypeA-004"><i></i><span>선택 시 동선에서 제외</span></label>
+											<dl>
+												<dt><span>김밥천국</span></dt>
+												<dd>
+													<p class="date">7월 20일 10:58</p>
+													<div class="bot">
+														<button class="btn--snap" onclick="modalPopup('/bcc/popup/pop_스냅샷플레이.html')">스냅샷 플레이</button>
+													</div>
+												</dd>
+											</dl>
+										</li>
+										<li class="movement__item" title="CCTV없음">
+											<input type="checkbox" checked="checked" id="TypeA-005" class="btn__switch">
+											<label for="TypeA-005"><i></i><span>선택 시 동선에서 제외</span></label>
+											<dl>
+												<dt><span>부천역 공차</span></dt>
+												<dd>
+													<p class="date">7월 20일 10:58</p>
+													<div class="bot">
+														<button class="btn--cctv" onclick="modalPopup('/bcc/popup/pop_CCTV선택.html')">CCTV 선택</button>
+													</div>
+												</dd>
+											</dl>
+										</li>
+										<li class="movement__item state__cctv-private" title="민간CCTV">
+											<input type="checkbox" checked="checked" id="TypeA-007" class="btn__switch">
+											<label for="TypeA-007"><i></i><span>선택 시 동선에서 제외</span></label>
+											<dl>
+												<dt><span>부천역 공차</span></dt>
+												<dd>
+													<p class="date">7월 20일 10:58</p>
+													<div class="bot">
+														<button class="btn--snap" onclick="modalPopup('/bcc/popup/pop_스냅샷플레이.html')">스냅샷 플레이</button>
+													</div>
+												</dd>
+											</dl>
+										</li>
+										<li class="movement__item state__cctv-private" title="민간CCTV">
+											<input type="checkbox" checked="checked" id="TypeA-008" class="btn__switch">
+											<label for="TypeA-008"><i></i><span>선택 시 동선에서 제외</span></label>
+											<dl>
+												<dt><span>부천역 공차</span></dt>
+												<dd>
+													<p class="date">7월 20일 10:58</p>
+													<div class="bot">
+														<button class="btn--snap" onclick="modalPopup('/bcc/popup/pop_스냅샷플레이.html')">스냅샷 플레이</button>
+													</div>
+												</dd>
+											</dl>
+										</li>
+										<li class="movement__item" title="CCTV없음">
+											<input type="checkbox" checked="checked" id="TypeA-009" class="btn__switch">
+											<label for="TypeA-009"><i></i><span>선택 시 동선에서 제외</span></label>
+											<dl>
+												<dt><span>부천역 공차</span></dt>
+												<dd>
+													<p class="date">7월 20일 10:58</p>
+													<div class="bot">
+														<button class="btn--cctv" onclick="modalPopup('/bcc/popup/pop_CCTV선택.html')">CCTV 선택</button>
+													</div>
+												</dd>
+											</dl>
+										</li>
+									</ul>
+									<!-- //movement__list -->
+
+									<div class="movement__map">
+										<!-- 지도영역 -->
+									</div>
+									<!-- //movement__map -->
+								</div>
+								<!-- //movement__wrap -->
+
+							</div>
+							<!-- //movement-path -->
 						</div>
 						<!-- //tab__contents -->
-						<div class="tabs__contents tabs--active">
+
+						<!-- 등록정보 -->
+						<div class="tabs__contents">
 
 							<div class="board__title">
 								<strong>확진자 정보</strong>
@@ -129,22 +261,16 @@
 								<div class="board__photo">
 									<p aria-photobox><img src="../../images/@temp/@picture.png" alt="예시"></p>
 									<div class="btns">
-										<div class="input__set__photo">
-											<label for="typePhoto" class="btn__small-w80 btn--blue">사진 업로드</label>
-											<input type="file" id="typePhoto" class="input__file-hidden">
-										</div>
-										<!-- //input__set__photo -->
-										<button class="btn__small-w80 btn--blue">CCTV 이미지 선택</button>
+										<button class="btn__default btn--blue" onclick="modalPopup('/bcc/popup/pop_확진자사진업로드_02.html')">사진 업로드</button>
+										<button class="btn__default btn--blue" onclick="modalPopup('/bcc/popup/pop_CCTV이미지선택.html')">CCTV 이미지 선택</button>
 									</div>
 									<!-- //btns -->
 								</div>
 								<!-- //photo -->
 								<table>
-									<caption>상세보기</caption>
+									<caption>확진자 정보 수정</caption>
 									<colgroup>
 										<col style="width:197px;">
-										<!-- <col style="width:99px;">
-										<col style="width:98px;"> -->
 										<col style="width:520px;">
 										<col style="width:180px;">
 										<col>
@@ -155,13 +281,13 @@
 											<td>
 												<div class="input__set__id">
 													<input type="text" id="typeA" Placeholder="입력해주세요" value="#1111">
-													<button class="btn__small-w80 btn--blue">중복확인</button>
+													<button class="btn__default btn--blue">중복확인</button>
 												</div>
 											</td>
 											<th><label for="typeB">기초역학조사서</label></th>
 											<td>
 												<div class="input__set__file-02 active">
-													<label for="typeB" class="btn__small-w80 btn--blue">파일첨부</label>
+													<label for="typeB" class="btn__default btn--blue">파일첨부</label>
 													<p class="input__file-02"><span class="input__file-name-02">기초역학조사서_#1111_김확진.hwp</span></p>
 													<input type="file" id="typeB" class="input__file-hidden">
 												</div>
@@ -171,11 +297,11 @@
 										<tr>
 											<th scope="row"><label for="typeC"><i class="bul__imp">*</i> 확진자 성명</th>
 											<td>
-												<input type="text" id="typeC" Placeholder="입력해주세요" value="김확신">
+												<input type="text" id="typeC" Placeholder="입력해주세요" value="김확진">
 											</td>
 											<th scope="row"><label for="typeD"><i class="bul__imp">*</i> 출생연도</th>
 											<td>
-												<select name="" id="typeD" class="type-04">
+												<select name="" id="typeD">
 													<option value="">1987</option>
 												</select>
 											</td>
@@ -183,7 +309,7 @@
 										<tr>
 											<th scope="row"><label for="typeE"><i class="bul__imp">*</i> 성별</th>
 											<td>
-												<select name="" id="typeE" class="type-04">
+												<select name="" id="typeE">
 													<option value="">여성</option>
 													<option value="">남성</option>
 												</select>
@@ -213,11 +339,11 @@
 											<th scope="row" class="align__top"><label for="typeI">주소</th>
 											<td colspan="3">
 												<div class="input__addr">
-													<div class="input__addr__zip-02">
+													<div class="input__addr__zip">
 														<input type="text" id="typeI" class="input__addr__zipcode" Placeholder="우편번호" value="18530">
-														<button class="btn__zipcode-02">우편번호 검색</button>
+														<button class="btn__zipcode">우편번호 검색</button>
 													</div>
-													<div class="input__addr__text-02">
+													<div class="input__addr__text">
 														<input type="text" id="typeI-002" Placeholder="도로명 주소" value="부천시 원미구 길주로 210">
 														<input type="text" id="typeI-003" Placeholder="상세주소" value="AA아파트 101동 1107호">
 													</div>
@@ -247,7 +373,7 @@
 
 							<div class="board__btn type-03">
 								<div class="board__btn__right">
-									<button class="btn__small-w80 btn--navy">저장</button>
+									<button class="btn__default btn--navy">저장</button>
 								</div>
 								<!-- //board__btn__right -->
 							</div>
@@ -262,16 +388,16 @@
 
 								<div class="board__btn type-02">
 									<div class="board__btn__right">
-										<button class="btn__small-w btn--white">삭제</button>
-										<button class="btn__small-w btn--normal-02">추가</button>
+										<button class="btn__default w-50 btn--white" onclick="modalPopup('/bcc/popup/pop_동선정보삭제.html')">삭제</button>
+										<button class="btn__default w-50 btn--normal" onclick="modalPopup('/bcc/popup/pop_동선정보추가.html')">추가</button>
 									</div>
 									<!-- //board__btn__right -->
 								</div>
 								<!-- //board__btn -->
 
-								<div class="board__list-02">
+								<div class="board__list">
 									<table>
-										<caption>목록</caption>
+										<caption>동선 정보 목록</caption>
 										<colgroup>
 											<col style="width:40px;">
 											<col style="width:310px;">
@@ -289,21 +415,22 @@
 												<th scope="col">주소</th>
 												<th scope="col">비고</th>
 											</tr>
+										</thead>
 										<tbody>
 											<tr>
 												<td><input type="checkbox"></td>
-												<td>20210801-13</td>
-												<td>17:10</td>
+												<td>2020-07-13</td>
+												<td><a href="javascript:void(0);" onclick="modalPopup('/bcc/popup/pop_동선정보수정.html')">17:10</a></td>
 												<td>김밥천국</td>
-												<td>부천시  부천로 137번길</td>
+												<td>부천시 부천로 137번길</td>
 												<td>-</td>
 											</tr>
 											<tr>
 												<td><input type="checkbox"></td>
-												<td>20210801-13</td>
-												<td>17:10</td>
-												<td><span class="txt__delete">김밥천국</span></td>
-												<td><span class="txt__delete">부천시  부천로 137번길</span></td>
+												<td class="txt__delete">2020-07-13</td>
+												<td class="txt__delete"><a href="javascript:void(0);" onclick="modalPopup('/bcc/popup/pop_동선정보수정.html')">17:10</a></td>
+												<td class="txt__delete">김밥천국</td>
+												<td class="txt__delete">부천시 부천로 137번길</td>
 												<td>진술 변경으로 삭제</td>
 											</tr>
 										</tbody>
@@ -323,16 +450,16 @@
 
 								<div class="board__btn type-02">
 									<div class="board__btn__right">
-										<button class="btn__small-w btn--white">삭제</button>
-										<button class="btn__small-w btn--normal-02">추가</button>
+										<button class="btn__default w-50 btn--white">삭제</button>
+										<button class="btn__default w-50 btn--normal" onclick="modalPopup('/bcc/popup/pop_민간CCTV비디오정보.html')">추가</button>
 									</div>
 									<!-- //board__btn__right -->
 								</div>
 								<!-- //board__btn -->
 
-								<div class="board__list-02">
+								<div class="board__list">
 									<table>
-										<caption>목록</caption>
+										<caption>민간CCTV 비디오 정보 목록</caption>
 										<colgroup>
 											<col style="width:40px;">
 											<col style="width:310px;">
@@ -348,24 +475,25 @@
 												<th scope="col">시간</th>
 												<th scope="col">장소명</th>
 												<th scope="col">주소</th>
-												<th scope="col">비고</th>
+												<th scope="col">녹화시간</th>
 											</tr>
+										</thead>
 										<tbody>
 											<tr>
 												<td><input type="checkbox"></td>
-												<td>20210801-13</td>
+												<td>2020-07-13</td>
 												<td>17:10</td>
 												<td>김밥천국</td>
-												<td>부천시  부천로 137번길</td>
-												<td>-</td>
+												<td>부천시 부천로 137번길</td>
+												<td>10:33</td>
 											</tr>
 											<tr>
 												<td><input type="checkbox"></td>
-												<td>20210801-13</td>
+												<td>2020-07-13</td>
 												<td>17:10</td>
-												<td><span class="txt__delete">김밥천국</span></td>
-												<td><span class="txt__delete">부천시  부천로 137번길</span></td>
-												<td>진술 변경으로 삭제</td>
+												<td>김밥천국</td>
+												<td>부천시 부천로 137번길</td>
+												<td>10:33</td>
 											</tr>
 										</tbody>
 									</table>
@@ -375,26 +503,25 @@
 							</div>
 							<!-- //board-wrap -->
 
-
 							<div class="board-wrap board__sec">
 
 								<div class="board__title">
-									<strong>민간CCTV 비디오 정보</strong>
+									<strong>진술 기반 접촉자 정보</strong><span>(영상분석과 무관한 진술 정보입니다.)</span>
 								</div>
 								<!-- //board__title -->
 
 								<div class="board__btn type-02">
 									<div class="board__btn__right">
-										<button class="btn__small-w btn--white">삭제</button>
-										<button class="btn__small-w btn--normal-02">추가</button>
+										<button class="btn__default w-50 btn--white">삭제</button>
+										<button class="btn__default w-50 btn--normal" onclick="modalPopup('/bcc/popup/pop_진술기반접촉자정보.html')">추가</button>
 									</div>
 									<!-- //board__btn__right -->
 								</div>
 								<!-- //board__btn -->
 
-								<div class="board__list-02">
+								<div class="board__list">
 									<table>
-										<caption>목록</caption>
+										<caption>진술 기반 접촉자 정보 목록</caption>
 										<colgroup>
 											<col style="width:40px;">
 											<col style="width:150px;">
@@ -418,10 +545,11 @@
 												<th scope="col">마스크 착용</th>
 												<th scope="col">비고</th>
 											</tr>
+										</thead>
 										<tbody>
 											<tr>
 												<td><input type="checkbox"></td>
-												<td>20210801-13</td>
+												<td>2020-07-13</td>
 												<td>17:10</td>
 												<td>김밥천국</td>
 												<td>부천시 부천로 137번길</td>
@@ -432,7 +560,7 @@
 											</tr>
 											<tr>
 												<td><input type="checkbox"></td>
-												<td>20210801-13</td>
+												<td>2020-07-13</td>
 												<td>17:10</td>
 												<td>김밥천국</td>
 												<td>-</td>
@@ -441,7 +569,6 @@
 												<td>미착용</td>
 												<td>형제</td>
 											</tr>
-
 										</tbody>
 									</table>
 								</div>
@@ -452,26 +579,173 @@
 
 							<div class="board__btn type-03">
 								<div class="board__btn__right">
-									<button class="btn__small-w80 btn--navy">저장</button>
-									<button class="btn__small-w80 btn--white-gray">취소</button>
+									<button class="btn__default btn--navy">저장</button>
+									<button class="btn__default btn--white-gray">취소</button>
 								</div>
 								<!-- //board__btn__right -->
 							</div>
 							<!-- //board__btn -->
 
-
-
-
-
 						</div>
 						<!-- //tab__contents -->
-						<div class="tabs__contents">3
 
+						<!-- 접촉자 -->
+						<div class="tabs__contents">
+
+							<div class="form__search">
+								<form>
+									<input type="hidden">
+									<fieldset>
+										<legend>접촉자 검색</legend>
+										<div class="form__search_inner">
+											<div class="form__input__set" style="width:350px"><!-- 디자인마다 간격이 상이 IE9 크로스브라우징위해 CSS3 사용불가로 인라인타입으로 반영 -->
+												<label for="typeA-001">접촉일</label>
+												<div class="form__input__date type-02">
+													<p><input type="text" id="typeA-001" value="2020/18/1993"><button class="btn__cal">달력</button></p>
+													<p><input type="text" id="typeA-002" value="2/18/1993"><button class="btn__cal">달력</button></p>
+												</div>
+											</div>
+											<!-- //form__input__set -->
+											<div class="form__input__set">
+												<label for="typeB">분석대상</label>
+												<select name="" id="typeB" class="w-120">
+													<option value="">전체</option>
+													<option value="">영상분석</option>
+													<option value="">확진자 진술</option>
+													<option value="">등록후보</option>
+													<option value="">제외</option>
+												</select>
+											</div>
+											<!-- //form__input__set -->
+											<div class="form__input__set">
+												<label for="typeC">분석현황</label>
+												<select name="" id="typeC" class="w-120">
+													<option value="">전체</option>
+													<option value="">등록</option>
+													<option value="">분석중</option>
+													<option value="">완료</option>
+													<option value="">오류</option>
+												</select>
+											</div>
+											<!-- //form__input__set -->
+											<div class="form__input__set">
+												<label for="typeD">마스크 착용</label>
+												<select name="" id="typeD" class="w-120">
+													<option value="">전체</option>
+													<option value="">양방 착용</option>
+													<option value="">일반 착용</option>
+													<option value="">미착용</option>
+												</select>
+											</div>
+											<!-- //form__input__set -->
+											<div class="form__input__set" style="width:180px"><!-- 디자인마다 간격이 상이 IE9 크로스브라우징위해 CSS3 사용불가로 인라인타입으로 반영 -->
+												<label for="typeE">접촉자명</label>
+												<input type="text" id="typeE" class="w-100" placeholder="입력해주세요">
+											</div>
+											<!-- //form__input__set -->
+											<div class="form__input__set" style="width:170px"><!-- 디자인마다 간격이 상이 IE9 크로스브라우징위해 CSS3 사용불가로 인라인타입으로 반영 -->
+												<label for="typeF">접촉장소</label>
+												<input type="text" id="typeF" class="w-100" placeholder="입력해주세요">
+											</div>
+											<!-- //form__input__set -->
+										</div>
+										<!-- //inner -->
+										<button class="form__btn__search btn--normal">조회</button>
+									</fieldset>
+								</form>
+							</div>
+							<!-- //board-search -->
+
+							<div class="board-wrap">
+
+								<div class="board__title">
+									<strong>접촉자 정보</strong>
+								</div>
+								<!-- //board__title -->
+
+								<div class="board__btn type-02">
+									<div class="board__btn__right">
+										<button class="btn__default w-50 btn--white">제외</button>
+										<button class="btn__default w-50 btn--normal" onclick="modalPopup('/bcc/popup/pop_분석요청_02.html')">분석요청</button>
+									</div>
+									<!-- //board__btn__right -->
+								</div>
+								<!-- //board__btn -->
+
+								<div class="board__list">
+									<table>
+										<caption>접촉자 정보 목록</caption>
+										<colgroup>
+											<col style="width:42px;">
+											<col style="width:150px;">
+											<col style="width:150px;">
+											<col style="width:100px;">
+											<col style="width:100px;">
+											<col style="width:120px;">
+											<col style="width:200px;">
+											<col style="width:100px;">
+											<col style="width:100px;">
+											<col style="width:120px;">
+											<col style="width:150px;">
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col"><input type="checkbox"></th>
+												<th scope="col">접촉일자</th>
+												<th scope="col">시간</th>
+												<th scope="col">접촉자명</th>
+												<th scope="col">감염위험도</th>
+												<th scope="col">마스크 착용</th>
+												<th scope="col">접촉장소</th>
+												<th scope="col">CCTV</th>
+												<th scope="col">분석대상</th>
+												<th scope="col">분석현황</th>
+												<th scope="col">접촉 스냅샷</th>
+												<th scope="col">접촉 비디오</th>
+											</tr>
+										<tbody>
+											<tr>
+												<td><input type="checkbox"></td>
+												<td>2020-07-13</td>
+												<td>14:10</td>
+												<td>접촉자6</td>
+												<td><a href="#" title="접촉자 동선 분석 화면">3등급</a></td>
+												<td>미착용</td>
+												<td>버거킹 부천점</td>
+												<td>CCTV45</td>
+												<td>영상분석</td>
+												<td>등록</td>
+												<td><a href="#" title="접촉 스냅샷 보기">[보기]</a></td>
+												<td><a href="#" title="접촉 비디오 재생">[보기]</a></td>
+											</tr>
+											<tr>
+												<td><input type="checkbox"></td>
+												<td>2020-07-13</td>
+												<td>14:10</td>
+												<td>접촉자6</td>
+												<td><a href="#" title="접촉자 동선 분석 화면">3등급</a></td>
+												<td>미착용</td>
+												<td>버거킹 부천점</td>
+												<td>CCTV45</td>
+												<td>영상분석</td>
+												<td>등록</td>
+												<td><a href="#" title="접촉 스냅샷 보기">[보기]</a></td>
+												<td><a href="#" title="접촉 비디오 재생">[보기]</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- //board__list -->
+
+							</div>
+							<!-- //board-wrap -->
 
 						</div>
 						<!-- //tab__contents -->
 
 					</div>
+					<!-- //tabs -->
 
 				</div>
 				<!-- //board-wrap -->

@@ -1,0 +1,130 @@
+<div class="pop__wrap w-1100 type-02">
+
+	<div class="pop__header">
+		<h4>지능형 역학시스템</h4>
+	</div>
+	<!-- //pop__header -->
+
+	<div class="pop__container">
+		<div class="pop__title no-border">
+			<h3>CCTV 이미지 선택</h3>
+		</div>
+		<!-- //pop__title -->
+
+		<div class="pop__section">
+			<div class="pop__area__left area__cctv-info">
+
+				<div class="pop__cctv__search">
+					<div class="input__set__date-time type-02">
+						<div class="input__set__date">
+							<input type="text" id="typeA-pop" value="2021-07-20" class="w-120"><button class="btn__cal">달력</button>
+						</div>
+						<!-- //input__set__date -->
+						<div class="input__set__time type-02">
+							<select name="" id="typeB-pop">
+								<option value="">00</option>
+							</select>
+							<label for="typeB-pop">시</label>
+							<select name="" id="typeC-pop">
+								<option value="">00</option>
+							</select>
+							<label for="typeC-pop">분</label>
+						</div>
+						<!-- //input__set__time -->
+						<div class="input__set__location">
+							<label for="typeD-pop">장소명</label>
+							<input type="text" id="typeD-pop" placeholder="장소를 입력하세요.">
+						</div>
+						<!-- //input__set__location -->
+					</div>
+					<div class="input__addr type-02">
+						<div class="input__addr__zip">
+							<input type="text" id="typeE-pop" class="input__addr__zipcode w-291" Placeholder="우편번호" value="">
+							<button class="btn__zipcode">우편번호 검색</button>
+						</div>
+						<!-- //input__addr__zip -->
+						<div class="input__addr__text">
+							<input type="text" id="typeF-001-pop" Placeholder="도로명 주소" value="">
+							<input type="text" id="typeF-002-pop" Placeholder="상세주소" value="">
+						</div>
+						<!-- //input__addr__text -->
+					</div>
+					<!-- //input__addr -->
+				</div>
+				<!-- //pop__cctv__search -->
+
+				<div class="board__btn type-04">
+					<div class="board__btn__right">
+						<button class="btn__default btn--blue">저장</button>
+					</div>
+					<!-- //board__btn__right -->
+				</div>
+				<!-- //board__btn -->
+
+				<div class="board__list type-fix">
+					<table>
+						<caption>목록</caption>
+						<colgroup>
+							<col style="width:150px;">
+							<col style="width:100px;">
+							<col style="width:100px;">
+							<col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">일자</th>
+								<th scope="col">시간</th>
+								<th scope="col">CCTV</th>
+								<th scope="col">주소</th>
+							</tr>
+						<tbody>
+							<tr>
+								<td colspan="4">
+									<div class="board__empty type-02">
+										<p>검색결과가 없습니다.</p>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- //board__list -->
+
+			</div>
+			<!-- //area__left -->
+
+			<div class="pop__area__right area__cctv-select">
+
+				<div class="pop__area__video">
+					<img src="../../images/@temp/@temp_video.png" alt="예시이미지">
+				</div>
+				<!-- //pop__area__video -->
+				<div class="txt__description">
+					<strong>일시정지 후 아래 이미지에서 확진자를 찾아 표시해주세요.</strong><span>(마우스 드래그)</span>
+				</div>
+				<div class="pop__area__capture">
+					<img src="../../images/@temp/@temp_capture.png" alt="예시이미지">
+				</div>
+				<!-- //pop__area__capture -->
+
+			</div>
+			<!-- //area__right -->
+		</div>
+		<!-- //pop__section -->
+
+		<div class="board__pop__btn type-03">
+			<div class="board__btn__right">
+				<button class="btn__default btn--navy">저장</button>
+				<button class="btn__default btn--navy">취소</button>
+			</div>
+			<!-- //btn__board__right -->
+		</div>
+		<!-- //board__btn -->
+
+	</div>
+	<!-- //pop__container -->
+
+	<button class="btn__close__popup" onclick="modalHide()">닫기</button>
+
+</div>
+<!-- //popup__wrap -->

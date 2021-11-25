@@ -1,0 +1,158 @@
+<div class="pop__wrap w-696 type-02">
+
+	<div class="pop__header">
+		<h4>지능형 역학시스템</h4>
+	</div>
+	<!-- //pop__header -->
+
+	<div class="pop__container">
+		<div class="pop__title">
+			<h3>동선 정보 추가</h3>
+		</div>
+		<!-- //pop__title -->
+
+		<div class="pop__section">
+			<div class="area__cctv-info">
+
+				<div class="pop__board__reg type-02">
+					<table>
+						<colgroup>
+							<col style="width:60px;">
+							<col>
+						</colgroup>
+						<caption>동선 정보 추가</caption>
+						<tbody>
+							<tr>
+								<th class="align__center"><label for="typeA-pop">일자</label></th>
+								<td>
+									<div class="input__set__date-time type-02">
+										<div class="input__set__date">
+											<input type="text" id="typeA-pop" value="2021-07-20" class="w-120"><button class="btn__cal">달력</button>
+										</div>
+										<!-- //input__set__date -->
+										<div class="input__set__time type-02">
+											<select name="" id="typeB-pop">
+												<option value="">00</option>
+											</select>
+											<label for="typeB-pop">시</label>
+											<select name="" id="typeC-pop">
+												<option value="">00</option>
+											</select>
+											<label for="typeC-pop">분</label>
+										</div>
+										<!-- //input__set__time -->
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th class="align__center"><label for="typeD-pop">장소명</label></th>
+								<td>
+									<input type="text" id="typeD-pop" placeholder="장소를 입력하세요." value="">
+								</td>
+							</tr>
+							<tr>
+								<th class="align__center"><label for="typeE-pop">주소</label></th>
+								<td>
+									<div class="input__addr">
+										<div class="input__addr__zip">
+											<input type="text" id="typeE-pop" class="input__addr__zipcode w-260" Placeholder="우편번호" value="">
+											<button class="btn__zipcode">우편번호 검색</button>
+										</div>
+										<!-- //input__addr__zip-02 -->
+										<div class="input__addr__text">
+											<input type="text" id="typeF-001-pop" Placeholder="도로명 주소" value="" class="w-260">
+											<input type="text" id="typeF-002-pop" Placeholder="상세주소" value="">
+										</div>
+										<!-- //input__addr__text -->
+									</div>
+									<!-- //input__addr -->
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- //board__reg -->
+
+				<div class="board__btn type-04">
+					<div class="board__btn__right">
+						<button class="btn__default btn--blue">리스트업</button>
+					</div>
+					<!-- //board__btn__right -->
+				</div>
+				<!-- //board__btn -->
+
+				<div class="board-wrap p-10">
+
+					<div class="board__btn type-05">
+						<div class="board__btn__right">
+							<button class="btn__excel">엑셀양식 다운로드</button>
+							<button class="btn__excel">엑셀 업로드</button>
+						</div>
+						<!-- //board__btn__right -->
+					</div>
+					<!-- //board__btn -->
+
+					<div class="board__list">
+						<table>
+							<caption>목록</caption>
+							<colgroup>
+								<col style="width:150px;">
+								<col style="width:100px;">
+								<col style="width:100px;">
+								<col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">일자</th>
+									<th scope="col">시간</th>
+									<th scope="col">CCTV</th>
+									<th scope="col">주소</th>
+								</tr>
+							<tbody>
+								<tr>
+									<td>2020-07-13</td>
+									<td>17:10</td>
+									<td>김밥천국</td>
+									<td>부천시 부천로 137번길 1</td>
+								</tr>
+								<tr>
+									<td>2020-07-13</td>
+									<td>17:10</td>
+									<td>김밥천국</td>
+									<td>부천시 부천로 137번길 1</td>
+								</tr>
+								<tr>
+									<td>2020-07-13</td>
+									<td>17:10</td>
+									<td>김밥천국</td>
+									<td>부천시 부천로 137번길 1</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- //board__list -->
+				</div>
+				<!-- //board-wrap -->
+
+			</div>
+			<!-- //area__left -->
+
+		</div>
+		<!-- //pop__section -->
+
+		<div class="board__pop__btn type-03">
+			<div class="board__btn__right">
+				<button class="btn__default btn--navy">저장</button>
+				<button class="btn__default btn--navy">취소</button>
+			</div>
+			<!-- //btn__board__right -->
+		</div>
+		<!-- //board__btn -->
+
+	</div>
+	<!-- //pop__container -->
+
+	<button class="btn__close__popup" onclick="modalHide()">닫기</button>
+
+</div>
+<!-- //popup__wrap -->

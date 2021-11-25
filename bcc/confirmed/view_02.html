@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html xml:lang="ko" lang="ko">
+<head>
+<title>부천시 지능형 역학 시스템</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../css/style_operator.css" />
+<script src="../../js/jquery-3.6.0.js"></script>
+<script defer src="../../js/common.js"></script>
+<script>
+	$(function(){//퍼블 LNB 확인용
+		$('.inc__area').load("../../bcc/inc/inc_nav_02.html",function(){depth(1,1,2);});
+	});
+</script>
+</head>
+<body>
+<div class="wrapper">
+
+	<header class="header">
+		<!-- "/bcc/inc/inc_header.html" -->
+	</header>
+	<!-- //Header -->
+
+	<div class="container">
+		<div class="contents">
+
+			<div class="inc__area">
+				<!-- "/bcc/inc/inc_nav.html" -->
+			</div>
+
+			<div class="area__contents">
+				<h3 class="hide">확진자관리</h3>
+				<h4 class="hide">확진자 조회</h4>
+
+				<div class="board-wrap">
+					<div class="board__title">
+						<strong>확진자 정보</strong>
+					</div>
+					<!-- //board__title -->
+
+					<div class="board__view-info">
+						<div class="board__photo">
+							<p><img src="../../images/@temp/@picture.png" alt="예시"></p>
+						</div>
+						<!-- //photo -->
+						<table>
+							<caption>상세보기</caption>
+							<colgroup>
+								<!-- <col style="width:197px;"> -->
+								<col style="width:99px;">
+								<col style="width:98px;">
+								<col style="width:560px;">
+								<col style="width:180px;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row" colspan="2">확진번호</th>
+									<td colspan="3">20210801-13</td>
+								</tr>
+								<tr>
+									<th scope="row" colspan="2">확진자 성명</th>
+									<td>김확진</td>
+									<th scope="row">등록일시</th>
+									<td>2021-08-01 15:30</td>
+								</tr>
+								<tr>
+									<th scope="row" colspan="2">분석 결과</th>
+									<td>분석완료</td>
+									<th scope="row">분석 기간</th>
+									<td>2021-07-01 ~ 2021-07-10</td>
+								</tr>
+								<tr>
+									<th scope="row" colspan="2">접촉자 수</th>
+									<td>16명</td>
+									<th scope="row">자가격리 기간</th>
+									<td>2021-07-01 ~ 2021-07-10</td>
+								</tr>
+								<tr>
+									<th scope="row" rowspan="3" class="">분석<br>시작<br>시점</th>
+									<th scope="row" class="align__center">일시</th>
+									<td colspan="3">2021-01-01</td>
+								</tr>
+								<tr>
+									<th scope="row" class="align__center">장소명</th>
+									<td colspan="3">부천시청앞</td>
+								</tr>
+								<tr>
+									<th scope="row" class="align__center">주소</th>
+									<td colspan="3">부천시 원미구 길주로 210 AA아파트 101동 1107호</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- //board__view-info -->
+
+				</div>
+				<!-- //board-wrap -->
+
+				<div class="board-wrap board__sec">
+
+					<div class="btns pos__top">
+						<button class="btn__default btn--navy">동선 분석요청</button>
+					</div>
+
+					<div class="tabs">
+						<div class="tabs__btns">
+							<a href="#" class="tabs__btn tabs--active">이동 동선</a>
+							<a href="#" class="tabs__btn">등록정보</a>
+							<a href="#" class="tabs__btn">접촉자</a>
+						</div>
+						<!-- //tabs__btn -->
+
+						<!-- 이동 동선 -->
+						<div class="tabs__contents tabs--active">
+							<div class="movement-path">
+								<div class="board__util">
+									<div class="input__set__select">
+										<label for="">분석일자</label>
+										<select name="" id="" class="w-150">
+											<option value="">2021-07-20</option>
+										</select>
+									</div>
+								</div>
+								<!-- //board__util -->
+
+								<div class="movement__wrap">
+
+									<ul class="movement__list analysis--before"><!-- 분석전 : analysis--before -->
+										<li class="movement__item state--cctv">
+											<dl>
+												<dt><span>부천역 자전거보관소</span></dt>
+												<dd>
+													<p class="date">7월 20일 10:58</p>
+													<div class="bot">
+														<button onclick="modalPopup('/bcc/popup/pop_CCTV선택.html')">CCTV 선택</button>
+													</div>
+												</dd>
+											</dl>
+										</li>
+										<li class="movement__item state--snap">
+											<dl>
+												<dt><span>부천역 앞<br>청라큐브시니처 오피스텔 홍보관 2층</span></dt>
+												<dd>
+													<p class="date">7월 20일 10:58</p>
+													<div class="bot">
+														<button onclick="modalPopup('/bcc/popup/pop_스냅샷플레이.html')">스냅샷 플레이</button>
+													</div>
+												</dd>
+											</dl>
+										</li>
+										<li class="movement__item state--snap">
+											<dl>
+												<dt><span>부천역 앞<br>청라큐브시니처 오피스텔 홍보관</span></dt>
+												<dd>
+													<p class="date">7월 20일 10:58</p>
+													<div class="bot">
+														<button onclick="modalPopup('/bcc/popup/pop_스냅샷플레이.html')">스냅샷 플레이</button>
+													</div>
+												</dd>
+											</dl>
+										</li>
+										<li class="movement__item state--snap ">
+											<dl>
+												<dt><span>김밥천국</span></dt>
+												<dd>
+													<p class="date">7월 20일 10:58</p>
+													<div class="bot">
+														<button onclick="modalPopup('/bcc/popup/pop_스냅샷플레이.html')">스냅샷 플레이</button>
+													</div>
+												</dd>
+											</dl>
+										</li>
+										<li class="movement__item state--cctv">
+											<dl>
+												<dt><span>부천역 공차</span></dt>
+												<dd>
+													<p class="date">7월 20일 10:58</p>
+													<div class="bot">
+														<button onclick="modalPopup('/bcc/popup/pop_CCTV선택.html')">CCTV 선택</button>
+													</div>
+												</dd>
+											</dl>
+										</li>
+										<li class="movement__item state--cctv type-blue">
+											<dl>
+												<dt><span>부천역 공차</span></dt>
+												<dd>
+													<p class="date">7월 20일 10:58</p>
+													<div class="bot">
+														<button onclick="modalPopup('/bcc/popup/pop_CCTV선택.html')">CCTV 선택</button>
+													</div>
+												</dd>
+											</dl>
+										</li>
+										<li class="movement__item state--cctv type-blue">
+											<dl>
+												<dt><span>부천역 공차</span></dt>
+												<dd>
+													<p class="date">7월 20일 10:58</p>
+													<div class="bot">
+														<button onclick="modalPopup('/bcc/popup/pop_CCTV선택.html')">CCTV 선택</button>
+													</div>
+												</dd>
+											</dl>
+										</li>
+										<li class="movement__item state--cctv type-blue">
+											<dl>
+												<dt><span>부천역 공차</span></dt>
+												<dd>
+													<p class="date">7월 20일 10:58</p>
+													<div class="bot">
+														<button onclick="modalPopup('/bcc/popup/pop_CCTV선택.html')">CCTV 선택</button>
+													</div>
+												</dd>
+											</dl>
+										</li>
+									</ul>
+									<!-- //movement__list -->
+
+									<div class="movement__map">
+										<!-- 지도영역 -->
+									</div>
+									<!-- //movement__map -->
+								</div>
+								<!-- //movement__wrap -->
+
+							</div>
+							<!-- //movement-path -->
+						</div>
+						<!-- //tab__contents -->
+
+						<!-- 등록정보 -->
+						<div class="tabs__contents">
+							-
+						</div>
+						<!-- //tab__contents -->
+
+						<!-- 접촉자 -->
+						<div class="tabs__contents">
+							-
+						</div>
+						<!-- //tab__contents -->
+
+					</div>
+
+				</div>
+				<!-- //board-wrap -->
+
+			</div>
+			<!-- //contents -->
+
+		</div>
+		<!-- //area__contents -->
+
+	</div>
+	<!-- //container -->
+
+	<footer class="footer">
+		<!-- "/bcc/inc/inc_footer.html" -->
+	</footer>
+	<!-- //Footer -->
+
+</div>
+<!-- //wrapper -->
+</body>
+</html>
