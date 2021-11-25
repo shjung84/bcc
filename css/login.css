@@ -24,8 +24,9 @@ body {width:100%;}
 .form__title {position:absolute; top:13px; font-weight:700; font-size:14px;}
 .form__login {position:relative; border-top:1px solid #7b7b7b; padding-top:49px;}
 .form__login form {display:block; position:relative; height:140px; padding-right:167px;}
-.form__login input[type=text] {display:block; height:60px; border:1px solid #7b7b7b; background:#f6f6f6; font-weight:700; font-size:14px; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px;}
-.form__login input[type=text] + input[type=text] {margin-top:20px;}
+.form__login input[type=text],
+.form__login input[type=password] {display:block; height:60px; border:1px solid #7b7b7b; background:#f6f6f6; font-weight:700; font-size:14px; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px;}
+.form__login input[type=password] {margin-top:20px;}
 
 .btn__sign-in {position:absolute; top:0; right:0; width:150px; height:140px; border:1px solid #7b7b7b; background:#f3802d; color:#fff; font-weight:700; font-size:20px; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px;}
 
