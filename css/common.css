@@ -337,15 +337,13 @@ h2, h3, h4, h5, strong, b {font-family:'NanumGothic'; font-weight:700;}
 .board__title span {margin-left:5px;}
 
 /* board__util */
-.board__util {display:flex; align-items:center; width:100%; margin-bottom:30px;}
+.board__util {display:flex; align-items:center; width:100%; margin-bottom:15px;}
 .board__util__total {display:inline-block; padding-right:20px; font-size:14px;}
 .board__util__total strong {position:relative; padding-left:17px;}
 .board__util__total strong:before {content:''; position:absolute; top:50%; left:0; width:6px; height:6px; margin-top:-2px; background:#6e6e6e;}
 .board__util__total em {margin-left:10px;}
 .board__util__total.type-02 {font-weight:700;}
 .board__util__total.type-02 strong:before {background:#f3802d;}
-.board__util__sort {display:inline-block;}
-.board__util__sort select {height:30px;}
 
 /* board__btn */
 .board__btn {overflow:hidden; margin:30px 0 15px; font-size:0;}

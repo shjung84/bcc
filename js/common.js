@@ -209,6 +209,7 @@ function depth(depth1,depth2,depth3){
 	_depth1.addClass("active");
 	_depth1.find(".nav__sub li").eq(_depth2).addClass("current");
 
+	console.log(depth1,depth2,depth3);
 	//Path
 	var path = $(".path");
 	var menuType = path.attr("aria-menutype");
@@ -286,10 +287,10 @@ function depth(depth1,depth2,depth3){
 		}else if(depth1 === 2){
 			depth_1_text = "접촉자 정보";
 			if(depth2 === 1){
-				depth_2_text = "접촉자 정보";
+				depth_2_text = "상세정보";
 			}
 			depth_2_sub = [
-				["접촉자 정보","../../bcc/confirmed/view.html"]
+				["상세정보","../../bcc/contact/list.html"]
 			]
 		}else if(depth1 === 3){
 			depth_1_text = "감염위험";
@@ -330,7 +331,7 @@ function depth(depth1,depth2,depth3){
 		if(depth3 === 1){
 			depth_3_text = "목록";
 		}else if(depth3 === 2){
-			depth_3_text = "상세조회";
+			depth_3_text = "상세보기";
 		}
 	}
 

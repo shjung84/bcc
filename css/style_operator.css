@@ -180,6 +180,7 @@ select:focus {border-color:#0f56b3;}
 .board__view-info table tr:last-child td {border-bottom-width:1px;}
 .board__view-info table td:last-child {border-right-width:1px;}
 .board__view-info .align__top {padding-top:12px; vertical-align:top;}
+.board__view-info.type-02 table {height:240px;}
 
 /* tabs */
 .tabs {overflow:hidden;}
@@ -227,7 +228,7 @@ select:focus {border-color:#0f56b3;}
 /* 분석전 */
 .analysis--before dl {color:#3A3838;}
 .analysis--before dt:before {background:#35a1a1;}
-.analysis--before dt button {background-color:#f3802d;}
+.analysis--before dd button {background-color:#f3802d;}
 .analysis--before dl .date {color:#666464;}
 
 /* 분석후 */
@@ -240,6 +241,15 @@ select:focus {border-color:#0f56b3;}
 .btn__switch:checked ~ dl .date {color:#666464;}
 .state__cctv-normal .btn__switch:checked ~ dl dt:before {background-color:#f3802d;}
 .state__cctv-private .btn__switch:checked ~ dl dt:before {background-color:#1d7ec7;}
+
+/* 접촉자 이동동선 */
+.contact-info dl {color:#3A3838;}
+.contact-info dt:before {background-image:url(../images/btn/btn_path_cctv.png);}
+.contact-info dd button {background-color:#f3802d;}
+.contact-info dl .date {color:#666464;}
+
+.contact-info .state__cctv-normal dl dt:before {background-color:#f3802d;}
+.contact-info .state__cctv-private dl dt:before {background-color:#1d7ec7;}
 
 
 /* POPUP */
