@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html xml:lang="ko" lang="ko">
+<head>
+<title>부천시 지능형 역학 시스템</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../css/style_operator.css" />
+<script src="../../js/jquery-3.6.0.js"></script>
+<script defer src="../../js/common.js"></script>
+<script>
+	$(function(){//퍼블 LNB 확인용
+		$('.inc__area').load("../../bcc/inc/inc_nav_02.html",function(){depth(3,1);});
+	});
+</script>
+</head>
+<body>
+<div class="wrapper">
+
+	<header class="header">
+		<!-- "/bcc/inc/inc_header.html" -->
+	</header>
+	<!-- //Header -->
+
+	<div class="container">
+		<div class="contents">
+
+			<div class="inc__area">
+				<!-- "/bcc/inc/inc_nav.html" -->
+			</div>
+
+			<div class="area__contents">
+				<h3 class="hide">감염위험</h3>
+				<h4 class="hide">감염위험지역 정보</h4>
+
+				<div class="form__search">
+					<form>
+						<input type="hidden">
+						<fieldset>
+							<legend>검색</legend>
+							<div class="form__search_inner">
+								<div class="form__input__set">
+									<label for="typeA-001">위험기간</label>
+									<div class="form__input__date type-02">
+										<p><input type="text" id="typeA-001" value="2020-01-04"><button class="btn__cal">달력</button></p>
+										<p><input type="text" id="typeA-002" value="2020-08-04"><button class="btn__cal">달력</button></p>
+									</div>
+								</div>
+								<!-- //form__input__set -->
+
+								<div class="form__chk__set type-02">
+									<label for="typeB-001">
+										<input type="checkbox" name="typeB" id="typeB-001">
+										<span>전체</span>
+									</label>
+									<label for="typeB-002">
+										<input type="checkbox" name="typeB" id="typeB-002">
+										<i class="state-01"></i><span>감염위험</span>
+									</label>
+									<label for="typeB-003">
+										<input type="checkbox" name="typeB" id="typeB-003">
+										<i class="state-02"></i><span>우선방역대상</span>
+									</label>
+									<label for="typeB-004">
+										<input type="checkbox" name="typeB" id="typeB-004">
+										<i class="state-03"></i><span>접촉자 우선검색</span>
+									</label>
+									<label for="typeB-005">
+										<input type="checkbox" name="typeB" id="typeB-005">
+										<i class="state-04"></i><span>동선</span>
+									</label>
+								</div>
+								<!-- //form__chk__set -->
+							</div>
+							<!-- //inner -->
+							<button class="form__btn__search btn--normal">조회</button>
+						</fieldset>
+					</form>
+				</div>
+				<!-- //form__search -->
+
+				<div class="area__maps">
+					<div class="maps">
+						<!-- 삭제 -->
+						<p class="description">지도영역</p>
+						<!-- //삭제 -->
+
+						<div class="tip__balloon" style="top:50px; left:50px;">
+							<div class="tip__header">
+								<strong>삼성전자 서비스센터 서비스센터</strong>
+								<span class="grade">위험도 4</span>
+							</div>
+							<!-- //tip__header -->
+							<div class="tip__contents">
+								<div class="board__view__mini">
+									<table>
+										<caption>상세</caption>
+										<colgroup>
+											<col style="width:63px;">
+											<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row">구분</th>
+												<td>감염위험</td>
+											</tr>
+											<tr>
+												<th scope="row">위험도</th>
+												<td>1</td>
+											</tr>
+											<tr>
+												<th scope="row">기간</th>
+												<td>7/15 ~ 7/29</td>
+											</tr>
+											<tr>
+												<th scope="row">위험원인</th>
+												<td><span class="tag__danger tag--red">확진자 노출</span></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p class="tip__address">경기 부천시 부흥로 193</p>
+							</div>
+							<!-- //tip__contents -->
+						</div>
+						<!-- //tip__balloon -->
+
+						<div class="tip__balloon arr--bottom" style="top:200px; left:550px;">
+							<div class="tip__header">
+								<strong>삼성전자 서비스센터 서비스센터</strong>
+								<span class="grade--blue">위험도 1</span>
+							</div>
+							<!-- //tip__header -->
+							<div class="tip__contents">
+								<div class="board__view__mini">
+									<table>
+										<caption>상세</caption>
+										<colgroup>
+											<col style="width:63px;">
+											<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row">구분</th>
+												<td>감염위험</td>
+											</tr>
+											<tr>
+												<th scope="row">위험도</th>
+												<td>1</td>
+											</tr>
+											<tr>
+												<th scope="row">기간</th>
+												<td>7/15 ~ 7/29</td>
+											</tr>
+											<tr>
+												<th scope="row">위험원인</th>
+												<td><span class="tag__danger tag--red">확진자 노출</span></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p class="tip__address">경기 부천시 부흥로 193</p>
+							</div>
+							<!-- //tip__contents -->
+						</div>
+						<!-- //tip__balloon -->
+
+						<div class="tip__balloon type-02" style="top:250px; left:50px;">
+							<div class="tip__contents">
+								<ul class="tip__movement__list">
+									<li class="tip__movement__item">
+										<p class="date">2021-07-17 15:30</p>
+										<p class="place">한솔프라자 2층</p>
+									</li>
+									<li class="tip__movement__item">
+										<p class="date">2021-07-17 15:30</p>
+										<p class="place">서울어린이병원앞</p>
+									</li>
+									<li class="tip__movement__item">
+										<p class="date">2021-07-17 15:30</p>
+										<p class="place">노영범한의원 앞</p>
+									</li>
+									<li class="tip__movement__item">
+										<p class="date">2021-07-17 15:30</p>
+										<p class="place">상1주민센터 앞</p>
+									</li>
+								</ul>
+								<!-- //tip__movement__list -->
+							</div>
+							<!-- //tip__contents -->
+						</div>
+						<!-- //tip__balloon -->
+
+					</div>
+					<!-- //maps -->
+				</div>
+				<!-- //area__maps -->
+
+				<div class="board-wrap">
+
+					<div class="board__title">
+						<strong>검색결과</strong>
+					</div>
+					<!-- //board__title -->
+
+					<div class="board__btn type-02">
+						<div class="board__btn__right">
+							<button class="btn__default w-50 btn--normal" onclick="modalPopup('../../bcc/popup/pop_감염위험지역정보.html')">외부공개</button>
+							<button class="btn__default w-50 btn--normal" onclick="modalPopup('../../bcc/popup/pop_위험지역등록_02.html')">등록</button>
+							<button class="btn__default w-50 btn--white">해지</button>
+							<button class="btn__excel h-30">엑셀양식 다운로드</button>
+						</div>
+						<!-- //board__btn__right -->
+					</div>
+					<!-- //board__btn -->
+
+					<div class="board__list">
+						<table>
+							<caption>접촉자 정보 목록</caption>
+							<colgroup>
+								<col style="width:42px;">
+								<col style="width:160px;">
+								<col style="width:100px;">
+								<col style="width:120px;">
+								<col style="width:120px;">
+								<col style="width:320px;">
+								<col style="width:200px;">
+								<col style="width:100px;">
+								<col style="width:200px;">
+								<col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col"><input type="checkbox"></th>
+									<th scope="col">구분</th>
+									<th scope="col">위험등급</th>
+									<th scope="col">위험시작일</th>
+									<th scope="col">위험종료일</th>
+									<th scope="col">명칭(주소)</th>
+									<th scope="col">위험원인</th>
+									<th scope="col">외부 공개</th>
+									<th scope="col">최종방역일시</th>
+									<th scope="col">접촉자 조사일시</th>
+								</tr>
+							<tbody>
+								<tr onclick="modalPopup('../../bcc/popup/pop_위험지역상세정보_02.html')">
+									<td><input type="checkbox"></td>
+									<td>감염위험</td>
+									<td>1</td>
+									<td>2021-08-02</td>
+									<td>2021-08-04</td>
+									<td><a href="#">삼성전자 서비스<br>(경기 부천시 길주로 254 디지털프라자 부천중동점 3층)</a></td>
+									<td>확진자 노출, 밀집</td>
+									<td>공개</td>
+									<td>2021-08-04 17:00</td>
+									<td>2021-08-04 19:00</td>
+								</tr>
+								<tr onclick="modalPopup('../../bcc/popup/pop_위험지역상세정보_02.html')">
+									<td><input type="checkbox"></td>
+									<td>감염위험</td>
+									<td>1</td>
+									<td>2021-08-02</td>
+									<td>2021-08-04</td>
+									<td><a href="#">삼성전자 서비스<br>(경기 부천시 길주로 254 디지털프라자 부천중동점 3층)</a></td>
+									<td>확진자 노출, 밀집</td>
+									<td>공개</td>
+									<td>2021-08-04 19:00</td>
+									<td>-</td>
+								</tr>
+								<tr onclick="modalPopup('../../bcc/popup/pop_위험지역상세정보_02.html')">
+									<td><input type="checkbox"></td>
+									<td>우선방역 / 접촉자우선검색</td>
+									<td>1</td>
+									<td>2021-08-02</td>
+									<td>2021-08-04</td>
+									<td><a href="#">삼성전자 서비스<br>(경기 부천시 길주로 254 디지털프라자 부천중동점 3층)</a></td>
+									<td>확진자 노출, 밀집</td>
+									<td>공개</td>
+									<td>-</td>
+									<td>2021-08-04 19:00</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- //board__list -->
+
+					<div class="board__bot">
+
+
+
+						<div class="paging type-02">
+							<button class="paging__btn btn--prev" disabled="disabled">prev</button>
+							<p class="paging__item">
+								<a href="#" role="button" class="paging__link paging__link--current">1</a>
+								<a href="#" role="button" class="paging__link">2</a>
+								<a href="#" role="button" class="paging__link">3</a>
+								<a href="#" role="button" class="paging__link">4</a>
+								<a href="#" role="button" class="paging__link">5</a>
+								<span class="paging__ellipsis">...</span>
+								<a href="#" role="button" class="paging__link">10</a>
+							</p>
+							<button class="paging__btn btn--next">next</button>
+						</div>
+						<!-- //paging -->
+
+					</div>
+					<!-- //board__bot -->
+
+				</div>
+				<!-- //board-wrap -->
+
+			</div>
+			<!-- //contents -->
+
+		</div>
+		<!-- //area__contents -->
+
+	</div>
+	<!-- //container -->
+
+	<footer class="footer">
+		<!-- "/bcc/inc/inc_footer.html" -->
+	</footer>
+	<!-- //Footer -->
+
+</div>
+<!-- //wrapper -->
+</body>
+</html>

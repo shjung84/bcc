@@ -312,8 +312,8 @@ function depth(depth1,depth2,depth3){
 			}
 			depth_2_sub = [
 				["감염위험지역 정보","../../bcc/infection/list.html"],
-				["신규 감염자 예측","../../bcc/infection/list.html"],
-				["감염지역 확산정보","../../bcc/infection/list.html"]
+				["신규 감염자 예측","../../bcc/infection/list_02.html"],
+				["감염지역 확산정보","../../bcc/infection/list_033.html"]
 			]
 		}else if(depth1 === 4){
 			depth_1_text = "운영관리";

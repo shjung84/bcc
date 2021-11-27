@@ -109,35 +109,3 @@ body {min-width:320px; width:100%;}
 .toggle__btn {display:block; width:100%; height:40px; padding:0 11px; border:1px solid #8e8d8d; background:#fff; text-align:left;}
 .toggle--active .toggle__btn {background:#f6f6f6;}
 
-/* tip__balloon */
-.tip__balloon {position:absolute; z-index:2; width:230px; height:160px; background: #fff; box-shadow:0px 0px 4px rgba(0, 0, 0, 0.61); -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px;}
-.tip__balloon.type-02 {width:300px; height:auto; min-height:120px;}
-.tip__balloon:before {content:"\00a0"; position:absolute; top:calc(50% - 8px); left:-9px; width:20px; height:16px; background: #fff; transform:rotate(29deg) skew(-35deg); -moz-transform:rotate(29deg) skew(-35deg); -ms-transform:rotate(29deg) (-35deg); -o-transform:rotate(29deg) skew(-35deg); -webkit-transform:rotate(29deg) skew(-35deg); box-shadow:-2px 2px 2px 0 rgba(0, 0, 0, 0.2);}
-
-.tip__header {position:relative; height:30px; padding:0 75px 0 10px; background:#3a3838; color:#fff;}
-.tip__header strong {display:block; overflow:hidden; height:30px; font-size:14px; line-height:30px; white-space: nowrap; text-overflow:ellipsis;}
-.tip__header .grade {position:absolute; top:calc(50% - 10px); right:10px; height:21px; padding:0 5px; background:#d02424; font-size:12px; line-height:22px; -webkit-border-radius:20px; -moz-border-radius:20px; border-radius:20px;}
-
-.tip__contents {position:relative; z-index:2; padding:6px 10px;}
-.tip__address {font-size:12px; line-height:1.7;}
-
-.board__view__mini {border:1px solid #c4c4c4;}
-.board__view__mini table {letter-spacing:-1px;}
-.board__view__mini table th,
-.board__view__mini table td {padding:0 6px; border-top:1px solid #c4c4c4; font-size:13px;}
-.board__view__mini table tr:first-child th,
-.board__view__mini table tr:first-child td {border-top:0;}
-.board__view__mini table th {background:#f9f7f9; text-align:left;}
-.board__view__mini table td {height:25px; border-left:1px solid #c4c4c4;}
-
-.movement__list {position:relative; margin-top:4px; padding-left:30px; border:1px solid #c4c4c4; color:#000; font-size:12px;}
-.movement__list:before {content:''; position:absolute; top:0; bottom:0; left:0; width:30px; border-right:1px solid #c4c4c4; background:#f3802d url(../images/common/bg_movement.png) no-repeat 0 50%;}
-.movement__item {display:table; table-layout:fixed; width:100%; border-top:1px solid #c4c4c4;}
-.movement__item:first-child {border-top:0;}
-.movement__item .date {display:table-cell;  width:120px; padding:0 8px; font-weight:700;}
-.movement__item .place {display:table-cell;}
-
-/* etc */
-.tag__danger {display:inline-block; height:18px; padding:0 3px; font-size:11px; line-height:18px; -webkit-border-radius:2px; -moz-border-radius:2px; border-radius:2px;}
-.tag--red {background:#e13434; color:#fff;}
-

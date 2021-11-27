@@ -1,0 +1,198 @@
+<div class="pop__wrap w-696 type-02">
+
+	<div class="pop__header">
+		<h4>지능형 역학시스템</h4>
+	</div>
+	<!-- //pop__header -->
+
+	<div class="pop__container">
+		<div class="pop__title">
+			<h3>위험 지역 등록</h3>
+		</div>
+		<!-- //pop__title -->
+
+		<div class="pop__section">
+
+			<div class="pop__board__reg type-02">
+				<table>
+					<colgroup>
+						<col style="width:94px;">
+						<col>
+						<col>
+						<col>
+					</colgroup>
+					<caption>위험 지역 등록</caption>
+					<tbody>
+						<tr>
+							<th><label for="typeA-001-pop">구분</label></th>
+							<td>
+								<div class="input__radio">
+									<label><input name="typeA-pop" id="typeA-001-pop" type="radio"><i></i><span>감염위험</span></label>
+								</div>
+								<!-- //input__radio -->
+							</td>
+							<td>
+								<div class="input__radio">
+									<label><input name="typeA-pop" id="typeA-002-pop" type="radio"><i></i><span>우선방역대상</span></label>
+								</div>
+								<!-- //input__radio -->
+							</td>
+							<td>
+								<div class="input__radio">
+									<label><input name="typeA-pop" id="typeA-003-pop" type="radio"><i></i><span>접촉자 우선검색</span></label>
+								</div>
+								<!-- //input__radio -->
+							</td>
+						</tr>
+						<tr>
+							<th><label for="typeB-001-pop">외부공개</label></th>
+							<td>
+								<div  class="input__radio">
+									<label><input name="typeB-pop" id="typeB-001-pop" type="radio"><i></i><span>공개</span></label>
+								</div>
+								<!-- //input__radio -->
+							</td>
+							<td>
+								<div  class="input__radio">
+									<label><input name="typeB-pop" id="typeB-002-pop" type="radio"><i></i><span>비공개</span></label>
+								</div>
+								<!-- //input__radio -->
+							</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<th><label for="typeC-pop">장소명</label></th>
+							<td colspan="3"><input type="text" id="typeC-pop" placeholder="입력해주세요." value=""></td>
+						</tr>
+						<tr>
+							<th><label for="typeD-pop">주소</label></th>
+							<td colspan="3">
+								<div class="input__addr">
+									<div class="input__addr__zip">
+										<input type="text" id="typeD-pop" class="input__addr__zipcode w-260" Placeholder="우편번호" value="1850">
+										<button class="btn__zipcode">우편번호 검색</button>
+									</div>
+									<!-- //input__addr__zip-02 -->
+									<div class="input__addr__text">
+										<input type="text" id="typeD-002-pop" Placeholder="도로명 주소" value="부천시 원미구 길주로 21" class="w-260">
+										<input type="text" id="typeD-003-pop" Placeholder="상세주소" value="부천시 아파트">
+									</div>
+									<!-- //input__addr__text -->
+								</div>
+								<!-- //input__addr -->
+							</td>
+						</tr>
+						<tr>
+							<th><label for="typeE-pop">위험 시작일</label></th>
+							<td colspan="3">
+								<div class="input__set__date-time type-02">
+									<div class="input__set__date">
+										<input type="text" id="typeE-pop" value="2021-07-20" class="w-120"><button class="btn__cal">달력</button>
+									</div>
+									<!-- //input__set__date -->
+								</div>
+								<!-- //input__set__date-time -->
+							</td>
+						</tr>
+						<tr>
+							<th><label for="typeF-pop">위험 종료일</label></th>
+							<td colspan="3">
+								<div class="input__set__date-time type-02">
+									<div class="input__set__date">
+										<input type="text" id="typeF-pop" value="2021-07-20" class="w-120"><button class="btn__cal">달력</button>
+									</div>
+									<!-- //input__set__date -->
+								</div>
+								<!-- //input__set__date-time -->
+							</td>
+						</tr>
+						<tr>
+							<th><label for="typeG-pop">위험 등급</label></th>
+							<td colspan="3">
+								<select name="typeG-pop" id="typeG-pop" class="w-120">
+									<option value="">선택</option>
+									<option value="">1</option>
+									<option value="">2</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th><label for="typeH-pop">위험 원인</label></th>
+							<td colspan="3"><input type="text" id="typeH-pop" placeholder="입력해주세요." value=""></td>
+						</tr>
+						<tr>
+							<th><label for="typeI-pop">최종 방역일시</label></th>
+							<td colspan="3">
+								<div class="input__set__date-time type-02">
+									<div class="input__set__date">
+										<input type="text" id="typeI-pop" value="2021-07-20" class="w-120"><button class="btn__cal">달력</button>
+									</div>
+									<!-- //input__set__date -->
+									<div class="input__set__time type-02">
+										<select name="" id="typeI-002-pop">
+											<option value="">00</option>
+											<option value="" selected>12</option>
+										</select>
+										<label for="typeI-002-pop">시</label>
+										<select name="" id="typeI-003-pop">
+											<option value="">00</option>
+										</select>
+										<label for="typeI-003-pop">분</label>
+									</div>
+									<!-- //input__set__time -->
+								</div>
+								<!-- //input__set__date-time -->
+							</td>
+						</tr>
+						<tr>
+							<th><label for="typeJ-pop">접촉자 조사일시</label></th>
+							<td colspan="3">
+								<div class="input__set__date-time type-02">
+									<div class="input__set__date">
+										<input type="text" id="typeJ-pop" value="2021-07-20" class="w-120"><button class="btn__cal">달력</button>
+									</div>
+									<!-- //input__set__date -->
+									<div class="input__set__time type-02">
+										<select name="" id="typeJ-002-pop">
+											<option value="">00</option>
+											<option value="" selected>12</option>
+										</select>
+										<label for="typeJ-002-pop">시</label>
+										<select name="" id="typeJ-003-pop">
+											<option value="">00</option>
+										</select>
+										<label for="typeJ-003-pop">분</label>
+									</div>
+									<!-- //input__set__time -->
+								</div>
+								<!-- //input__set__date-time -->
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- //board__reg -->
+
+		</div>
+		<!-- //pop__section -->
+
+		<div class="board__pop__btn type-03">
+			<div class="board__btn__right">
+				<button class="btn__default btn--navy">저장</button>
+				<button class="btn__default btn--navy" aria-pop-close>취소</button>
+			</div>
+			<!-- //btn__board__right -->
+		</div>
+		<!-- //board__btn -->
+
+	</div>
+	<!-- //pop__container -->
+
+	<button class="btn__close__popup" aria-pop-close>닫기</button>
+
+</div>
+<!-- //popup__wrap -->
+
+<script>
+	addFile();
+</script>
