@@ -1,0 +1,104 @@
+<div class="pop__wrap w-1122 type-02">
+
+	<div class="pop__header">
+		<h4>지능형 역학시스템</h4>
+	</div>
+	<!-- //pop__header -->
+
+	<div class="pop__container">
+		<div class="pop__title">
+			<h3>확진자 등록</h3>
+		</div>
+		<!-- //pop__title -->
+
+		<div class="pop__section">
+
+			<div class="board__reg-info type-pop">
+				<div class="board__photo">
+					<p aria-photobox></p>
+					<div class="btns">
+						<button class="btn__default w-full btn--blue">사진 업로드</button>
+					</div>
+					<!-- //btns -->
+				</div>
+				<!-- //photo -->
+				<table>
+					<caption>확진자 정보 등록</caption>
+					<colgroup>
+						<col style="width:197px;">
+						<col>
+						<col style="width:180px;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"><label for="typeA-pop">확진번호</th>
+							<td colspan="3">
+								<input type="text" id="typeA-pop" Placeholder="입력해주세요" value="20210801-13">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="typeB-pop">확진자 성명</th>
+							<td>
+								<input type="text" id="typeB-pop" Placeholder="입력해주세요" value="김확진">
+							</td>
+							<th scope="row"><label for="typeC-pop">전화번호</th>
+							<td>
+								<input type="text" id="typeC-pop" Placeholder="입력해주세요" value="010-1234-1234">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="typeD-pop">자가격리 시작일</th>
+							<td>
+								<div class="form__input__date">
+									<p><input type="text" id="typeD-pop" Placeholder="입력해주세요" value="2021-07-01"><button class="btn__cal">달력</button></p>
+								</div>
+								<!-- //form__input__date -->
+							</td>
+							<th scope="row"><label for="typeE-pop">자가격리 종료일</th>
+							<td>
+								<div class="form__input__date">
+									<p><input type="text" id="typeE-pop" Placeholder="입력해주세요" value="2021-07-01"><button class="btn__cal">달력</button></p>
+								</div>
+								<!-- //form__input__date -->
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" class="align__top"><label for="typeF-pop">주소</th>
+							<td colspan="3">
+								<div class="input__addr">
+									<div class="input__addr__zip">
+										<input type="text" id="typeF-pop" class="input__addr__zipcode" Placeholder="우편번호" value="18530">
+										<button class="btn__zipcode">우편번호 검색</button>
+									</div>
+									<div class="input__addr__text">
+										<input type="text" id="typeF-pop-002" Placeholder="도로명 주소" value="부천시 원미구 길주로 210">
+										<input type="text" id="typeF-pop-003" Placeholder="상세주소" value="AA아파트 101동 1107호">
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- //board__reg-info -->
+
+		</div>
+		<!-- //pop__section -->
+
+		<div class="board__pop__btn type-03">
+			<div class="board__btn__right">
+				<button class="btn__default btn--navy" onclick="modalPopup('../../bcc/popup/pop_확진자전환.html','modalPopup-02')">확진자 전환</button>
+				<button class="btn__default btn--navy" aria-pop-close>취소</button>
+			</div>
+			<!-- //btn__board__right -->
+		</div>
+		<!-- //board__btn -->
+
+	</div>
+	<!-- //pop__container -->
+
+	<button class="btn__close__popup" aria-pop-close>닫기</button>
+
+</div>
+<!-- //popup__wrap -->

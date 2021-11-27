@@ -90,6 +90,7 @@ function tabs(){
 		var idx = $(this).index();
 		btn.eq(idx).addClass(act).siblings().removeClass(act);
 		box.eq(idx).addClass(act).siblings().removeClass(act);
+		return false;
 	});
 }
 
@@ -118,31 +119,33 @@ function toggleList(){
 }
 
 /* POPUP */
-function modalPopup(fileurl){
-	$("body").addClass("modal");
-	$("body").append($("<div class='trplayer'></div>"));
-	$("body").append($("<div class='trplayerw'></div>"));
+function modalPopup(fileurl,popId){
+	var body = $("body");
+	if(!body.is(".modal")){body.append($("<div class='trplayer'></div>"))}
+	if(!popId){popId = "modalPopup-01"}
+	body.addClass("modal");
+	body.append($("<div class='trplayerw' aria-pop-name="+popId+"></div>"));
 
-	$(".trplayerw").append($("<div class='pop__modal'></div>"));
-	$(".pop__modal").load(fileurl, function(){
-		var modalpopWidth = $(".pop__modal").width();
-		$(".pop__modal").css("margin-left",-modalpopWidth/2+"px");
-		var modalpopHeight = $(".pop__modal").height();
-		$(".pop__modal").css("margin-top",-modalpopHeight/2+"px");
-		var windowHeight = $(window).height();
-		var windowWidth = $(window).width();
-		function modalCssChange(width, height) {
+	$(".trplayerw[aria-pop-name="+popId+"]").append($("<div class='pop__modal' aria-pop-name="+popId+"></div>"));
+	$(".pop__modal[aria-pop-name="+popId+"]").load(fileurl,function(){
+		var ths = $(this);
+		var modalpopWidth = ths.width();
+		var modalpopHeight = ths.height();
+		ths.css("margin-left",-modalpopWidth/2+"px");
+		ths.css("margin-top",-modalpopHeight/2+"px");
+
+		function modalCssChange(width,height) {
 			var width = parseInt(width);
 			var height = parseInt(height);
-			if (height < modalpopHeight){
-				$("body").addClass("a-height");
-			} else {
-				$("body").removeClass("a-height");
+			if(height < modalpopHeight){
+				body.addClass("a-height");
+			}else{
+				body.removeClass("a-height");
 			}
-			if (width < modalpopWidth){
-				$("body").addClass("a-width");
-			} else {
-				$("body").removeClass("a-width");
+			if(width < modalpopWidth){
+				body.addClass("a-width");
+			}else{
+				body.removeClass("a-width");
 			}
 		}
 		$(function() {
@@ -150,13 +153,19 @@ function modalPopup(fileurl){
 				modalCssChange($(this).width(), $(this).height());
 			}).resize();
 		});
+		modalHide();
 	});
 }
 function modalHide(){
-	$("body").removeClass("modal");
-	$(".trplayer").remove();
-	$(".trplayerw").remove();
-	$(".pop__modal").remove();
+	var close = $("[aria-pop-close]");
+	close.click(function(){
+		var x = $(".trplayerw").length;
+		if(x <= 1){
+			$("body").removeClass("modal");
+			$(".trplayer").remove();
+		}
+		$(this).closest(".trplayerw").remove();
+	});
 }
 
 function addFile(){
