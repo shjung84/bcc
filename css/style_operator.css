@@ -1,5 +1,7 @@
 /* CSS규칙 - BEM 방식 */
 /* 운영자:역학조사관 */
+/* path */
+.path__select:last-child .path__selected {color:#525252; font-weight:700;}
 
 /* From Style */
 textarea {color:#525151; -webkit-border-radius:2px; -moz-border-radius:2px; border-radius:2px;}
@@ -29,26 +31,13 @@ select:focus {border-color:#0f56b3;}
 
 
 /* COMMON */
-
+.paging {margin-top:20px;}
 
 /* FORM */
 /* board-search */
 .form__search {padding-right:85px;}
 .form__btn__search {position:absolute; top:calc(50% - 12px); right:18px; width:50px; height:25px; color:#fff; font-weight:700; font-size:11px; line-height:25px; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;}
 .form__input__set label {font-size:11px; line-height:30px;}
-
-/* input__radio */
-.input__radio__wrap {display:table; table-layout:fixed; width:100%;}
-
-.input__radio {/* line-height:24px; */}
-.input__radio input[type=radio] {position:absolute; left:-99999px;}
-.input__radio label {display:inline-block; position:relative; padding-left:25px;}
-.input__radio span {color:#525151; font-weight:300; font-size:13px;}
-.input__radio i {position:absolute; top:calc(50% - 7px); left:0; width:14px; height:14px;}
-.input__radio i:before,
-.input__radio i:after {content:''; position:absolute; border-radius:50%; box-sizing:border-box;}
-.input__radio i:before {top:0; left:0; width:14px; height:14px; background:#fff; box-shadow:0px 0px 4px #c7c7dc;}
-.input__radio input:checked + i:after {top:calc(50% - 5px); left:calc(50% - 5px); width:10px; height:10px; background:#fb8832; box-shadow:inset 0px 0px 4px #ecb38a;}
 
 /* input__chk */
 .input__chk__list {padding:0 10px;}
@@ -64,6 +53,29 @@ select:focus {border-color:#0f56b3;}
 .input__chk i:before {top:0; left:0; width:12px; height:12px; border:2px solid #dfe1e6; background:#fafbfc; border-radius:2px;}
 .input__chk input:checked + i:before {}
 .input__chk input:checked + i:after {top:0px; left:1px; width:13px; height:5px; border-width:0 0 2px 2px; border-style:solid; border-color:#0f56b3; transform:rotate(-45deg);}
+
+/* input__radio */
+.input__radio__wrap {display:table; table-layout:fixed; width:100%;}
+
+.input__radio {/* line-height:24px; */}
+.input__radio input[type=radio] {position:absolute; left:-99999px;}
+.input__radio label {display:inline-block; position:relative; padding-left:25px;}
+.input__radio span {color:#525151; font-weight:300; font-size:13px;}
+.input__radio i {position:absolute; top:calc(50% - 7px); left:0; width:14px; height:14px;}
+.input__radio i:before,
+.input__radio i:after {content:''; position:absolute; border-radius:50%; box-sizing:border-box;}
+.input__radio i:before {top:0; left:0; width:14px; height:14px; background:#fff; box-shadow:0px 0px 4px #c7c7dc;}
+.input__radio input:checked + i:after {top:calc(50% - 5px); left:calc(50% - 5px); width:10px; height:10px; background:#fb8832; box-shadow:inset 0px 0px 4px #ecb38a;}
+
+.input__radio__big {display:table-cell; width:16%;}
+.input__radio__big input[type=radio] {position:absolute; left:-99999px;}
+.input__radio__big label {display:inline-block; position:relative; padding-left:65px;}
+.input__radio__big span {font-weight:700;}
+.input__radio__big i {position:absolute; top:0; left:0; width:24px; height:24px;}
+.input__radio__big i:before,
+.input__radio__big i:after {content:''; position:absolute; border-radius:50%; box-sizing:border-box;}
+.input__radio__big i:before {top:0; left:0; width:24px; height:24px; border:1px solid #d1d1d1; background:#f6f6f6;}
+.input__radio__big input:checked + i:after {top:calc(50% - 9px); left:calc(50% - 9px); width:18px; height:18px; border:1px solid #b98d59; background:#fb8832;}
 
 
 /*form__chk__set */
@@ -162,6 +174,7 @@ select:focus {border-color:#0f56b3;}
 
 
 /* BOARD */
+.board-wrap.board__top {margin-bottom:20px;}
 
 /* board__empty */
 .board__empty {padding:50px 0 30px; border:1px solid #dadada;}
@@ -223,6 +236,16 @@ select:focus {border-color:#0f56b3;}
 .board__view-info table td:last-child {border-right-width:1px;}
 .board__view-info .align__top {padding-top:12px; vertical-align:top;}
 .board__view-info.type-02 table {height:240px;}
+
+
+/* board__check */
+.board__check table {border:1px solid #ebeaea; background:#fff;}
+.board__check table th,
+.board__check table td {border-top:1px solid #ebeaea;}
+.board__check table tr:first-child th,
+.board__check table tr:first-child td {border-top:0;}
+.board__check table th {padding:12px 35px; background:#f6f6f6; color:#3a3838; text-align:left;}
+.board__check table td {padding:12px 60px; height:60px; border-left:1px solid #ebeaea; vertical-align:middle;}
 
 /* tabs */
 .tabs {overflow:hidden;}

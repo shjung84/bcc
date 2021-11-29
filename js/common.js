@@ -47,7 +47,7 @@ function navAction(){
 				btn.addClass(active);
 			});
 		}
-		return false;
+		if(ths.attr("href") === "#") return false;
 	});
 }
 
@@ -218,7 +218,6 @@ function depth(depth1,depth2,depth3){
 	_depth1.addClass("active");
 	_depth1.find(".nav__sub li").eq(_depth2).addClass("current");
 
-	console.log(depth1,depth2,depth3);
 	//Path
 	var path = $(".path");
 	var menuType = path.attr("aria-menutype");
@@ -260,9 +259,9 @@ function depth(depth1,depth2,depth3){
 			}
 			depth_2_sub = [
 				["계정 관리","../../bcc/adminMember/list.html"],
-				["메뉴 권한 설정","../../bcc/adminMember/#.html"], //추가 : 211124
+				["메뉴 권한 설정","../../bcc/adminMember/#.html"],
 				["사용자 작업이력","../../bcc/adminMember/userhistory.html"],
-				["IP접근제어","../../bcc/adminMember/terminal.html"], //수정 : 211124
+				["IP접근제어","../../bcc/adminMember/terminal.html"],
 				["CCTV범위설정","../../bcc/adminMember/cctvbounds.html"],
 				["삭제기간설정","../../bcc/adminMember/deleteperiod.html"]
 			]
@@ -327,21 +326,23 @@ function depth(depth1,depth2,depth3){
 				depth_2_text = "사용자 작업이력";
 			}
 			depth_2_sub = [
-				["감염 등록 통계","../../bcc/management/list.html"],
-				["CCTV 범위 설정","../../bcc/management/list.html"],
-				["삭제 기간 설정","../../bcc/management/list.html"],
-				["사용자 작업이력","../../bcc/management/list.html"]
+				["감염 등록 통계","../../bcc/management/register.html"],
+				["CCTV 범위 설정","../../bcc/management/cctvbounds.html"],
+				["삭제 기간 설정","../../bcc/management/deleteperiod.html"],
+				["사용자 작업이력","../../bcc/management/userhistory.html"]
 			]
 		}
 	}
 
 	if(depth3){
-		$("[aria-depth-03").removeAttr("aria-hidden");
+		$("[aria-depth-03]").removeAttr("aria-hidden");
 		if(depth3 === 1){
 			depth_3_text = "목록";
 		}else if(depth3 === 2){
 			depth_3_text = "상세보기";
 		}
+	}else{
+		$("[aria-depth-03]").remove();
 	}
 
 	depth_1_box.html(depth_1_text);

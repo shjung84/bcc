@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html xml:lang="ko" lang="ko">
+<head>
+<title>부천시 지능형 역학 시스템</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../css/style_operator.css" />
+<script src="../../js/jquery-3.6.0.js"></script>
+<script defer src="../../js/common.js"></script>
+<script>
+	$(function(){//퍼블 LNB 확인용
+		$('.inc__area').load("../../bcc/inc/inc_nav_02.html",function(){depth(4,2);});
+	});
+</script>
+</head>
+<body>
+<div class="wrapper">
+
+	<header class="header">
+		<!-- "/bcc/inc/inc_header.html" -->
+	</header>
+	<!-- //Header -->
+
+	<div class="container">
+		<div class="contents">
+
+			<div class="inc__area">
+				<!-- "/bcc/inc/inc_nav_02.html" -->
+			</div>
+
+			<div class="area__contents">
+				<h3 class="hide">운영관리</h3>
+				<h4 class="hide">CCTV범위설정</h4>
+
+				<div class="board-wrap board__top">
+
+					<div class="board__title">
+						<strong>CCTV 범위 설정</strong>
+					</div>
+					<!-- //board__title -->
+
+					<div class="board__check">
+						<table>
+							<caption>CCTV 범위 설정</caption>
+							<colgroup>
+								<col style="width:317px;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">CCTV 분석 범위</th>
+									<td>
+										<div class="input__radio__wrap">
+											<div class="input__radio__big">
+												<label>
+													<input type="radio" name="typeA" checked="checked"><i></i><span>50M</span>
+												</label>
+											</div>
+											<!-- //input__radio -->
+											<div class="input__radio__big">
+												<label>
+													<input type="radio" name="typeA"><i></i><span>100M</span>
+												</label>
+											</div>
+											<!-- //input__radio -->
+											<div class="input__radio__big">
+												<label>
+													<input type="radio" name="typeA"><i></i><span>150M</span>
+												</label>
+											</div>
+											<!-- //input__radio -->
+											<div class="input__radio__big">
+												<label>
+													<input type="radio" name="typeA"><i></i><span>200M</span>
+												</label>
+											</div>
+											<!-- //input__radio -->
+											<div class="input__radio__big">
+												<label>
+													<input type="radio" name="typeA"><i></i><span>250M</span>
+												</label>
+											</div>
+											<!-- //input__radio -->
+											<div class="input__radio__big">
+												<label>
+													<input type="radio" name="typeA"><i></i><span>300M</span>
+												</label>
+											</div>
+											<!-- //input__radio -->
+										</div>
+										<!-- //input__radio__wrap -->
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+					<!-- //board__reg -->
+
+					<div class="board__btn">
+						<div class="board__btn__right">
+							<button class="btn__default w-50 btn--normal">저장</button>
+						</div>
+						<!-- //board__btn__right -->
+					</div>
+					<!-- //board__btn -->
+
+				</div>
+				<!-- //board-wrap -->
+
+				<div class="board-wrap">
+
+					<div class="board__title">
+						<strong>CCTV 범위 변경 이력</strong>
+					</div>
+					<!-- //board__title -->
+
+					<div class="board__list">
+						<table>
+							<caption>CCTV 범위 변경 이력 목록</caption>
+							<colgroup>
+								<col style="width:310px;">
+								<col style="width:310px;">
+								<col style="width:310px;">
+								<col style="width:310px;">
+								<col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">범위</th>
+									<th scope="col">등록자</th>
+									<th scope="col">등록일</th>
+									<th scope="col">사용유무</th>
+									<th scope="col">비고</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="align__center">50M</td>
+									<td>시스템관리자</td>
+									<td class="align__center">2021-06-13</td>
+									<td class="align__center">사용</td>
+									<td>신규등록</td>
+								</tr>
+								<tr>
+									<td class="align__center">100M</td>
+									<td>시스템관리자</td>
+									<td class="align__center">2021-06-13</td>
+									<td class="align__center">사용</td>
+									<td>신규등록</td>
+								</tr>
+								<tr>
+									<td class="align__center">50M</td>
+									<td>시스템관리자</td>
+									<td class="align__center">2021-06-13</td>
+									<td class="align__center">사용</td>
+									<td>신규등록</td>
+								</tr>
+								<tr>
+									<td class="align__center">100M</td>
+									<td>시스템관리자</td>
+									<td class="align__center">2021-06-13</td>
+									<td class="align__center">사용</td>
+									<td>신규등록</td>
+								</tr>
+								<tr>
+									<td class="align__center">50M</td>
+									<td>시스템관리자</td>
+									<td class="align__center">2021-06-13</td>
+									<td class="align__center">사용</td>
+									<td>신규등록</td>
+								</tr>
+								<tr>
+									<td class="align__center">100M</td>
+									<td>시스템관리자</td>
+									<td class="align__center">2021-06-13</td>
+									<td class="align__center">종료</td>
+									<td>종료된 설정</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- //board__list -->
+
+					<div class="paging type-02">
+						<button class="paging__btn btn--prev" disabled="disabled">prev</button>
+						<p class="paging__item">
+							<a href="#" role="button" class="paging__link paging__link--current">1</a>
+							<a href="#" role="button" class="paging__link">2</a>
+							<a href="#" role="button" class="paging__link">3</a>
+							<a href="#" role="button" class="paging__link">4</a>
+							<a href="#" role="button" class="paging__link">5</a>
+							<span class="paging__ellipsis">...</span>
+							<a href="#" role="button" class="paging__link">10</a>
+						</p>
+						<button class="paging__btn btn--next">next</button>
+					</div>
+					<!-- //paging -->
+
+				</div>
+				<!-- //board-wrap -->
+
+			</div>
+			<!-- //contents -->
+
+		</div>
+		<!-- //area__contents -->
+
+	</div>
+	<!-- //container -->
+
+	<footer class="footer">
+		<!-- "/bcc/inc/inc_footer.html" -->
+	</footer>
+	<!-- //Footer -->
+
+</div>
+<!-- //wrapper -->
+</body>
+</html>

@@ -40,18 +40,16 @@
 						<fieldset>
 							<legend>검색</legend>
 							<div class="form__search_inner">
-
 								<div class="form__input__set">
 									<label for="typeA">통계주기</label>
-									<select name="" id="typeA" class="type-02 w-127">
+									<select name="" id="typeA" class="type-02"><!-- 211129 : 디자인 수정 반영 -->
 										<option value="">전체</option>
 										<option value="">옵션1</option>
 										<option value="">옵션2</option>
 									</select>
 								</div>
 								<!-- //form__input__set -->
-
-								<div class="form__input__set">
+								<div class="form__input__set date-set"><!-- 211129 : 디자인 수정 반영 -->
 									<label for="typeB-001">등록일</label>
 									<div class="form__input__date">
 										<p><input type="text" id="typeB-001" value="2/18/1993"><button class="btn__cal">달력</button></p>
@@ -59,19 +57,20 @@
 									</div>
 								</div>
 								<!-- //form__input__set -->
-
 								<div class="form__input__set">
-									<label for="typeC">통계범위1</label>
-									<input type="text" id="typeC" placeholder="입력해주세요">
+									<label for="typeC">통계범위</label>
+									<select name="" id="typeC" class="type-02">
+										<option value="">전체</option>
+										<option value="">옵션1</option>
+										<option value="">옵션2</option>
+									</select>
 								</div>
 								<!-- //form__input__set -->
-
 								<div class="form__input__set">
-									<label for="typeD">통계범위1</label>
+									<label for="typeD">사용자</label>
 									<input type="text" id="typeD" placeholder="입력해주세요">
 								</div>
 								<!-- //form__input__set -->
-
 							</div>
 							<!-- //inner -->
 							<button class="form__btn__search btn--normal">조회</button>
