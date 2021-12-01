@@ -11,7 +11,7 @@
 <script defer src="../../js/common.js"></script>
 <script>
 	$(function(){//퍼블 LNB 확인용
-		$('.inc__area').load("../../bcc/inc/inc_nav.html",function(){depth(1,1);});
+		$('.inc__area').load("../../bcc/inc/inc_nav.html",function(){depth(1,1,2);});
 	});
 </script>
 </head>
@@ -102,8 +102,8 @@
 
 					<div class="board__btn">
 						<div class="board__btn__right">
-							<button class="btn__small btn--normal">취소</button>
-							<button class="btn__small btn--normal">저장</button>
+							<button class="btn__small btn--normal" onclick="location.href='list.html';">취소</button>
+							<button class="btn__small btn--normal" onclick="location.href='view.html';">등록</button>
 						</div>
 						<!-- //board__btn__right -->
 					</div>

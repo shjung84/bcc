@@ -44,31 +44,38 @@
 									<label for="typeA">통계주기</label>
 									<select name="" id="typeA" class="type-02"><!-- 211129 : 디자인 수정 반영 -->
 										<option value="">전체</option>
-										<option value="">옵션1</option>
-										<option value="">옵션2</option>
+										<option value="">시간별</option>
+										<option value="">일별</option>
+										<option value="">월별</option>
 									</select>
 								</div>
 								<!-- //form__input__set -->
 								<div class="form__input__set date-set"><!-- 211129 : 디자인 수정 반영 -->
 									<label for="typeB-001">등록일</label>
 									<div class="form__input__date">
-										<p><input type="text" id="typeB-001" value="2/18/1993"><button class="btn__cal">달력</button></p>
-										<p><input type="text" id="typeB-002" value="2/18/1993"><button class="btn__cal">달력</button></p>
+										<p><input type="text" id="typeB-001" value="2020-07-01"><button class="btn__cal">달력</button></p>
+										<p><input type="text" id="typeB-002" value="2020-08-04"><button class="btn__cal">달력</button></p>
 									</div>
 								</div>
 								<!-- //form__input__set -->
 								<div class="form__input__set">
-									<label for="typeC">통계범위</label>
+									<label for="typeC">통계범위1</label>
 									<select name="" id="typeC" class="type-02">
 										<option value="">전체</option>
-										<option value="">옵션1</option>
-										<option value="">옵션2</option>
+										<option value="">분석</option>
+										<option value="">재분석</option>
 									</select>
 								</div>
 								<!-- //form__input__set -->
 								<div class="form__input__set">
-									<label for="typeD">사용자</label>
-									<input type="text" id="typeD" placeholder="입력해주세요">
+									<label for="typeD">통계범위2</label>
+									<select name="" id="typeD" class="type-02">
+										<option value="">전체</option>
+										<option value="">완료</option>
+										<option value="">미완료</option>
+										<option value="">오류</option>
+										<option value="">추가동선 탐지</option>
+									</select>
 								</div>
 								<!-- //form__input__set -->
 							</div>
@@ -83,14 +90,17 @@
 
 					<div class="board__util">
 						<div class="board__util__total"><strong>총</strong><em>80건</em></div>
-						<!-- <div class="board__util__sort">
-							<select name="" id="">
-								<option value="">15개씩 보기</option>
-								<option value="">30개씩 보기</option>
-							</select>
-						</div> -->
 					</div>
 					<!-- //board__util -->
+
+					<div class="board__btn type-02">
+						<div class="board__btn__right">
+							<button class="btn__default btn--green">다운로드</button>
+							<button class="btn__default btn--normal" onclick="modalPopup('../../bcc/popup/pop_출력항목.html')">출력항목</button>
+						</div>
+						<!-- //board__btn__right -->
+					</div>
+					<!-- //board__btn -->
 
 					<div class="board__list">
 						<table>
@@ -124,7 +134,7 @@
 							<tbody>
 								<tr>
 									<td class="align__center">시간별</td>
-									<td class="align__center"><a href="javascript:void(0);" onclick="alert(`팝업`)">2021-01-01 13:00</a></td>
+									<td class="align__center"><a href="javascript:void(0);" onclick="modalPopup('../../bcc/popup/pop_AI영상분석상세정보.html')">2021-01-01 13:00</a></td>
 									<td class="align__center">12</td>
 									<td class="align__center">12</td>
 									<td class="align__center">10</td>
@@ -136,7 +146,7 @@
 								</tr>
 								<tr>
 									<td class="align__center">시간별</td>
-									<td class="align__center"><a href="javascript:void(0);" onclick="alert(`팝업`)">2021-01-01 13:00</a></td>
+									<td class="align__center"><a href="javascript:void(0);" onclick="modalPopup('../../bcc/popup/pop_AI영상분석상세정보.html')">2021-01-01 13:00</a></td>
 									<td class="align__center">12</td>
 									<td class="align__center">12</td>
 									<td class="align__center">10</td>
@@ -151,14 +161,20 @@
 					</div>
 					<!-- //board__list -->
 
-					<div class="board__btn">
-						<div class="board__btn__right">
-							<button class="btn__small btn--normal">다운로드</button>
-							<button class="btn__small btn--normal">출력항목</button>
-						</div>
-						<!-- //board__btn__right -->
+					<div class="paging">
+						<button class="paging__btn btn--prev" disabled="disabled">prev</button>
+						<p class="paging__item">
+							<a href="#" role="button" class="paging__link paging__link--current">1</a>
+							<a href="#" role="button" class="paging__link">2</a>
+							<a href="#" role="button" class="paging__link">3</a>
+							<a href="#" role="button" class="paging__link">4</a>
+							<a href="#" role="button" class="paging__link">5</a>
+							<span class="paging__ellipsis">...</span>
+							<a href="#" role="button" class="paging__link">10</a>
+						</p>
+						<button class="paging__btn btn--next">next</button>
 					</div>
-					<!-- //board__btn -->
+					<!-- //paging -->
 
 				</div>
 				<!-- //board-wrap -->

@@ -209,6 +209,7 @@ function addFileImg(){
 
 // S : 임시 : 퍼블 LNB 확인용
 function depth(depth1,depth2,depth3){
+	console.log(depth1,depth2,depth3)
 
 	//Nav
 	var nav = $(".nav");
@@ -235,6 +236,12 @@ function depth(depth1,depth2,depth3){
 			depth_1_text = "확진자 관리";
 			if(depth2 === 1){
 				depth_2_text = "CCTV 관리";
+				if(depth3 === 2){
+					depth_3_text = "등록";
+				}else if(depth3 === 3){
+					depth_3_text = "상세정보";
+				}
+
 			}else if(depth2 === 2){
 				depth_2_text = "연동시스템";
 			}
@@ -246,6 +253,14 @@ function depth(depth1,depth2,depth3){
 			depth_1_text = "사용자 관리";
 			if(depth2 === 1){
 				depth_2_text = "계정 관리";
+				console.log(`depth_2_text : ${depth_2_text}, depth3 : ${depth3}`);
+
+				if(depth3 === 2){
+					depth_3_text = "사용자 등록";
+				}else if(depth3 === 3){
+					depth_3_text = "상세보기";
+				}
+
 			}else if(depth2 === 2){
 				depth_2_text = "메뉴 권한 설정";
 			}else if(depth2 === 3){
@@ -255,15 +270,15 @@ function depth(depth1,depth2,depth3){
 			}else if(depth2 === 5){
 				depth_2_text = "CCTV범위설정";
 			}else if(depth2 === 6){
-				depth_2_text = "삭제기간설정";
+				depth_2_text = "삭제 기간 설정";
 			}
 			depth_2_sub = [
 				["계정 관리","../../bcc/adminMember/list.html"],
-				["메뉴 권한 설정","../../bcc/adminMember/#.html"],
+				["메뉴 권한 설정","../../bcc/adminMember/permission.html"],
 				["사용자 작업이력","../../bcc/adminMember/userhistory.html"],
 				["IP접근제어","../../bcc/adminMember/terminal.html"],
 				["CCTV범위설정","../../bcc/adminMember/cctvbounds.html"],
-				["삭제기간설정","../../bcc/adminMember/deleteperiod.html"]
+				["삭제 기간 설정","../../bcc/adminMember/deleteperiod.html"]
 			]
 		}else if(depth1 === 3){
 			depth_1_text = "통계 관리";
@@ -336,11 +351,6 @@ function depth(depth1,depth2,depth3){
 
 	if(depth3){
 		$("[aria-depth-03]").removeAttr("aria-hidden");
-		if(depth3 === 1){
-			depth_3_text = "목록";
-		}else if(depth3 === 2){
-			depth_3_text = "상세보기";
-		}
 	}else{
 		$("[aria-depth-03]").remove();
 	}

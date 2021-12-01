@@ -11,7 +11,7 @@
 <script defer src="../../js/common.js"></script>
 <script>
 	$(function(){//퍼블 LNB 확인용
-		$('.inc__area').load("../../bcc/inc/inc_nav.html",function(){depth(2,1);});
+		$('.inc__area').load("../../bcc/inc/inc_nav.html",function(){depth(2,1,2);});
 	});
 </script>
 </head>
@@ -69,7 +69,7 @@
 									</td>
 								</tr>
 								<tr>
-									<th scope="row"><label for="typeC">이름 <i class="bul__imp">*</i></label></th>
+									<th scope="row"><label for="typeC" class="txt--red">이름 <i class="bul__imp">*</i></label></th>
 									<td><input type="text" id="typeC" Placeholder="이름 입력" value=""></td>
 								</tr>
 								<tr>
@@ -88,7 +88,6 @@
 									<th scope="row"><label for="typeG">비고</label></th>
 									<td><input type="text" id="typeG" Placeholder="비고입력" value=""></td>
 								</tr>
-
 							</tbody>
 						</table>
 					</div>
@@ -97,7 +96,7 @@
 					<div class="board__btn">
 						<div class="board__btn__right">
 							<button class="btn__small btn--normal">취소</button>
-							<button class="btn__small btn--normal">저장</button>
+							<button class="btn__small btn--normal" onclick="location.href='view_02.html';">저장</button>
 						</div>
 						<!-- //board__btn__right -->
 					</div>

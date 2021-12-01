@@ -231,8 +231,10 @@ h2, h3, h4, h5, strong, b {font-family:'NanumGothic'; font-weight:700;}
 
 /* FORM */
 /* board-search */
-.form__search {position:relative; margin:-1px 0 10px 0; padding:7px 107px 7px 23px; border:1px solid #dadada; background:#fff;}
+.form__search {position:relative; margin:-1px 0 10px 0; padding:7px 85px 7px 23px; border:1px solid #dadada; background:#fff;}
 .form__search:before {content:''; position:absolute; top:100%; right:-1px; left:-1px; height:10px; margin-top:1px; border-bottom:1px solid #dadada; background:#f6f6f6;}
+
+.form__btn__search {position:absolute; top:calc(50% - 12px); right:18px; width:50px; height:25px; color:#fff; font-weight:700; font-size:11px; line-height:25px; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;}
 
 .form__search_inner {display:table; table-layout:fixed; width:100%; font-size:0;}
 .form__input__set {display:table-cell; width:25%; text-align:center;}
@@ -375,6 +377,7 @@ h2, h3, h4, h5, strong, b {font-family:'NanumGothic'; font-weight:700;}
 /* etc */
 .tag__danger {display:inline-block; height:18px; padding:0 3px; font-size:11px; line-height:18px; -webkit-border-radius:2px; -moz-border-radius:2px; border-radius:2px;}
 .tag--red {background:#e13434; color:#fff;}
+.txt--red {color:#e13434;}
 
 
 /* POPUP */
@@ -390,6 +393,7 @@ body.a-height .pop__modal {top:0 !important; margin-top:0 !important}
 .pop__wrap.small {width:610px;}
 .pop__wrap.w-353 {width:353px;}
 .pop__wrap.w-446 {width:446px;}
+.pop__wrap.w-473 {width:473px;}
 .pop__wrap.w-675 {width:675px;}
 .pop__wrap.w-696 {width:696px;}
 .pop__wrap.w-712 {width:712px;}
@@ -398,8 +402,8 @@ body.a-height .pop__modal {top:0 !important; margin-top:0 !important}
 
 .pop__header {padding:0 50px 0 35px; color:#fff;}
 .pop__header h4 {font-weight:700;}
-.pop__container {position:relative; padding:20px 35px;}
-.pop__title {padding-bottom:20px; border-bottom:2px solid #b5b5b5;}
+.pop__container {position:relative; padding:15px 35px 20px;}
+.pop__title {padding-bottom:15px; border-bottom:1px solid #b5b5b5;}
 .pop__title.no-border {border-bottom:0;}
 .pop__title.type-02 {margin:10px 0 7px;}
 .pop__title h3 {font-size:18px;}

@@ -40,7 +40,8 @@
 						<fieldset>
 							<legend>검색</legend>
 							<div class="form__search_inner">
-								<div class="form__input__set">
+								<!-- 211130 : 수정 : 설계서 현행화 -->
+								<div class="form__input__set" style="width:390px;">
 									<label for="typeA-001">등록일</label>
 									<div class="form__input__date">
 										<p><input type="text" id="typeA-001" value="2/18/1993"><button class="btn__cal">달력</button></p>
@@ -50,7 +51,7 @@
 								<!-- //form__input__set -->
 								<div class="form__input__set">
 									<label for="typeB">계정권한</label>
-									<select required name="typeB" id="typeB" class="type-02">
+									<select required name="typeB" id="typeB" class="type-02 w-120">
 										<option value="" selected>선택</option>
 										<option value="">옵션1</option>
 										<option value="">옵션2</option>
@@ -58,13 +59,27 @@
 								</div>
 								<!-- //form__input__set -->
 								<div class="form__input__set">
-									<label for="typeC">이름</label>
-									<input type="text" id="typeC" placeholder="입력해주세요">
+									<label for="typeC">계정상태</label>
+									<select required name="typeC" id="typeC" class="type-02 w-120">
+										<option value="" selected>선택</option>
+										<option value="">옵션1</option>
+										<option value="">옵션2</option>
+									</select>
 								</div>
 								<!-- //form__input__set -->
 								<div class="form__input__set">
-									<label for="typeD">모델</label>
-									<input type="text" id="typeD" placeholder="입력해주세요">
+									<label for="typeD">ID</label>
+									<input type="text" id="typeD" placeholder="입력해주세요" class="w-120">
+								</div>
+								<!-- //form__input__set -->
+								<div class="form__input__set">
+									<label for="typeE">이름</label>
+									<input type="text" id="typeE" placeholder="입력해주세요" class="w-120">
+								</div>
+								<!-- //form__input__set -->
+								<div class="form__input__set" style="width:190px;">
+									<label for="typeF">소속</label>
+									<input type="text" id="typeF" placeholder="입력해주세요" class="w-120">
 								</div>
 								<!-- //form__input__set -->
 							</div>
@@ -79,12 +94,6 @@
 
 					<div class="board__util">
 						<div class="board__util__total"><strong>총</strong><em>80건</em></div>
-						<!-- <div class="board__util__sort">
-							<select name="" id="">
-								<option value="">15개씩 보기</option>
-								<option value="">30개씩 보기</option>
-							</select>
-						</div> -->
 					</div>
 					<!-- //board__util -->
 
@@ -129,7 +138,7 @@
 								<tr>
 									<td class="align__center"><input type="checkbox"></td>
 									<td class="align__center">hong</td>
-									<td class="align__center">홍길동</td>
+									<td class="align__center"><a href="view_02.html">홍길동</a></td>
 									<td>운영자</td>
 									<td>감염병 관리과</td>
 									<td>주무관</td>
@@ -141,7 +150,7 @@
 								<tr>
 									<td class="align__center"><input type="checkbox"></td>
 									<td class="align__center">hong</td>
-									<td class="align__center">홍길동</td>
+									<td class="align__center"><a href="view_02.html">홍길동</a></td>
 									<td>시스템 관리자</td>
 									<td>감염병 관리과</td>
 									<td>주무관</td>
