@@ -1,7 +1,3 @@
-$(window).on('scroll', function(){
-
-});
-
 $(function(){
 	fileInclude();	// File Include
 	navAction();	// Nav
@@ -9,10 +5,6 @@ $(function(){
 	tabs();			// Tab
 	addFile();
 	addFileImg();
-
-	$(window).resize(function(){
-
-	}).resize();
 });
 
 /* File Include */

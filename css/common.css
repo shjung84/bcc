@@ -304,7 +304,7 @@ h2, h3, h4, h5, strong, b {font-family:'NanumGothic'; font-weight:700;}
 
 /* board__title */
 .board__title {margin:20px 0 15px; font-size:14px;}
-.board__title:first-child {margin-top:-5px; /* margin-top:10px; */}
+.board__title:first-child {margin-top:-5px;}
 .board__title strong {position:relative; padding-left:17px; color:#3a3838;}
 .board__title strong:before {content:''; position:absolute; top:50%; left:0; width:6px; height:6px; margin-top:-2px; background:#f3802d;}
 .board__title span {margin-left:5px;}

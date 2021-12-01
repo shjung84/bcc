@@ -49,7 +49,6 @@ select:focus {border-color:#0f56b3;}
 .input__chk i:before,
 .input__chk i:after {content:''; position:absolute; box-sizing:border-box;}
 .input__chk i:before {top:0; left:0; width:12px; height:12px; border:2px solid #dfe1e6; background:#fafbfc; border-radius:2px;}
-.input__chk input:checked + i:before {}
 .input__chk input:checked + i:after {top:0px; left:1px; width:13px; height:5px; border-width:0 0 2px 2px; border-style:solid; border-color:#0f56b3; transform:rotate(-45deg);}
 
 /* input__radio */
@@ -234,7 +233,6 @@ select:focus {border-color:#0f56b3;}
 .board__view-info table td:last-child {border-right-width:1px;}
 .board__view-info .align__top {padding-top:12px; vertical-align:top;}
 .board__view-info.type-02 table {height:240px;}
-
 
 /* board__check */
 .board__check table {border:1px solid #ebeaea; background:#fff;}

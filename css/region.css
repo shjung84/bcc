@@ -4,7 +4,7 @@ body {min-width:320px; width:100%;}
 .header__region {position:relative; z-index:2; padding:40px 0 0; height:120px; background:#fff;}
 .header__title {display:none;}
 @media screen and (max-width:1024px){
-	.header__region {height:50px; padding:0; background:#fcc; overflow:hidden;}
+	.header__region {overflow:hidden; height:50px; padding:0;}
 	.header__inner {height:50px;}
 	.header__title {display:block; position:relative; top:12px; text-align:center; font-weight:800; font-size:15px;}
 	.header__util {display:none;}

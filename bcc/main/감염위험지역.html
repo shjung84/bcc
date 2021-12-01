@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html xml:lang="ko" lang="ko">
+<head>
+<title>부천시 지능형 역학 시스템</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../css/main.css" />
+<script src="../../js/jquery-3.6.0.js"></script>
+<script defer src="../../js/main.js"></script>
+</head>
+<body>
+<div class="wrapper">
+
+	<header class="header__main">
+		<div class="header__main__inner">
+			<h1 class="header__main--logo"><img src="../../images/main/logo.png" alt="부천시 - 판타지아 부천"></h1>
+			<h2 class="header__main--title">감염위험지역</h2>
+			<a href="javascript:void(0);" class="btn__gnb">GNB</a>
+		</div>
+		<!-- //Header__inner -->
+
+		<div class="gnb">
+			<h2>자가진단 웹 서비스</h2>
+			<ul class="gnb__list">
+				<li class="gnb__item gnb--current"><a href="" class="gnb__link">감염위험 지역</a></li>
+				<li class="gnb__item"><a href="" class="gnb__link">감염위험 측정</a></li>
+				<li class="gnb__item"><a href="" class="gnb__link">유용한 코로나 관련 정보</a></li>
+				<li class="gnb__item"><a href="" class="gnb__link">개인정보 및 동선정보 동의</a></li>
+			</ul>
+			<!-- //gnb__list -->
+		</div>
+		<!-- //gnb -->
+
+	</header>
+	<!-- //Header -->
+
+	<div class="container__main">
+
+		<div class="board-wrap">
+
+			<div class="board__title type-02">
+				<strong>동선 정보 입력</strong>
+			</div>
+			<!-- //board__title -->
+
+			<div class="board__reg">
+				<table>
+					<caption>상세보기</caption>
+					<colgroup>
+						<col style="width:370px;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"><label for="typeA"></label>일시</th>
+							<td><input type="text" id="typeA" placeholder="입력해주세요." value="2021.07.15 ~ 2021.08.01"></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="typeB">장소명</label></th>
+							<td><input type="text" id="typeB" placeholder="입력해주세요." value="김밥천국"></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="typeB">주소</label></th>
+							<td><input type="text" id="typeB" placeholder="입력해주세요." value="부천시  부천로 137번길 1"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- //board__view -->
+
+			<div class="board__btn type-03">
+				<div class="board__btn__right">
+					<button class="btn__default btn--normal">동선추가</button>
+				</div>
+				<!-- //board__btn__right -->
+			</div>
+			<!-- //board__btn -->
+
+		</div>
+		<!-- //board-wrap -->
+
+		<div class="board-wrap board__sec">
+
+			<div class="board__title type-02">
+				<strong>나의 동선 정보</strong>
+			</div>
+			<!-- //board__title -->
+
+			<div class="board__list">
+				<table>
+					<caption>접촉자 정보 목록</caption>
+					<colgroup>
+						<col style="width:19%;">
+						<col style="width:19%;">
+						<col style="width:19%;">
+						<col>
+						<col style="width:60px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">일자</th>
+							<th scope="col">시간</th>
+							<th scope="col">장소명</th>
+							<th scope="col" colspan="2">주소</th>
+						</tr>
+					<tbody>
+						<tr>
+							<td>2020-07-13</td>
+							<td>17:10</td>
+							<td>김밥천국</td>
+							<td>부천시  부천로 137번길 1</td>
+							<td><button class="btn__small">삭제</button></td>
+						</tr>
+						<tr>
+							<td>2020-07-13</td>
+							<td>17:10</td>
+							<td>김밥천국</td>
+							<td>부천시  부천로 137번길 1</td>
+							<td><button class="btn__small">삭제</button></td>
+						</tr>
+						<tr>
+							<td>2020-07-13</td>
+							<td>17:10</td>
+							<td>김밥천국</td>
+							<td>부천시  부천로 137번길 1</td>
+							<td><button class="btn__small">삭제</button></td>
+						</tr>
+						<tr>
+							<td>2020-07-13</td>
+							<td>17:10</td>
+							<td>김밥천국</td>
+							<td>부천시  부천로 137번길 1</td>
+							<td><button class="btn__small">삭제</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- //board__list -->
+
+		</div>
+		<!-- //board-wrap -->
+
+		<div class="board__btn type-03">
+			<button class="btn__big">위험도 체크하기</button>
+		</div>
+		<!-- //board__btn -->
+
+	</div>
+	<!-- //container -->
+
+</div>
+<!-- //wrapper -->
+</body>
+</html>
