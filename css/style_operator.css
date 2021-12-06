@@ -74,7 +74,6 @@ select:focus {border-color:#0f56b3;}
 .input__radio__big i:before {top:0; left:0; width:24px; height:24px; border:1px solid #d1d1d1; background:#f6f6f6;}
 .input__radio__big input:checked + i:after {top:calc(50% - 9px); left:calc(50% - 9px); width:18px; height:18px; border:1px solid #b98d59; background:#fb8832;}
 
-
 /*form__chk__set */
 .form__chk__set span {font-weight:700; font-size:12px; vertical-align:middle;}
 .form__chk__set label {display:inline-block; margin-left:50px; text-align:left;}
@@ -211,7 +210,6 @@ select:focus {border-color:#0f56b3;}
 
 /* board__photo */
 .board__photo {float:left; position:relative;}
-/* .board__photo {position:absolute; top:11px; left:14px;} */
 .board__photo p {overflow:hidden; width:184px; height:240px; border:1px solid #d9d9d9; background:#f7f9fa url(../images/contents/bg_photo.png) no-repeat 50% 50%;}
 .board__photo p img {width:100%; height:100%; max-width:182px; max-height:242px;}
 .board__photo .btns {margin-top:4px; font-size:0;}
@@ -352,7 +350,6 @@ select:focus {border-color:#0f56b3;}
 .pop__board__reg.type-02 table th {padding:5px; color:#000; text-align:center; font-size:12px;}
 .pop__board__reg.type-02 table td {padding:5px; font-size:12px;}
 .pop__board__reg.type-02 table td input[type=text] {width:330px;}
-
 
 .pop__board__view {position:relative;}
 .pop__board__view table {border-bottom:1px solid #b5b5b5; background:#fff; font-size:18px;}

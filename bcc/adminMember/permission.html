@@ -34,147 +34,212 @@
 				<h3 class="hide">사용자관리</h3>
 				<h4 class="hide">메뉴 권한 설정</h4>
 
-				<div class="board-wrap">
+				<div class="board-wrap bg__gray">
 
 					<div class="board__title">
 						<strong>역학조사관 메뉴 관리</strong>
 					</div>
 					<!-- //board__title -->
 
-					<div class="manage__list-wrap">
-						<div class="manage__list-left">
+					<div class="manage-wrap">
+						<div class="manage__list-wrap">
 							<div class="manage__title"><strong>역학조사관 Web 제공 메뉴</strong></div>
-							<ul class="manage__list">
-								<li>
-									<div class="input__chk__small">
-										<label>
-											<input type="checkbox"><i></i>
-											<span>확진자 조회</span>
-										</label>
-									</div>
-									<!-- //input__chk__small -->
-								</li>
-								<li>
-									<div class="input__chk__small">
-										<label>
-											<input type="checkbox" disabled="disabled"><i></i>
-											<span>확진자 등록</span>
-										</label>
-									</div>
-									<!-- //input__chk__small -->
-								</li>
-								<li>
-									<div class="input__chk__small">
-										<label>
-											<input type="checkbox" checked="checked"><i></i>
-											<span>자가격리 종료 대상</span>
-										</label>
-									</div>
-									<!-- //input__chk__small -->
-								</li>
-								<li>
-									<div class="input__chk__small">
-										<label>
-											<input type="checkbox"><i></i>
-											<span>접촉자 조회</span>
-										</label>
-									</div>
-									<!-- //input__chk__small -->
-								</li>
-								<li>
-									<div class="input__chk__small">
-										<label>
-											<input type="checkbox"><i></i>
-											<span>감염위험지역 정보</span>
-										</label>
-									</div>
-									<!-- //input__chk__small -->
-								</li>
-								<li>
-									<div class="input__chk__small">
-										<label>
-											<input type="checkbox"><i></i>
-											<span>신규 감염자 예측</span>
-										</label>
-									</div>
-									<!-- //input__chk__small -->
-								</li>
-								<li>
-									<div class="input__chk__small">
-										<label>
-											<input type="checkbox"><i></i>
-											<span>감염지역정보 확산정보</span>
-										</label>
-									</div>
-									<!-- //input__chk__small -->
-								</li>
-								<li>
-									<div class="input__chk__small">
-										<label>
-											<input type="checkbox"><i></i>
-											<span>감염 등록 통계</span>
-										</label>
-									</div>
-									<!-- //input__chk__small -->
-								</li>
-								<li>
-									<div class="input__chk__small">
-										<label>
-											<input type="checkbox"><i></i>
-											<span>CCTV 범위 설정</span>
-										</label>
-									</div>
-									<!-- //input__chk__small -->
-								</li>
-								<li>
-									<div class="input__chk__small">
-										<label>
-											<input type="checkbox"><i></i>
-											<span>삭제 기간 설정</span>
-										</label>
-									</div>
-									<!-- //input__chk__small -->
-								</li>
-								<li>
-									<div class="input__chk__small">
-										<label>
-											<input type="checkbox"><i></i>
-											<span>사용자 작업이력</span>
-										</label>
-									</div>
-									<!-- //input__chk__small -->
-								</li>
-							</ul>
+							<div class="manage__list">
+								<table>
+									<caption>역학조사관 Web 제공 메뉴</caption>
+									<colgroup>
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">역학조사관</th>
+											<th scope="col">ID</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>김검사</td>
+											<td>ID1234</td>
+										</tr>
+										<tr>
+											<td>김검사</td>
+											<td>ID1234</td>
+										</tr>
+										<tr>
+											<td>김검사</td>
+											<td>ID1234</td>
+										</tr>
+										<tr>
+											<td>김검사</td>
+											<td>ID1234</td>
+										</tr>
+										<tr>
+											<td>김검사</td>
+											<td>ID1234</td>
+										</tr>
+										<tr>
+											<td>김검사</td>
+											<td>ID1234</td>
+										</tr>
+										<tr>
+											<td>김검사</td>
+											<td>ID1234</td>
+										</tr>
+										<tr>
+											<td>김검사</td>
+											<td>ID1234</td>
+										</tr>
+										<tr>
+											<td>김검사</td>
+											<td>ID1234</td>
+										</tr>
+										<tr>
+											<td>김검사</td>
+											<td>ID1234</td>
+										</tr>
+										<tr>
+											<td>김조사관</td>
+											<td>ID1234</td>
+										</tr>
+										<tr>
+											<td>김조사관</td>
+											<td>ID1234</td>
+										</tr>
+										<tr>
+											<td>김조사관</td>
+											<td>ID1234</td>
+										</tr>
+										<tr>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 							<!-- //manage__list -->
 						</div>
-						<!-- //manage__list-left -->
+						<!-- //manage__list-wrap -->
 
-						<div class="manage__btn__box">
-							<button class="btn__system btn--exception"><i></i>제외</button>
-							<button class="btn__system btn--add">추가<i></i></button>
+						<div class="manage__list-wrap">
+							<div class="manage__title"><strong>어떤 타이틀을 넣어야할지?</strong></div>
+							<div class="manage__list-02">
+								<dl class="manage__group">
+									<dt>대메뉴</dt>
+									<dd>
+										<div class="input__chk__manage">
+											<label>
+												<input type="checkbox" checked="checked"><i></i>
+												<span>서브메뉴</span>
+											</label>
+										</div>
+										<!-- //input__chk__manage -->
+										<div class="input__chk__manage">
+											<label>
+												<input type="checkbox"><i></i>
+												<span>서브메뉴</span>
+											</label>
+										</div>
+										<!-- //input__chk__manage -->
+										<div class="input__chk__manage">
+											<label>
+												<input type="checkbox" checked="checked"><i></i>
+												<span>서브메뉴</span>
+											</label>
+										</div>
+										<!-- //input__chk__manage -->
+									</dd>
+								</dl>
+								<!-- //manage__group -->
+								<dl class="manage__group">
+									<dt>대메뉴</dt>
+									<dd>
+										<div class="input__chk__manage">
+											<label>
+												<input type="checkbox" checked="checked"><i></i>
+												<span>서브메뉴</span>
+											</label>
+										</div>
+										<!-- //input__chk__manage -->
+										<div class="input__chk__manage">
+											<label>
+												<input type="checkbox"><i></i>
+												<span>서브메뉴</span>
+											</label>
+										</div>
+										<!-- //input__chk__manage -->
+										<div class="input__chk__manage">
+											<label>
+												<input type="checkbox" checked="checked"><i></i>
+												<span>서브메뉴</span>
+											</label>
+										</div>
+										<!-- //input__chk__manage -->
+									</dd>
+								</dl>
+								<!-- //manage__group -->
+								<dl class="manage__group">
+									<dt>대메뉴</dt>
+									<dd>
+										<div class="input__chk__manage">
+											<label>
+												<input type="checkbox" checked="checked"><i></i>
+												<span>서브메뉴</span>
+											</label>
+										</div>
+										<!-- //input__chk__manage -->
+										<div class="input__chk__manage">
+											<label>
+												<input type="checkbox"><i></i>
+												<span>서브메뉴</span>
+											</label>
+										</div>
+										<!-- //input__chk__manage -->
+										<div class="input__chk__manage">
+											<label>
+												<input type="checkbox" checked="checked"><i></i>
+												<span>서브메뉴</span>
+											</label>
+										</div>
+										<!-- //input__chk__manage -->
+									</dd>
+								</dl>
+								<!-- //manage__group -->
+								<dl class="manage__group">
+									<dt>대메뉴</dt>
+									<dd>
+										<div class="input__chk__manage">
+											<label>
+												<input type="checkbox" checked="checked"><i></i>
+												<span>서브메뉴</span>
+											</label>
+										</div>
+										<!-- //input__chk__manage -->
+										<div class="input__chk__manage">
+											<label>
+												<input type="checkbox"><i></i>
+												<span>서브메뉴</span>
+											</label>
+										</div>
+										<!-- //input__chk__manage -->
+										<div class="input__chk__manage">
+											<label>
+												<input type="checkbox" checked="checked"><i></i>
+												<span>서브메뉴</span>
+											</label>
+										</div>
+										<!-- //input__chk__manage -->
+									</dd>
+								</dl>
+								<!-- //manage__group -->
+
+							</div>
+							<!-- //manage__list-02 -->
 						</div>
-						<!-- //btn__box -->
-
-						<div class="manage__list-right">
-							<div class="manage__title"><strong>역학조사관 Web 제외 메뉴</strong></div>
-							<ul class="manage__list">
-								<li>
-									<div class="input__chk__small">
-										<label>
-											<input type="checkbox"><i></i>
-											<span>확진자 조회</span>
-										</label>
-									</div>
-									<!-- //input__chk__small -->
-								</li>
-							</ul>
-							<!-- //manage__list -->
-
-						</div>
-						<!-- //manage__list-right -->
+						<!-- //manage__list-wrap -->
 
 					</div>
-					<!-- //manage__list-wrap -->
+					<!-- //manage-wrap -->
 
 				</div>
 				<!-- //board-wrap -->

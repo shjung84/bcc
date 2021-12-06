@@ -269,7 +269,6 @@ h2, h3, h4, h5, strong, b {font-family:'NanumGothic'; font-weight:700;}
 .input__set__select {font-size:0;}
 .input__set__select * {vertical-align:middle;}
 .input__set__select label {margin-right:15px; font-weight:700; font-size:12px;  line-height:30px;}
-.input__set__select select {}
 
 /* input__set__date-time */
 .input__set__date-time {position:relative; font-size:0;}
@@ -327,6 +326,7 @@ h2, h3, h4, h5, strong, b {font-family:'NanumGothic'; font-weight:700;}
 .board__btn.type-05 {margin-top:0; margin-bottom:10px;}
 .board__btn__left {float:left;}
 .board__btn__right {float:right;}
+.board__top .board__btn {margin:20px 0 0;}
 
 /* board__bot */
 .board__bot {position:relative; margin-top:20px;}
