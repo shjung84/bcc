@@ -17,7 +17,7 @@
 
 		<div class="header__main__inner">
 			<h1 class="header__main--logo"><img src="../../images/main/logo.png" alt="부천시 - 판타지아 부천"></h1>
-			<h2 class="header__main--title">감염위험지역</h2>
+			<h2 class="header__main--title">감염지역 확산정보</h2>
 			<a href="javascript:void(0);" class="btn__gnb">GNB</a>
 		</div>
 		<!-- //Header__inner -->
@@ -39,7 +39,7 @@
 	</header>
 	<!-- //Header -->
 
-	<div class="area__maps">
+	<div class="area__maps type-full">
 		<div class="maps">
 
 			<!-- 삭제 -->
@@ -88,92 +88,71 @@
 
 		</div>
 		<!-- //maps -->
-
 	</div>
 	<!-- //area__maps -->
 
-	<div class="container__main type-02">
+	<div class="form__date-sort">
+		<form>
+			<input type="hidden">
+			<fieldset>
+				<legend>검색</legend>
+				<div class="form__date-sort_inner">
 
-		<div class="form__search-02">
-			<form>
-				<input type="hidden">
-				<fieldset>
-					<legend>검색</legend>
-					<div class="form__search_inner">
-						<div class="form__input__set type-02">
-							<label for="typeA-001">조회기간</label>
-							<div class="form__input__date type-02">
-								<p class="form__inp"><input type="text" id="typeA-001" value=""><button class="btn__cal">달력</button></p>
-								<span class="form__bar">-</span>
-								<p class="form__inp"><input type="text" id="typeA-002" value=""><button class="btn__cal">달력</button></p>
-							</div>
-						</div>
-						<!-- //form__input__set -->
-						<button class="form__btn__search btn--normal">조회</button>
+					<div class="form__sort-txt">
+						<label>
+							<input type="radio" name="typeA"><span>현재</span>
+						</label>
 					</div>
-					<!-- //form__search_inner -->
-				</fieldset>
-			</form>
-		</div>
-		<!-- //form__search-02 -->
+					<!-- //form__sort-txt -->
 
-		<div class="board-wrap type-02">
-			<div class="board__list-02">
-				<table>
-					<caption>접촉자 정보 목록</caption>
-					<colgroup>
-						<col style="width:16.522%;">
-						<col style="width:16.609%;">
-						<col style="width:33.13%;">
-						<col style="width:8.217%;">
-						<col style="width:25.521%;">
-					</colgroup>
-					<thead>
-						<tr>
-							<th scope="col">위험 시작일</th>
-							<th scope="col">위험종료일</th>
-							<th scope="col">명칭(주소)</th>
-							<th scope="col">위험<span>등급</span></th>
-							<th scope="col">위험원인</th>
-						</tr>
-					<tbody>
-						<tr>
-							<td>2020-07-13</td>
-							<td>17:10</td>
-							<td>김밥천국<br>부천시  부천로 137번길 1</td>
-							<td>1</td>
-							<td>확진자노출</td>
-						</tr>
-						<tr>
-							<td>2020-07-13</td>
-							<td>17:10</td>
-							<td>김밥천국<br>부천시  부천로 137번길 1</td>
-							<td>2</td>
-							<td>방지 가이드 위반<br>(마스크 미착용)</td>
-						</tr>
-						<tr>
-							<td>2020-07-13</td>
-							<td>17:10</td>
-							<td>ABC 당구장<br>(부천시  부천로 137번길 1)</td>
-							<td>3</td>
-							<td>확진자노출,밀집</td>
-						</tr>
-						<tr>
-							<td>2020-07-13</td>
-							<td>17:10</td>
-							<td>ABC 당구장<br>(부천시  부천로 137번길 1)</td>
-							<td>3</td>
-							<td>확진자노출,밀집</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<!-- //board__list -->
-		</div>
-		<!-- //board-wrap -->
+					<div class="form__sort-txt">
+						<label>
+							<input type="radio" name="typeA" checked="checked"><span>+1일</span>
+						</label>
+					</div>
+					<!-- //form__sort-txt -->
 
+					<div class="form__sort-txt">
+						<label>
+							<input type="radio" name="typeA"><span>+2일</span>
+						</label>
+					</div>
+					<!-- //form__sort-txt -->
+
+					<div class="form__sort-txt">
+						<label>
+							<input type="radio" name="typeA"><span>+3일</span>
+						</label>
+					</div>
+					<!-- //form__sort-txt -->
+
+					<div class="form__sort-txt">
+						<label>
+							<input type="radio" name="typeA"><span>+4일</span>
+						</label>
+					</div>
+					<!-- //form__sort-txt -->
+
+					<div class="form__sort-txt">
+						<label>
+							<input type="radio" name="typeA"><span>+5일</span>
+						</label>
+					</div>
+					<!-- //form__sort-txt -->
+
+					<div class="form__sort-txt">
+						<label>
+							<input type="radio" name="typeA"><span>+6일</span>
+						</label>
+					</div>
+					<!-- //form__sort-txt -->
+
+				</div>
+				<!-- //form__search_inner -->
+			</fieldset>
+		</form>
 	</div>
-	<!-- //container -->
+	<!-- //form__date-sort -->
 
 </div>
 <!-- //wrapper -->
