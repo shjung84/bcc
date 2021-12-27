@@ -36,6 +36,17 @@ a:focus {text-decoration:none;}
 table {width:100%; border-collapse:separate; border-spacing:0; table-layout:fixed;}
 table th {font-weight:700; font-size:14px;}
 table td {font-size:13px;}
+table caption {
+	overflow:hidden !important;
+	position:relative;
+	width:1px !important;
+	height:1px !important;
+	padding:0 !important;
+	margin:-1px !important;
+	border:0 !important;
+	clip:rect(0,0,0,0) !important;
+	white-space:nowrap !important;
+}
 
 /* Tag all font-size set */
 em,span { font-family:inherit; color:inherit; font-size:inherit; line-height:inherit;}
@@ -47,18 +58,19 @@ input[type=text],
 input[type=password] {width:100%; padding:0 12px; border:1px solid #c4c4c4; vertical-align:middle; font-weight:300; font-size:13px; font-family:'NanumGothic';}
 input[type=checkbox] {margin-right:10px;}
 input[type=radio] {margin-right:10px;}
+select {width:100%; padding:0 30px 0 12px; border:1px solid #c4c4c4; background-color:#fff; background-repeat:no-repeat; background-position:100% 50%; vertical-align:middle; font-weight:300; font-size:13px; font-family:'NanumGothic'; -webkit-appearance:none; -moz-appearance:none; appearance:none;}
+select::-ms-expand {display:none;}
+button {padding-bottom:2px; border:0; color:#000; vertical-align:middle; font-size:14px; font-family:'NanumGothic'; cursor:pointer;}
+button:disabled {cursor:default;}
+
 input:focus,
 select:focus,
 option:focus,
 textarea:focus,
-button:focus {outline:none;}
+button:focus {/* outline:none; */} /* 21-12-27 : 웹접근성 */
 
-select {width:100%; padding:0 30px 0 12px; border:1px solid #c4c4c4; background-color:#fff; background-repeat:no-repeat; background-position:100% 50%; vertical-align:middle; font-weight:300; font-size:13px; font-family:'NanumGothic'; -webkit-appearance:none; -moz-appearance:none; appearance:none;}
-select::-ms-expand {display:none;}
 
-button {padding-bottom:2px; border:0; color:#000; vertical-align:middle; font-size:14px; font-family:'NanumGothic'; cursor:pointer;}
-button:disabled {cursor:default;}
-hr, caption {display:none;}
+hr {display:none;}
 address,cite,em {font-style:normal;}
 fieldset {border:0; padding:0;}
 legend {overflow:hidden; position:absolute; height:0; text-indent:-999999px; font-size:0px; line-height:0;}
