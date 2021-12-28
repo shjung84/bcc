@@ -146,15 +146,15 @@ select.type-03 {padding:0 30px 0 12px; background-image:url(../images/common/bg_
 
 /* button color */
 .btn--normal {background:#445767;}
-.btn--normal:active {background:#f3802d;}
+.btn--normal:active {background:#943e00;}
 .btn--normal[disabled] {color:#cecece;}
 
 .btn--normal-02 {background:#445767; font-size:11px;}
-.btn--normal-02:active {background:#f3802d;}
+.btn--normal-02:active {background:#943e00;}
 .btn--normal-02[disabled] {color:#cecece;}
 
 .btn--white {border:1px solid #445767; background:#fff; color:#445767; font-size:11px;}
-.btn--white:active {border-color:#f3802d; background:#f3802d; color:#fff;}
+.btn--white:active {border-color:#943e00; background:#943e00; color:#fff;}
 .btn--white[disabled] {color:#cecece;}
 
 .btn--navy {background:#0f56b3; font-size:11px;}
@@ -166,7 +166,7 @@ select.type-03 {padding:0 30px 0 12px; background-image:url(../images/common/bg_
 .btn--blue[disabled] {border:1px solid #8f9193; background:#fff; color:#8f9193;}
 
 .btn--gray {background:#666464;}
-.btn--gray:active {background:#f3802d;}
+.btn--gray:active {background:#943e00;}
 .btn--gray[disabled] {color:#cecece;}
 
 .btn--green {background:#35a1a1;}
@@ -189,7 +189,7 @@ select.type-03 {padding:0 30px 0 12px; background-image:url(../images/common/bg_
 .board__list table tbody td:first-child {border-left:0;}
 .board__list table thead th.type__location-01 {height:25px; border-width:0 0 1px 1px;}
 .board__list table thead th.type__location-02 {height:25px; border-left:1px solid #c8c8c8;}
-.board__list table tbody td a:hover {color:#f3802d; font-weight:700;}
+.board__list table tbody td a:hover {color:#943e00; font-weight:700;}
 
 /* board__reg */
 .board__reg {position:relative;}

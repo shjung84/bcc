@@ -140,11 +140,11 @@ select:focus {border-color:#0f56b3;}
 
 /* button color */
 .btn--normal {background:#445767;}
-.btn--normal:active {background:#f3802d;}
+.btn--normal:active {background:#943e00;}
 .btn--normal[disabled] {color:#cecece;}
 
 .btn--white {border:1px solid #445767; background:#fff; color:#445767; line-height:28px;}
-.btn--white:active {border-color:#f3802d; background:#f3802d; color:#fff;}
+.btn--white:active {border-color:#943e00; background:#943e00; color:#fff;}
 .btn--white[disabled] {color:#cecece;}
 
 .btn--navy {background:#0f56b3; font-size:11px;}
@@ -156,7 +156,7 @@ select:focus {border-color:#0f56b3;}
 .btn--blue[disabled] {border:1px solid #8f9193; background:#fff; color:#8f9193;}
 
 .btn--white-gray {border:1px solid #8f9193; background:#fff; color:#8f9193; font-size:11px;}
-.btn--white-gray:active {border-color:#f3802d; background:#f3802d; color:#fff;}
+.btn--white-gray:active {border-color:#943e00; background:#943e00; color:#fff;}
 .btn--white-gray[disabled] {color:#cecece;}
 
 .btn--cctv {background-image:url(../images/btn/btn_path_cctv.png);}
@@ -165,8 +165,6 @@ select:focus {border-color:#0f56b3;}
 .btn__excel {height:25px; padding:2px 7px 2px 25px; background:#35a1a1 url(../images/btn/btn_excel.png) no-repeat 6px 50%; color:#fff; font-weight:700; font-size:10px; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;}
 .btn__excel.h-30 {height:30px;}
 .btn__excel:active {background-color:#1c7878;}
-
-.btn__zipcode {width:110px; height:30px; padding-left:30px; background:#4c4c4d url(../images/btn/btn_zip.png) no-repeat 7px 45%; color:#fff; text-align:left; font-weight:800; font-size:11px; line-height:30px; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;}
 
 
 /* BOARD */
@@ -249,8 +247,8 @@ select:focus {border-color:#0f56b3;}
 .tabs__btn:before {content:''; position:absolute; top:0; right:0; bottom:0; left:0; z-index:1; border:1px solid #d5d5d5;}
 .tabs__btn:after {content:''; position:absolute; right:0; bottom:0; left:0; z-index:2; border-bottom:4px solid transparent;}
 .tabs__btn:first-child {margin-left:0;}
-.tabs__btn.tabs--active {background:#fff; color:#f3802d; font-weight:700;}
-.tabs__btn.tabs--active:after {background-color:#f3802d;}
+.tabs__btn.tabs--active {background:#fff; color:#943e00; font-weight:700;}
+.tabs__btn.tabs--active:after {background-color:#943e00;}
 .tabs__contents {display:none; margin-top:15px;}
 .tabs__contents.tabs--active {display:block;}
 
@@ -282,12 +280,12 @@ select:focus {border-color:#0f56b3;}
 .btn__switch + label i {position:absolute; top:-4px; left:0; z-index:1; width:16px; height:16px; background-color:#666464; box-shadow:0px 2px 2px rgba(0, 0, 0, 0.25); border-radius:50%; transition:ease 0.1s}
 .btn__switch + label span {display:none; position:absolute; bottom:100%; right:0; z-index:2; height:20px; margin:0 -10px 3px 0; padding:0 7px; background:rgba(0, 0, 0, 0.7); color:#fff; white-space:nowrap; font-size:12px; line-height:20px; box-shadow:0px 4px 3px rgba(0, 0, 0, 0.15); border-radius:5px;}
 .btn__switch + label:hover span {display:block;}
-.btn__switch:checked + label i {left:12px; background-color:#f3802d;}
+.btn__switch:checked + label i {left:12px; background-color:#943e00;}
 
 /* 분석전 */
 .analysis--before dl {color:#3A3838;}
 .analysis--before dt:before {background:#35a1a1;}
-.analysis--before dd button {background-color:#f3802d;}
+.analysis--before dd button {background-color:#943e00;}
 .analysis--before dl .date {color:#666464;}
 
 /* 분석후 */
@@ -296,18 +294,18 @@ select:focus {border-color:#0f56b3;}
 
 .btn__switch:checked ~ dl {color:#3A3838;}
 .btn__switch:checked ~ dl dt:before {background-color:#35a1a1;}
-.btn__switch:checked ~ dl button {background-color:#f3802d;}
+.btn__switch:checked ~ dl button {background-color:#943e00;}
 .btn__switch:checked ~ dl .date {color:#666464;}
-.state__cctv-normal .btn__switch:checked ~ dl dt:before {background-color:#f3802d;}
+.state__cctv-normal .btn__switch:checked ~ dl dt:before {background-color:#943e00;}
 .state__cctv-private .btn__switch:checked ~ dl dt:before {background-color:#1d7ec7;}
 
 /* 접촉자 이동동선 */
 .contact-info dl {color:#3A3838;}
 .contact-info dt:before {background-image:url(../images/btn/btn_path_cctv.png);}
-.contact-info dd button {background-color:#f3802d;}
+.contact-info dd button {background-color:#943e00;}
 .contact-info dl .date {color:#666464;}
 
-.contact-info .state__cctv-normal dl dt:before {background-color:#f3802d;}
+.contact-info .state__cctv-normal dl dt:before {background-color:#943e00;}
 .contact-info .state__cctv-private dl dt:before {background-color:#1d7ec7;}
 
 /* 감염위험 */

@@ -15,11 +15,13 @@
 
 	<div class="signup">
 		<h1 class="signup-title">
-			<p class="txt-01">
+			<!-- S: 21-12-27 : 웹접근성 : 수정 -->
+			<em class="txt-01">
 				<span>COVID19 CCTV</span>
 				<strong>MONITORING SYSTEM</strong>
-			</p>
-			<p class="txt-02">코로나 자가진단 회원가입</p>
+			</em>
+			<em class="txt-02">코로나 자가진단 회원가입</em>
+			<!-- E: 21-12-27 : 웹접근성 : 수정 -->
 		</h1>
 		<!-- //signup-title -->
 
@@ -71,9 +73,11 @@
 					<div class="input__set">
 						<label for="typeE">생년월일</label>
 						<div class="input__box input--birthday">
-							<span class="input"><input type="text" name="" id="typeE" placeholder="" value=""></span>
-							<span class="input"><input type="text" name="" id="typeE-002" placeholder="" value=""></span>
-							<span class="input"><input type="text" name="" id="typeE-003" placeholder="" value=""></span>
+							<!-- S: 21-12-27 : 웹접근성 : 수정 -->
+							<span class="input"><input type="text" name="" id="typeE" placeholder="" value="" title="생년월일 년도 입력"></span>
+							<span class="input"><input type="text" name="" id="typeE-002" placeholder="" value="" title="생년월일 월 입력"></span>
+							<span class="input"><input type="text" name="" id="typeE-003" placeholder="" value="" title="생년월일 일 입력"></span>
+							<!-- E: 21-12-27 : 웹접근성 : 수정 -->
 						</div>
 						<!-- //input__box -->
 					</div>
@@ -93,14 +97,18 @@
 						<label for="typeF-002">휴대전화</label>
 						<div class="input__box__wrap">
 							<div class="input__box input--with--btn ">
-								<span class="input"><input type="text" name="" id="typeF-002" placeholder="" value="01045552456"></span>
+								<!-- S: 21-12-27 : 웹접근성 : 수정 -->
+								<span class="input"><input type="text" name="" id="typeF-002" placeholder="" value="01045552456" readonly="readonly"></span>
+								<!-- E: 21-12-27 : 웹접근성 : 수정 -->
 								<button class="btn__number btn--gray">재전송</button>
 							</div>
 							<!-- //input__box -->
 
 							<!-- 경고메시지 : caution -->
 							<div class="input__box">
-								<span class="input"><input type="text" name="" id="typeF-003" placeholder="" value="12345"></span>
+								<!-- S: 21-12-27 : 웹접근성 : 수정 -->
+								<span class="input"><input type="text" name="" id="typeF-003" placeholder="" value="12345" title="인증번호 입력"></span>
+								<!-- E: 21-12-27 : 웹접근성 : 수정 -->
 								<div class="caution__txt">잘못된 인증번호 입니다.</div>
 							</div>
 							<!-- //input__box -->
@@ -114,8 +122,8 @@
 			<!-- //signup-form -->
 
 			<div class="btns">
-				<!-- <button class="btn__big-04" disabled="disabled">가입하기</button> -->
-				<button class="btn__big-04">가입하기</button>
+				<!-- <button class="btn__big-02" disabled="disabled">가입하기</button> -->
+				<button class="btn__big-02">가입하기</button><!-- 21-12-27 : 클래스변경 -->
 			</div>
 			<!-- //btns -->
 

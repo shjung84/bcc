@@ -73,8 +73,8 @@ table td.step-01:before {content:'퍼블 진행중';}
 table td.step-02:before {content:'디자인 검수요청';}
 table td.complete:before {content:'완료';}
 table td.modify:before {content:'수정중';}
-table td.complete.new:before {content:'NEW - 완료'; color:#f3802d; font-weight:800;}
-table td.update:before {content:'UPDATE - 완료';color:#f3802d; font-weight:800;}
+table td.complete.new:before {content:'NEW - 완료'; color:#943e00; font-weight:800;}
+table td.update:before {content:'UPDATE - 완료';color:#943e00; font-weight:800;}
 
 /* history */
 .history {position:relative;}

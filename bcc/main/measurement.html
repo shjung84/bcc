@@ -15,14 +15,18 @@
 
 	<header class="header__main">
 		<div class="header__main__inner">
-			<h1 class="header__main--logo"><img src="../../images/main/logo.png" alt="부천시 - 판타지아 부천"></h1>
+			<!-- S: 21-12-27 : 웹접근성 : 수정 -->
+			<h1 class="header__main--logo"><img srcset="../../images/main/logo@2x.png 2x" src="../../images/main/logo.png" alt="부천시 - 판타지아 부천"></h1>
+			<!-- E: 21-12-27 : 웹접근성 : 수정 -->
 			<h2 class="header__main--title">감염위험 측정</h2>
 			<a href="javascript:void(0);" class="btn__gnb">GNB</a>
 		</div>
 		<!-- //Header__inner -->
 
 		<div class="gnb">
-			<h2 class="gnb__title"><span>자가진단 웹 서비스</span></h2>
+			<!-- S: 21-12-27 : 웹접근성 : 수정 -->
+			<h2 class="gnb__title"><em><img srcset="../../images/main/logo_w@2x.png 2x" src="../../images/main/logo_w.png" alt="부천시 - 판타지아 부천"></em><span>자가진단 웹 서비스</span></h2>
+			<!-- E: 21-12-27 : 웹접근성 : 수정 -->
 			<ul class="gnb__list">
 				<li class="gnb__item"><a href="" class="gnb__link">감염위험 지역</a></li>
 				<li class="gnb__item gnb--current"><a href="" class="gnb__link">감염위험 측정</a></li>
@@ -48,27 +52,45 @@
 			<!-- //board__title -->
 
 			<div class="board__reg">
+				<!-- S: 21-12-27 : 웹접근성 : 수정 -->
 				<table>
-					<caption>상세보기</caption>
+					<caption>동선 정보 입력</caption>
 					<colgroup>
-						<col style="width:370px;">
+						<col style="width:20%;">
 						<col>
 					</colgroup>
 					<tbody>
 						<tr>
-							<th scope="row"><label for="typeA"></label>일시</th>
-							<td><input type="text" id="typeA" placeholder="입력해주세요." value="2021.07.15 ~ 2021.08.01"></td>
+							<th scope="row"><label for="yyyy">날짜</label></th>
+							<td>
+								<input type="text" id="yyyy" name="yyyy" placeholder="" value="" maxlength="4" title="날짜 년도 입력" style="width:35%;">
+								<input type="text" id="mm" name="mm" placeholder="" value="" maxlength="2" title="날짜 월 입력" style="width:25%; margin-left:5px;">
+								<input type="text" id="dd" name="dd" placeholder="" value="" maxlength="2" title="날짜 일 입력" style="width:25%; margin-left:5px;">
+							</td>
 						</tr>
 						<tr>
-							<th scope="row"><label for="typeB">장소명</label></th>
-							<td><input type="text" id="typeB" placeholder="입력해주세요." value="김밥천국"></td>
+							<th scope="row"><label for="hh">시간</label></th>
+							<td>
+								<input type="text" id="hh" name="hh" placeholder="" value="" maxlength="2" title="시작 시간 입력" style="width:25%;" title="조회기간 검색">
+								<input type="text" id="kk" name="kk" placeholder="" value="" maxlength="2" title="종료 시간 입력" style="width:25%; margin-left:5px;">
+							</td>
 						</tr>
 						<tr>
-							<th scope="row"><label for="typeB">주소</label></th>
-							<td><input type="text" id="typeB" placeholder="입력해주세요." value="부천시  부천로 137번길 1"></td>
+							<th scope="row"><label for="place">장소명</label></th>
+							<td><input type="text" id="place" name="place" placeholder="입력해주세요." value="김밥천국"></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="post">주소</label></th>
+							<td>
+								<input type="text" id="post" name="post" placeholder="" value="" style="width:25%;" readonly="readonly" title="우편번호"><button type="button" style="margin-left:5px;" class="btn__zipcode" onclick="execDaumPostcode()" title="새창 열림">우편번호 검색</button><br>
+								<input type="text" id="address1" name="address1" placeholder="" value="" style="margin-top:5px;" readonly="readonly" title="주소 입력"><br>
+								<input type="text" id="address2" name="address2" placeholder="" value="" style="margin-top:5px;" title="주소 상세정보 입력">
+								<input type="hidden" id="extraAddress" name="extraAddress" value="">
+							</td>
 						</tr>
 					</tbody>
 				</table>
+				<!-- E: 21-12-27 : 웹접근성 : 수정 -->
 			</div>
 			<!-- //board__view -->
 

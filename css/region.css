@@ -78,7 +78,7 @@ body {min-width:320px; width:100%;}
 .tabs__btns button:after {content:''; position:absolute; right:0; bottom:0; left:0; z-index:2; border-bottom:4px solid transparent;}
 .tabs__btns button:first-child {width:calc(50% + 1px); margin-right:-1px;}
 .tabs__btns .tabs--active {background:#fff; color:#3a3838; font-weight:700; font-size:14px;}
-.tabs__btns .tabs--active:after {background-color:#f3802d;}
+.tabs__btns .tabs--active:after {background-color:#943e00;}
 .tabs__contents {display:none; margin-top:15px;}
 .tabs__contents.tabs--active {display:block;}
 @media screen and (max-width:1024px){
