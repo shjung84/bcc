@@ -41,6 +41,53 @@ function agreechk(){
 	});
 }
 
+/* POPUP */
+function layerPopup(fileurl,popId){
+	var body = $("body");
+	if(!body.is(".layer")){body.append($("<div class='trplayer'></div>"))}
+	body.addClass("layer");
+	body.append($("<div class='trplayerw'></div>"));
 
+	$(".trplayerw").append($("<div class='pop__layer'></div>"));
+	$(".pop__layer").load(fileurl,function(){
+		var ths = $(this);
+		var layerpopWidth = ths.width();
+		var layerpopHeight = ths.height();
+		ths.css("margin-left",-layerpopWidth/2+"px");
+		ths.css("margin-top",-layerpopHeight/2+"px");
+
+		function layerCssChange(width,height) {
+			var width = parseInt(width);
+			var height = parseInt(height);
+			if(height < layerpopHeight){
+				body.addClass("a-height");
+			}else{
+				body.removeClass("a-height");
+			}
+			if(width < layerpopWidth){
+				body.addClass("a-width");
+			}else{
+				body.removeClass("a-width");
+			}
+		}
+		$(function() {
+			$(window).resize(function() {
+				layerCssChange($(this).width(), $(this).height());
+			}).resize();
+		});
+		layerHide();
+	});
+}
+function layerHide(){
+	var close = $("[aria-pop-close]");
+	close.click(function(){
+		var x = $(".trplayerw").length;
+		if(x <= 1){
+			$("body").removeClass("layer");
+			$(".trplayer").remove();
+		}
+		$(this).closest(".trplayerw").remove();
+	});
+}
 
 

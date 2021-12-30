@@ -60,24 +60,13 @@ input[type=text]:disabled,
 input[type=text]:read-only,
 input[type=password]:disabled,
 input[type=password]:read-only {color:#888;}
-
-
 input[type=checkbox] {margin-right:10px;}
 input[type=radio] {margin-right:10px;}
-
-
 
 select {width:100%; padding:0 30px 0 12px; border:1px solid #c4c4c4; background-color:#fff; background-repeat:no-repeat; background-position:100% 50%; vertical-align:middle; font-weight:300; font-size:13px; font-family:'NanumGothic'; -webkit-appearance:none; -moz-appearance:none; appearance:none;}
 select::-ms-expand {display:none;}
 button {padding-bottom:2px; border:0; color:#000; vertical-align:middle; font-size:14px; font-family:'NanumGothic'; cursor:pointer;}
 button:disabled {cursor:default;}
-
-input:focus,
-select:focus,
-option:focus,
-textarea:focus,
-button:focus {/* outline:none; */} /* 21-12-27 : 웹접근성 */
-
 
 hr {display:none;}
 address,cite,em {font-style:normal;}
@@ -386,7 +375,6 @@ h2, h3, h4, h5, strong, b {font-family:'NanumGothic'; font-weight:700;}
 .tip__movement__item .date {display:table-cell;  width:120px; padding:0 8px; font-weight:700;}
 .tip__movement__item .place {display:table-cell;}
 
-.board__view__mini {}
 .board__view__mini table {border:1px solid #c4c4c4; letter-spacing:-1px;}
 .board__view__mini table th,
 .board__view__mini table td {padding:0 6px; border-top:1px solid #c4c4c4; font-size:13px;}
@@ -403,13 +391,13 @@ h2, h3, h4, h5, strong, b {font-family:'NanumGothic'; font-weight:700;}
 
 
 /* POPUP */
-body#popup {background:none}
-body.modal {overflow:hidden}
-.trplayer {position:fixed; left:0; top:0; z-index:100; width:100%; height:100%; background:#000; opacity:0.7; filter:alpha(opacity="70")}
-.trplayerw {overflow:auto; position:fixed; left:0; top:0; z-index:100; width:100%; height:100%}
-.pop__modal {position:absolute; left:50%; top:50%; z-index:101; background:#fff}
-body.a-width .pop__modal {left:0 !important; margin-left:0 !important}
-body.a-height .pop__modal {top:0 !important; margin-top:0 !important}
+body#popup {background:none;}
+body.modal {overflow:hidden;}
+.trplayer {position:fixed; left:0; top:0; z-index:100; width:100%; height:100%; background:#000; opacity:0.7; filter:alpha(opacity="70");}
+.trplayerw {overflow:auto; position:fixed; left:0; top:0; z-index:100; width:100%; height:100%;}
+.pop__modal {position:absolute; left:50%; top:50%; z-index:101; background:#fff;}
+body.a-width .pop__modal {left:0 !important; margin-left:0 !important;}
+body.a-height .pop__modal {top:0 !important; margin-top:0 !important;}
 
 .pop__wrap {width:830px;}
 .pop__wrap.small {width:610px;}

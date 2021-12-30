@@ -15,7 +15,7 @@ body {width:100%; color:#090909;}
 .container__main {position:relative; z-index:1; max-width:1200px; margin:0 auto; padding:24px 17px;}
 
 @media screen and (max-width:1024px){
-	body {min-width:320px; width:100%;}
+	body {min-width:280px; width:100%;}
 
 	.header__main__inner {width:100%;}
 	.container__main.type-02 {padding-top:10px;}
@@ -202,7 +202,7 @@ input[type=password]::-webkit-input-placeholder {color:#a7a2a2 !important;}
 .policy-chk dl dd[aria-agree-checked=true] {background-color:#fde6d5;}
 .policy-chk .input__chk span {line-height:20px;}
 
-.policy-wrap {max-width:303px; height:447px; margin:0 auto; padding:15px 20px; background:#f6f6f6; color:#545958; font-size:11px; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;}
+.policy-wrap {overflow-y:auto; max-width:303px; height:447px; margin:0 auto; padding:15px 20px; background:#f6f6f6; color:#545958; font-size:11px; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;}
 
 @media screen and (max-width:1024px){
 	.policy {padding:125px 0 20px;}
@@ -213,6 +213,7 @@ input[type=password]::-webkit-input-placeholder {color:#a7a2a2 !important;}
 
 	.policy-chk {margin-top:20px;}
 }
+
 
 
 /* 회원가입 */
@@ -413,4 +414,24 @@ input[type=password]::-webkit-input-placeholder {color:#a7a2a2 !important;}
 
 	.cs__info {min-height:30px; padding:8px 65px 5px 8px; font-size:12px;}
 	.cs__link {top:calc(50% - 7px); right:7px; width:56px; height:14px; color:#2b2b2b; font-weight:700; font-size:8px; line-height:14px; -webkit-border-radius:2px; -moz-border-radius:2px; border-radius:2px;}
+}
+
+/* POPUP */
+body.layer {overflow:hidden;}
+.pop__layer {position:absolute; left:50%; top:50%; z-index:101; min-width:280px; background:#fff;}
+.pop__layer__wrap {position:relative; width:343px; padding:75px 20px 90px;}
+.pop__layer__header {position:absolute; top:0; right:20px; left:20px; height:55px; border-bottom:1px solid #b5b5b5; color:#3f414e; font-weight:800; font-size:20px;}
+.pop__layer__header h2 {display:table-cell; height:55px; color:#3f414e; vertical-align:middle; font-weight:800; font-size:20px;}
+.pop__layer__container {position:relative;}
+.pop__layer__btns {position:absolute; right:20px; bottom:20px; left:20px;}
+
+body.a-width .pop__layer {left:0 !important; margin-left:0 !important;}
+body.a-height .pop__layer {top:0 !important; margin-top:0 !important;}
+body.a-height .pop__layer__container {height:calc(100vh - 165px);}
+body.a-height .policy-wrap.type--layer {position:absolute; top:0; right:0; bottom:0; left:0; height:auto;}
+
+@media screen and (max-width:343px){
+	.pop__layer {left:0;width:100%;  margin-left:0 !important;}
+	.pop__layer__wrap {width:100%;}
+	.pop__layer__header h2 {font-size:18px;}
 }
